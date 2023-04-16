@@ -20,11 +20,13 @@ header div{
 header img{
     width: auto;
     border-radius: 12px;
-    margin-right: 50px;
+    margin-right: auto;
+    margin-left: 20px;
 }
 header h2{
-    font-size: 36px;
-    margin-left: 50px;
+    font-size: 38px;
+    margin-left: auto;
+    margin-right: 90px;
 }
 
 @media screen and (max-width: 767px) {
