@@ -57,9 +57,21 @@ main ul li a{
 footer{
     padding-bottom: 20px;
 }
+footer a{
+    text-decoration: none;
+    color: #01852d;
+    font-weight: 500;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #014919;
+    font-weight: 500;
+}
 #secondLineFooter{
-    color: #0c0202;
+    color: #2d9c01;
     text-align: center;
+    font-weight: 600;
+    font-style:italic;
 }
 
 @media screen and (max-width: 767px) {
