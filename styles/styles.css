@@ -6,14 +6,14 @@
 body{
     background-color: rgb(40, 41, 41);
 }
-header div{
+header div, footer{
     max-width: 1000px;
     width: 90%;
     display: flex;
     margin: auto; 
     border-radius: 12px;
     background:linear-gradient(#dfffdd,#6cffb5);
-    margin-top: 30px;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
     padding: 20px 10px;
@@ -53,6 +53,13 @@ main ul li a{
     text-decoration: none;
     color: #6cffb5;
     text-transform: capitalize;
+}
+footer{
+    padding-bottom: 20px;
+}
+#secondLineFooter{
+    color: #0c0202;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
