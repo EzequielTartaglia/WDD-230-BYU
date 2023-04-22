@@ -25,10 +25,12 @@
     padding: 20px 0;
     margin-top: 50px;
   }
+
   header img {
     width: 220px;
     height: 220px;
   }
+  
   header h2 {
     font-size: 26px;
   }
