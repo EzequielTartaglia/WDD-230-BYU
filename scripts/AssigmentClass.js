@@ -7,7 +7,7 @@ class Assigment{
         this.linkName = linkName
     }
 }
-const lesson2 = new Assigment("Lesson 02","","Link")
+const lesson2 = new Assigment("Lesson 02","./Lesson 2/design-principles.html","Design Principles Document")
 lessonList.push(lesson2)
 const lesson3 = new Assigment("Lesson 03","","Link")
 lessonList.push(lesson3)

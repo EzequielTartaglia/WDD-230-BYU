@@ -1,21 +1,32 @@
+*{
+    margin: auto 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(40, 41, 41);
+}
 header, footer{
+    max-width: 1600px;
     width: 100%;
     display: flex;
     margin: auto; 
     background:linear-gradient(#dfffdd,#6cffb5);
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 0 10px;
+    height: auto;
 }
 header div {
    flex: auto;
    align-items: center;
    align-content: center;
    text-align: center;
-    margin: -30px -10px;
+   margin: 0 -10px;
 }
 header div h1{
-font-size: 38px;
+  margin-top: 0px;
+  font-size: 38px;
 }
 header div h2{
     margin-top: -25px;
@@ -23,7 +34,9 @@ font-size: 26px;
 }
 
 footer{
-    padding: 0px
+    height: auto;
+    text-align: center;
+    padding: 10px 10px;
 }
 footer a{
     text-decoration: none;
@@ -36,7 +49,6 @@ footer a:hover{
     font-weight: 500;
 }
 #secondLineFooter{
-    margin-top: -10px;
     color: #2d9c01;
     text-align: center;
     font-weight: 600;

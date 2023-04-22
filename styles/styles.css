@@ -55,7 +55,9 @@ main ul li a{
     text-transform: capitalize;
 }
 footer{
-    padding-bottom: 20px;
+    text-align: center;
+    padding: 0px 10px;
+
 }
 footer a{
     text-decoration: none;
