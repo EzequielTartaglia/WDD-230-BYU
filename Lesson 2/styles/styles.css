@@ -1,0 +1,45 @@
+header, footer{
+    width: 100%;
+    display: flex;
+    margin: auto; 
+    background:linear-gradient(#dfffdd,#6cffb5);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+header div {
+   flex: auto;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+    margin: -30px -10px;
+}
+header div h1{
+font-size: 38px;
+}
+header div h2{
+    margin-top: -25px;
+font-size: 26px;
+}
+
+footer{
+    padding: 0px
+}
+footer a{
+    text-decoration: none;
+    color: #01852d;
+    font-weight: 500;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #014919;
+    font-weight: 500;
+}
+#secondLineFooter{
+    margin-top: -10px;
+    color: #2d9c01;
+    text-align: center;
+    font-weight: 600;
+    font-style:italic;
+}
+
