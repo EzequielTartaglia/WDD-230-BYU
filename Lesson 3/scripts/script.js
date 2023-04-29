@@ -7,3 +7,4 @@ currentYear.innerText = date.getFullYear();
 const secondLineFooter = document.getElementById("secondLineFooter")
 
 secondLineFooter.innerText = `Last Update: ${date.toLocaleString()}`
+

@@ -28,4 +28,14 @@
   background: linear-gradient(#f0f0f0a1, #ffffff);
   border-radius: 6px;
   }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger:hover{
+    background: linear-gradient(#8484af, #6cffb5);
+
+  }
 }

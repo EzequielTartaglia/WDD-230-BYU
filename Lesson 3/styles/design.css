@@ -1,0 +1,28 @@
+@media screen and (max-width: 33.5em) {
+    .mainMenu{
+      flex-wrap: wrap;
+    }
+  .mainMenu li a{
+    padding: 5px;
+    margin: 5px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .mainMenu li:hover{
+    background: linear-gradient(#f0f0f0a1, #ffffff);
+    border-radius: 6px;
+    }
+    nav {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    .hamburger:hover{
+      background: linear-gradient(#8484af, #6cffb5);
+  
+    }
+  }
+  
