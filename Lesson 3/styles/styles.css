@@ -13,7 +13,7 @@ footer {
   width: 100%;
   display: flex;
   margin: auto;
-  background: linear-gradient(#dfffdd, #6cffb5);
+  background: linear-gradient(#6cffb5, #dfffdd);
   align-items: center;
   justify-content: center;
   padding: 0 10px;
@@ -34,62 +34,46 @@ header div h2 {
   margin-top: -25px;
   font-size: 26px;
 }
+nav{
+	background-color: #36454f;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainMenu{
+  flex: 1 1 auto;
+  width: 100%;
+  background-color: #6d7471;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.mainMenu li{
+	display: block;
+  width: 100%;
+  justify-content: space-between;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.mainMenu li a{
+  text-decoration: none;
+  color: #feffff;
+}
+.mainMenu li a:hover{
+  color: #51e099;
+}
 
 main{
   max-width: 1600px;
-  margin:  0 auto;
+  margin: 0 auto;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-
-#container {
-  margin: 20px auto;
-  height: auto;
-  display: flex;
-  word-break: break-all;
-  padding: 20px;
-}
-
-.cardContainer {
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-  margin: 0 10px;
-  border-radius: 6px;
-  background: linear-gradient(#789178, #ffffff);
-}
-
-.sectionTitle{
-    text-align: left;
-    padding-left: 12px;
-    background: linear-gradient(#b2e6d4, #69e7a8);
-}
-
-.sectionContent{
-    background-color: #d3e2d8;
-    padding: 20px 10px;
-    text-align: left;
-    position: relative;
-    margin-bottom: -10px;
-}
-
-.sourceName{
-    font-size: 16px;
-    text-align: left;
-    margin:  5px 10px;
-}
-
-.sourceLink {
-    margin:  5px 10px;
-}
-
-.sourceImg{
-    border-radius: 5px;
-    margin: 15px 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 footer {
