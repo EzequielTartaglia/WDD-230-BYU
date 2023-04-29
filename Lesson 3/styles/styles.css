@@ -35,19 +35,21 @@ header div h2 {
   font-size: 26px;
 }
 nav{
-	background-color: #36454f;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 }
 
 .mainMenu{
+  max-width: 1600px;
+  margin: 0 auto;
   flex: 1 1 auto;
   width: 100%;
-  background-color: #6d7471;
+  background-color: #d9f7d9;
   display: flex;
   flex-direction: row;
   padding: 10px;
+  border: 1px solid #dce6df;
 }
 
 .mainMenu li{
@@ -56,16 +58,16 @@ nav{
   justify-content: space-between;
 	text-align: center;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
   text-transform: capitalize;
 }
 
 .mainMenu li a{
   text-decoration: none;
-  color: #feffff;
+  color: #0a0c0c;
 }
 .mainMenu li a:hover{
-  color: #51e099;
+  color: #16b983;
 }
 
 main{
