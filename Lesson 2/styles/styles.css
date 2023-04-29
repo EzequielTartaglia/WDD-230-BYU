@@ -37,6 +37,7 @@ header div h2 {
 
 main{
   max-width: 1600px;
+  margin:  0 auto;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -70,6 +71,7 @@ main{
     padding: 20px 10px;
     text-align: left;
     position: relative;
+    margin-bottom: -10px;
 }
 
 .sourceName{
