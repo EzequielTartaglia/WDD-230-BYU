@@ -37,7 +37,6 @@ header div h2 {
 nav{
 	text-align: center;
 	display: flex;
-	flex-direction: column;
 }
 
 .mainMenu{

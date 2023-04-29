@@ -1,4 +1,4 @@
-@media screen and (min-width: 33.5em) {
+@media screen and (max-width: 33.5em) {
   header div {
     text-align: center;
     padding: 20px 0;
@@ -11,5 +11,21 @@
 
   header div h2 {
     font-size: 26px;
+  }
+
+  .mainMenu{
+    flex-wrap: wrap;
+  }
+.mainMenu li a{
+  padding: 5px;
+  margin: 5px 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.mainMenu li:hover{
+  background: linear-gradient(#f0f0f0a1, #ffffff);
+  border-radius: 6px;
   }
 }
