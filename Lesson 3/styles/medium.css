@@ -15,7 +15,13 @@
 
   .mainMenu {
     flex-wrap: wrap;
+    background: linear-gradient(#6cffb5, #cfcfcfec);
+    border: none;
+    border-bottom: 1.5px solid #6cffb5;
+    border-top: 1.5px solid #8484af;
+
   }
+ 
   .mainMenu li a {
     padding: 5px;
     margin: 5px 10px;
@@ -23,11 +29,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
-  }
-  .mainMenu li:hover {
-    background: linear-gradient(#f0f0f0a1, #ffffff);
-    border-radius: 6px;
   }
   nav {
     display: none;
