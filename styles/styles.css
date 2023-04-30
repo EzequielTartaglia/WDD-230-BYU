@@ -14,7 +14,7 @@ header div, footer{
     display: flex;
     margin: auto; 
     border-radius: 12px;
-    background:linear-gradient(#dfffdd,#6cffb5);
+    background: linear-gradient(#12a7e2, #6cffb5);
     margin-top: 10px;
     align-items: center;
     justify-content: center;
@@ -53,28 +53,38 @@ main ul li {
 main ul li a{
     margin-left: 10px;
     text-decoration: none;
-    color: #6cffb5;
+    color: #0388c5;
     text-transform: capitalize;
 }
-footer{
-    text-align: center;
-    padding: 0px 10px;
 
-}
-footer a{
+footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  footer a {
     text-decoration: none;
-    color: #01852d;
+    color: #05425e;
     font-weight: 500;
-}
-footer a:hover{
+  }
+  
+  footer a:hover {
     text-decoration: none;
-    color: #014919;
+    color: #012649;
     font-weight: 500;
-}
-#secondLineFooter{
-    color: #2d9c01;
+  }
+  
+  #firstLineFooter{
+    padding: 0;
+    color: #0a0c0c;
+  }
+  
+  #secondLineFooter {
+    color: #016b9c;
     text-align: center;
     font-weight: 600;
-    font-style:italic;
-}
-
+    font-style: italic;
+    padding: 0;
+  }
+  

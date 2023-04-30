@@ -13,7 +13,7 @@ footer {
   width: 100%;
   display: flex;
   margin: auto;
-  background: linear-gradient(#dfffdd, #6cffb5);
+  background: linear-gradient(#12a7e2, #6cffb5);
   align-items: center;
   justify-content: center;
   padding: 0 10px;
@@ -63,8 +63,8 @@ main{
 .sectionTitle{
     text-align: left;
     padding-left: 12px;
-    background: linear-gradient(#b2e6d4, #69e7a8);
-}
+    background: linear-gradient(#12a7e2, #6cffb5);
+  }
 
 .sectionContent{
     background-color: #d3e2d8;
@@ -100,19 +100,25 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #01852d;
+  color: #05425e;
   font-weight: 500;
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #014919;
+  color: #012649;
   font-weight: 500;
 }
 
+#firstLineFooter{
+  padding: 0;
+  color: #0a0c0c;
+}
+
 #secondLineFooter {
-  color: #2d9c01;
+  color: #016b9c;
   text-align: center;
   font-weight: 600;
   font-style: italic;
+  padding: 0;
 }
