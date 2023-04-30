@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
   }
   .mainMenu li:hover {
     background: linear-gradient(#f0f0f0a1, #ffffff);
@@ -30,6 +31,7 @@
   }
   nav {
     display: none;
+    margin-left: -15px;
   }
   .hamburger {
     display: block;
