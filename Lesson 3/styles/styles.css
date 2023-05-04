@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-/* Traer informacion de wdd130 */
+
+/* Template design */
 
 :root {
   /* change the values below to your colors from your palette */
@@ -58,6 +59,17 @@ p {
   padding: 1em;
   word-wrap: break-word;
 }
+.targetAudienceLists{
+  align-items: center;
+}
+.targetAudienceLi{
+  padding: 50px;
+  margin-left: 50px;
+  align-items: center;
+text-align: justify;
+justify-content: center;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
