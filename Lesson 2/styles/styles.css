@@ -36,14 +36,6 @@ header div h2 {
   font-size: 26px;
 }
 
-main{
-  max-width: 1600px;
-  margin:  0 auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 #container {
   margin: 20px auto;
   height: auto;
