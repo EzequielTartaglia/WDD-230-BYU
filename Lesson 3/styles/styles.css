@@ -56,11 +56,12 @@ hr {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  padding: 1em;
+  padding: 30px;
   word-wrap: break-word;
 }
 .targetAudienceLists{
   align-items: center;
+  font-weight: bold;
 }
 .targetAudienceLi{
   padding: 50px;
@@ -68,6 +69,10 @@ p {
   align-items: center;
 text-align: justify;
 justify-content: center;
+}
+.targetAudienceP{
+  margin-bottom: -45px;
+  font-weight: 100;
 }
 
 .colors {
