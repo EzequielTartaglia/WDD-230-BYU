@@ -50,7 +50,7 @@ header div h2 {
   overflow: hidden;
   margin: 0 10px;
   border-radius: 6px;
-  background: linear-gradient(#789178, #ffffff);
+  background-color: #d3e2d8;
 }
 
 .sectionTitle{
