@@ -37,6 +37,7 @@ header div h2 {
 }
 
 #container {
+  max-width: 1600px;
   margin: 20px auto;
   height: auto;
   display: flex;
