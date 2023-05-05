@@ -9,25 +9,25 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #042716;
-  --primary-color-second-option: #001D0F;
-  --secondary-color: #265F59;
-  --accent1-color: #DCB234;
-  --accent2-color: #E1E1E1;
+  --primary-color: #085E70;
+  --primary-color-second-option: #076fac;
+  --secondary-color: #A4E3F8 ;
+  --accent1-color: #0BABB1  ;
+  --accent2-color: #00818a;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Open Sans";
   --paragraph-font: Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #265F59; /* headlines on a white background */
-  --headline-color-on-color: #E1E1E1; /* headlines on a colored background */
-  --paragraph-color-on-white: #265F59; /* paragraph text on a white background */
-  --paragraph-color-on-color: #E1E1E1; /* paragraph text on a colored background */
-  --paragraph-background-color: #265F59;
-  --nav-link-color: #E1E1E1;
-  --nav-background-color: #265F59;
-  --nav-hover-link-color: #DCB234;
+  --headline-color-on-white: #eeeded; /* headlines on a white background */
+  --headline-color-on-color: #2c2b2b; /* headlines on a colored background */
+  --paragraph-color-on-white: #2c2b2b; /* paragraph text on a white background */
+  --paragraph-color-on-color: #eeeded; /* paragraph text on a colored background */
+  --paragraph-background-color: #065577;
+  --nav-link-color: #065577;
+  --nav-background-color: #eeeded;
+  --nav-hover-link-color: #06a9b4;
 }
 
 img {
@@ -148,7 +148,9 @@ ul{
   grid-template-areas: ". . home home . ."
     ". . . top . ."
     ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "page2 page2 . . page3 page3"
+    
+    ;
 }
 .sitemap > div {
 
