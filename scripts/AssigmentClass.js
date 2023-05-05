@@ -9,7 +9,7 @@ class Assigment{
 }
 const lesson2 = new Assigment("Lesson 02","./Lesson 2/design-principles.html","Design Principles Document")
 lessonList.push(lesson2)
-const lesson3 = new Assigment("Lesson 03","./Lesson 3/index.html","Website Planning Document")
+const lesson3 = new Assigment("Lesson 03","./Lesson 3","Chamber Exchange Site Plan")
 lessonList.push(lesson3)
 const lesson4 = new Assigment("Lesson 04","","Link")
 lessonList.push(lesson4)
