@@ -76,6 +76,7 @@
   }
 
   .contacts {
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +84,7 @@
     flex-basis: 50%;
     flex-grow: 1;
     flex-shrink: 1;
+    font-size: 16px;
   }
   
   .contacts p {
