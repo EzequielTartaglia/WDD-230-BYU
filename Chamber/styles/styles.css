@@ -29,11 +29,53 @@ header .logo img {
   width: 150px;
   height: auto;
 }
+nav{
+	text-align: center;
+	display: flex;
+  margin-bottom: 50px;
+}
+.hamburger {
+  display: none;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000000;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  background: linear-gradient(#12a7e2, #6cffb5);
+  margin-bottom: 10px;
+  transition: all 0.8s ease-in-out;
+  text-decoration: none;
+  color: #ffffff;
+}
+.hamburger i{
+  color: #ffffff;
+}
+.hamburger:hover{
+  background: linear-gradient(#12a7e2, #532ed8);
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
 nav {
   display: block;
   align-items: center;
   justify-content: center;
 }
+
+.hamburger.active ~ nav {
+  display: block;
+}
+
 .mainMenu {
   max-width: 1600px;
   margin: 0 auto;

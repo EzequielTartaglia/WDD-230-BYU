@@ -1,3 +1,31 @@
+.mainMenu {
+  flex-wrap: wrap;
+  background: linear-gradient(#6cffb5, #cfcfcfec);
+  border: none;
+  border-bottom: 1.5px solid #6cffb5;
+  border-top: 1.5px solid #8484af;
+
+}
+
+.mainMenu li a {
+  padding: 5px;
+  margin: 5px 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+nav {
+  display: none;
+  margin-left: -15px;
+}
+.hamburger {
+  display: block;
+}
+.hamburger:hover {
+  background: linear-gradient(#12a7e2, #532ed8);
+}
+
 footer {
   max-width: 100%;
   width: 100%;

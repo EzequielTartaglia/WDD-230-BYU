@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles//normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/floatButtons.css" />
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css"/>
     <link rel="stylesheet" href="./styles/medium.css" media="screen and (max-width: 600px)">
     <title>Document</title>
 </head>
 <body>
+
     <header>
-        <div class="logo"><a href="index.html"><img src="./images/ce-logo.png" alt="Chamber Exchange Logo"></a></div>
+        <div class="logo">
+            <a href="index.html"><img src="./images/ce-logo.png" alt="Chamber Exchange Logo"></a>
+        </div>
+        <button class="hamburger" id="hamburgerChamber"><i class="fas fa-bars"></i></button>
         <nav>
             <ul class="mainMenu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Beneficts</a></li>
-                <li><a href="">Join</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Benefits</a></li>
+                <li><a href="#">Join</a></li>
             </ul>
         </nav>
     </header>
+
     <main><br></main>
     
     <footer>
@@ -61,5 +71,6 @@
     </footer>
     
     <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </body>
 </html>
