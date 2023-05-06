@@ -1,114 +1,147 @@
 * {
-  margin: auto 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-body {
-  background-color: rgb(40, 41, 41);
-}
-header div,
-footer {
-  max-width: 1000px;
-  width: 90%;
-  display: flex;
-  margin: auto;
-  border-radius: 12px;
-  background: linear-gradient(to right, #A4E3F8, #D9F0FD, #6FC3E4);
-  margin-top: 10px;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 10px;
-}
-header img {
-  border-radius: 12px;
-  margin-right: auto;
-  margin-left: 20px;
-}
-header h1 {
-  font-size: 38px;
-  margin-left: auto;
-  margin-right: auto;
-}
-main {
-  max-width: 1000px;
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #dfffdd;
-}
-main h2,
-p {
-  margin: 10px 0;
-}
-main ul {
-  text-align: left;
-  list-style-position: inside;
-  margin-left: 15px;
-}
-main ul li {
-  margin: 10px 0;
-}
-main ul li a {
-  margin-left: 10px;
-  text-decoration: none;
-  color: #0388c5;
-  text-transform: capitalize;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  body {
+    background-color: rgb(40, 41, 41);
+  }
+  
+  header div,
+  footer {
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border-radius: 12px;
+    background: linear-gradient(to right, #A4E3F8, #D9F0FD, #6FC3E4);
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+  
+  header img {
+    border-radius: 12px;
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    font-size: 38px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  main {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #dfffdd;
+  }
+  
+  main h2,
+  p {
+    margin: 10px 0;
+  }
+  
+  main ul {
+    text-align: left;
+    list-style-position: inside;
+    margin-left: 15px;
+  }
+  
+  main ul li {
+    margin: 10px 0;
+  }
+  
+  main ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #0388c5;
+    text-transform: capitalize;
+  }
+  
+  footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: #ce7420;
+    font-weight: 500;
+  }
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footerLogoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .footerContactInfoContainer {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  #footerLogoInfo {
+    margin-top: -80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #logoFooter {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  #footerLogoInfo p {
+    margin: 0;
+  }
+  
+  hr {
+    height: 2px;
+    margin: 20px 0;
+    background: linear-gradient(to right,#15c5c5 10%, #085E70 , #15c5c5);
+    border: none;
+    width: 100%;
+  }
+  
 
-footer {
-  height: auto;
-  text-align: center;
-  padding: 10px 10px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: #ce7420;
-  font-weight: 500;
-}
-
-
-#footerLogoInfo {
-  margin-top: -80px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#logoFooter {
-  width: 400px;
-}
-
-#footerLogoInfo p {
-  margin-bottom: -3px;
-}
-hr {
-  height: 0px;
-  margin: 15px 0;
-  background: linear-gradient(#085E70, #787a7a);
-}
-
-#firstLineFooter,
-#secondLineFooter {
-  display: inline;
-}
-
-#firstLineFooter {
-  padding: 0;
-  color: #0a0c0c;
-}
-
-#secondLineFooter {
-  color: #039ba0;
-  font-weight: 100;
-  font-style: italic;
-}
+  
+  #firstLineFooter,
+  #secondLineFooter {
+    display: inline;
+  }
+  
+  #firstLineFooter {
+    padding: 0;
+    color: #0a0c0c;
+  }
+  
+  #secondLineFooter {
+    color: #039ba0;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
