@@ -108,9 +108,7 @@
     width: 100%;
     padding: 0;
     color: #0a0c0c;
-    height: auto;
     text-align: center;
-    padding: 2px;
   }
   #firstLineFooter p{
     margin-bottom: 5px;
@@ -122,5 +120,10 @@
     color: #039ba0;
     font-weight: 100;
     font-style: italic;
+  }
+  
+  #firstLineFooter p:not(:last-child)::after {
+    content: " |";
+    display: inline;
   }
   
