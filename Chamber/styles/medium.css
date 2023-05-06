@@ -14,21 +14,27 @@ footer {
 
 .footerLogoContainer,
 .footerContactInfoContainer {
-  flex-basis: 100%;
   margin: 0px;
+  margin-bottom: 20px;
   flex-direction: column;
+  flex-basis: 100%;
   font-size: 18px;
+  width: 100%;
 }
 
 #logoFooter {
-  width: 500px;
+  width: 400px;
   margin: -100px 0;
+  padding-right: 0px;
+
 }
 
 .contacts {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  width: 100%;
+
 }
 
 .contacts p {

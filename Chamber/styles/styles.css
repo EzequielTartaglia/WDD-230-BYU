@@ -14,20 +14,14 @@
     width: 100%;
     display: flex;
     margin: auto;
-    border-radius: 12px;
     background: linear-gradient(to right, #A4E3F8, #D9F0FD, #6FC3E4);
-    margin-top: 10px;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
-  }
-  
-  footer {
-    height: auto;
     text-align: center;
     padding: 10px 10px;
+
   }
-  
+
   footer a {
     text-decoration: none;
     color: #000000;
@@ -42,6 +36,7 @@
   
   .footerContainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -50,7 +45,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-basis: 100%;
+    flex-basis: 50%;
     flex-grow: 1;
     flex-shrink: 1;
     font-size: 20px;
@@ -58,10 +53,13 @@
   
 
   #footerLogoInfo {
-    margin-top: -40px;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 17px;
   }
   #footerTile{
     font-size: 18px;
@@ -71,14 +69,18 @@
   }
   #logoFooter {
     width: 400px;
-    margin-right: -150px;
+    margin-right: -120px;
+    padding-right: 50px;
+    margin-top: -100px;
+    margin-bottom: -120px;
   }
 
   .contacts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-basis: 100%;
+    flex-basis: 50%;
     flex-grow: 1;
     flex-shrink: 1;
   }
@@ -86,7 +88,6 @@
   .contacts p {
     margin-bottom: -5px;
     margin: 0;
-
   }
 
   hr {
@@ -119,20 +120,5 @@
     color: #039ba0;
     font-weight: 100;
     font-style: italic;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .footerContainer {
-      flex-direction: column;
-    }
-  
-    .footerLogoContainer {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .contacts {
-      width: 100%;
-    }
   }
   
