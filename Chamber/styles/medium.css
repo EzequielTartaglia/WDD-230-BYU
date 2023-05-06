@@ -1,6 +1,6 @@
 .mainMenu {
   flex-wrap: wrap;
-  background: linear-gradient(#6cffb5, #cfcfcfec);
+  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   border: none;
   border-bottom: 1.5px solid #6cffb5;
   border-top: 1.5px solid #8484af;
