@@ -33,11 +33,15 @@ footer {
 
 .contacts p {
   padding: 5px;
-  margin: 5px;
+  margin: 4px;
+}
+#footerLogoInfo p{
+  margin: 2px;
 }
 
 #firstLineFooter,
 #secondLineFooter {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }

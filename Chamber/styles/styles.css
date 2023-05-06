@@ -43,7 +43,7 @@
   .footerContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .footerLogoContainer {
@@ -104,8 +104,12 @@
   }
   
   #firstLineFooter {
+    width: 100%;
     padding: 0;
     color: #0a0c0c;
+    height: auto;
+    text-align: center;
+    padding: 2px;
   }
   #firstLineFooter p{
     margin-bottom: 5px;
