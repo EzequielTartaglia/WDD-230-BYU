@@ -14,7 +14,7 @@ footer {
   display: flex;
   margin: auto;
   border-radius: 12px;
-  background: linear-gradient(#12a7e2, #A4E3F8);
+  background: linear-gradient(to right, #A4E3F8, #D9F0FD, #6FC3E4);
   margin-top: 10px;
   align-items: center;
   justify-content: center;
@@ -76,26 +76,24 @@ footer a:hover {
   font-weight: 500;
 }
 
-#footerLogoInfo {
-  width: 100%;
-  display: flex;
-}
 
-#footerLogoInfoContainer {
+#footerLogoInfo {
+  margin-top: -80px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 #logoFooter {
-  width: 300px;
+  width: 400px;
 }
 
-#footerLogoInfoContainer p {
+#footerLogoInfo p {
   margin-bottom: -3px;
 }
 hr {
   height: 0px;
-  margin: 35px 0;
+  margin: 15px 0;
   background: linear-gradient(#085E70, #787a7a);
 }
 
@@ -110,7 +108,7 @@ hr {
 }
 
 #secondLineFooter {
-  color: #0BABB1;
+  color: #039ba0;
   font-weight: 100;
   font-style: italic;
 }
