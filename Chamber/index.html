@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="/styles/medium.css">
+    <link rel="stylesheet" href="./styles//normalize.css">
     <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="./styles/medium.css" media="screen and (max-width: 767px)">
     <title>Document</title>
 </head>
 <body>
@@ -14,6 +14,7 @@
         <nav></nav>
     </header>
     <main></main>
+    
     <footer>
         
         <div class="footerContainer">
@@ -22,24 +23,28 @@
             <a href="index.html"><img id="logoFooter" src="./images/ce-logo.png" alt="Logo Photo"></a>
         </div>
         <div id="footerLogoInfo">
-            <p>Chamber Exchange: Guild of Commerce</p>
+            <p id="footerTile">Chamber Exchange: Guild of Commerce</p>
             <p>10 Saint George</p>
             <p>Texas, United States of America</p>
         </div>
-        <div class="footerContactInfoContainer">
+        <div class="contacts">
             <p>info@chamberexchange.org</p>
+            <p>(+1) 224 857 965</p>
+            <p><a href="">📌Location Map </a></p>
           </div>
           
         </div>
         <hr/>
         <div>
-            <p id="firstLineFooter">
-              &copy;<span id="currentYear"></span> Chamber Exchange |
-              <a href="https://www.linkedin.com/in/ezequieltartaglia/"
+            <div id="firstLineFooter">
+                <p>
+              &copy;<span id="currentYear"></span> Chamber Exchange</p> 
+              <p><a href="https://www.linkedin.com/in/ezequieltartaglia/"
                 >Ezequiel M. Tartaglia</a
               >
-              | WDD 230 Project | <p id="secondLineFooter"></p>
-            </p>
+               </p>
+              <p> WDD 230 Project </p> <p id="secondLineFooter"></p>
+            </div>
             
           </div>
        

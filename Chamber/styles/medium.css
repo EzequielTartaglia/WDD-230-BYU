@@ -1,37 +1,43 @@
-@media screen and (max-width: 600px) {
-  header div {
-    margin: auto;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 30px;
-  }
-
-  header img {
-    margin-right: 30px;
-    width: 150px;
-    height: 150px;
-  }
-
-  header h2 {
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 26px;
-  }
+footer {
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
 }
 
-@media screen and (min-width: 33.5em) {
-  header div {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
-  }
+.footerContainer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-  header img {
-    width: 220px;
-    height: 220px;
-  }
-  
-  header h2 {
-    font-size: 26px;
-  }
+.footerLogoContainer,
+.footerContactInfoContainer {
+  flex-basis: 100%;
+  margin: 0px;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+#logoFooter {
+  width: 500px;
+  margin: -100px 0;
+}
+
+.contacts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts p {
+  padding: 5px;
+  margin: 5px;
+}
+
+#firstLineFooter,
+#secondLineFooter {
+  display: flex;
+  flex-direction: column;
 }
