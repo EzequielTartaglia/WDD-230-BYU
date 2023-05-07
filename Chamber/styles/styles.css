@@ -19,7 +19,7 @@ header {
   padding: 10px;
 }
 
-header .logo{
+header .logo {
   width: 33%;
   display: flex;
   justify-content: center;
@@ -31,37 +31,31 @@ header .logo img {
   width: 160px;
   height: 160px;
 }
-nav{
-	text-align: center;
-	display: flex;
+nav {
+  text-align: center;
+  display: flex;
   margin-bottom: 50px;
 }
 .hamburger {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 1000000;
   border: none;
-  padding: 0px;
   font-size: 20px;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
   width: 70px;
   height: 70px;
-  border-radius: 20%;
-  background: linear-gradient(#12a7e2, #6cffb5);
-  margin-bottom: 10px;
+  background: none;
   transition: all 0.8s ease-in-out;
-  text-decoration: none;
-  color: #000000;
 }
-.hamburger i{
+
+.hamburger i {
   color: #0f0b0b;
 }
-.hamburger:hover{
-  background: linear-gradient(#12a7e2, #532ed8);
+
+.hamburger i:hover {
+  color: #ce7420;
 }
 
 .hamburger:focus {
@@ -87,7 +81,6 @@ nav {
   flex-direction: row;
   flex-wrap: no wrap;
   padding: 20px 20px;
-
 }
 
 .mainMenu li {
@@ -101,21 +94,13 @@ nav {
   padding: 10px 20px;
 }
 
-.mainMenu li .active {
-    color: #fefdff;
-    background: linear-gradient(#12a7e2, #532ed8);
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    padding: 10px 10%;
-  }
-  
-  .mainMenu li a{
-    text-decoration: none;
-    color: #0a0c0c;
-  }
-  .mainMenu li a:hover{
-    color: #ce7420;
-  }
+.mainMenu li a {
+  text-decoration: none;
+  color: #0a0c0c;
+}
+.mainMenu li a:hover {
+  color: #ce7420;
+}
 
 /* Footer */
 footer {
