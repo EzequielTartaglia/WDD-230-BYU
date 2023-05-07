@@ -32,7 +32,7 @@ header {
     flex-wrap: wrap;
     border: none;
     border-top: 1.5px solid #8484af;
-    margin-bottom: -60px;
+    margin-bottom: -30px;
   }
   
   nav {
@@ -64,8 +64,8 @@ header {
   }
   
   #logoFooter {
-    width: 400px;
-    margin: -100px 0;
+    width: 320px;
+    margin: -70px 0;
     padding-right: 0px;
   
   }
