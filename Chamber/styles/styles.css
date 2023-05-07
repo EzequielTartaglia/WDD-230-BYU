@@ -11,23 +11,25 @@ body {
 
 /* Header */
 header {
-  max-width: 1600px;
-  width: 100%;
+  height: 90px;
   display: flex;
-  margin: auto;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  text-align: center;
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  padding: 10px;
 }
-header .logo {
-  display: inline-block;
-  vertical-align: middle;
+
+header .logo{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
 header .logo img {
-  width: 150px;
-  height: auto;
+  width: 160px;
+  height: 160px;
 }
 nav{
 	text-align: center;
@@ -37,11 +39,11 @@ nav{
 .hamburger {
   display: none;
   position: fixed;
-  left: 20px;
-  bottom: 20px;
+  top: 20px;
+  right: 20px;
   z-index: 1000000;
   border: none;
-  padding: 10px;
+  padding: 0px;
   font-size: 20px;
   cursor: pointer;
   align-items: center;
@@ -53,10 +55,10 @@ nav{
   margin-bottom: 10px;
   transition: all 0.8s ease-in-out;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 .hamburger i{
-  color: #ffffff;
+  color: #0f0b0b;
 }
 .hamburger:hover{
   background: linear-gradient(#12a7e2, #532ed8);
@@ -84,8 +86,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: no wrap;
-  padding: 10px 20px;
-  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  padding: 20px 20px;
 
 }
 
