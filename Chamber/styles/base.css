@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  
+  }
+  
+  header .logo {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  
+  nav {
+    order: 3;
+    text-align: center;
+  }
+  
+  .mainMenu {
+    flex-direction: column;
+  }
+  
+  .hamburger {
+    display: block;
+    order: 1;
+  }
+  .mainMenu {
+    flex-wrap: wrap;
+    border: none;
+    border-top: 1.5px solid #8484af;
+    margin-bottom: -60px;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footerLogoContainer,
+  .footerContactInfoContainer {
+    margin: 0px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-basis: 100%;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  #logoFooter {
+    width: 400px;
+    margin: -100px 0;
+    padding-right: 0px;
+  
+  }
+  
+  .contacts {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+  }
+  
+  .contacts p {
+    padding: 5px;
+    margin: 3px;
+  }
+  #footerLogoInfo p{
+    margin: 2px;
+  }
+  
+  #firstLineFooter,
+  #secondLineFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Not show the "|" between the lines */
+  #firstLineFooter p:not(:last-child)::after {
+    display: none;
+  }
