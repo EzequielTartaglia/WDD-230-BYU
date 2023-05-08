@@ -112,10 +112,18 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 10px;
-  color: #0a0c0c;
   text-decoration: none;
-}
+  color: #1558ce;
 
+}
+#linkedIn,#facebook{
+  color: #1558ce;
+  font-size: 25px;
+}
+#linkedIn:hover,#facebook:hover{
+  color: #ce7420;
+
+}
 .socialsHeader a:hover {
   color: #ce7420;
 }
