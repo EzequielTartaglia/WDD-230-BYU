@@ -1,11 +1,11 @@
-header {
+.headerInfo {
   display: flex;
   justify-content: space-between; 
   align-items: center;
   height: auto;
 }
 
-header .logo {
+.headerInfo .logo {
   display: flex;
   justify-content: center;
   align-items: center;
