@@ -1,4 +1,3 @@
-
 const hamburger = document.getElementById('hamburgerChamber');
 const menu = document.querySelector('.mainMenu');
 

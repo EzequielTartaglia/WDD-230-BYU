@@ -1,3 +1,64 @@
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  height: auto;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+nav {
+  text-align: center;
+}
+
+
+.hamburger {
+  display: block;
+  order: 1;
+}
+
+.mainMenu {
+  flex-wrap: wrap;
+  border: none;
+  border-top: 1.5px solid #8484af;
+  margin-bottom: -30px;
+  display: none;
+  flex-direction: column;
+
+}
+.mainMenu.active {
+  display: block;
+}
+.socialsHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;  
+  padding-right: 60px;
+}
+
+.socialsHeader i {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  
+}
+
+.socialsHeader a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #0a0c0c;
+
+}
+
+.socialsHeader a:hover {
+  color: #ce7420;
+}
 
 /* Footer */
 footer {

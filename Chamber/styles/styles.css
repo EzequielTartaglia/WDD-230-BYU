@@ -13,33 +13,91 @@ body {
 header {
   height: 90px;
   display: flex;
+  flex-direction: row;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-between;
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   padding: 10px;
 }
 
-header .logo {
-  width: 33%;
+.logoTitleContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 15px;
 }
 
-header .logo img {
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo img {
   width: 160px;
   height: 160px;
 }
-nav {
-  text-align: center;
+
+.titleContainer {
   display: flex;
-  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+}
+.primaryTitle{
+  font-size: 20px;
+  font-style: italic;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+.mainMenu li {
+  margin-right: 10px;
+}
+
+.mainMenu li a {
+  text-decoration: none;
+  color: #0a0c0c;
+}
+
+.socialsHeader {
+  display: flex;
+  align-items: center;
+  order: 2; 
+  margin-top: 10px; 
+}
+
+.socialsHeader i {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px; 
+}
+.socialsHeader a {
+  display: flex; 
+  align-items: center; 
+  margin-right: 10px; 
+  color: #0a0c0c; 
+  text-decoration: none;
+
+}
+
+.socialsHeader a:hover {
+  color: #ce7420; 
 }
 .hamburger {
   display: none;
   position: absolute;
-  top: 20px;
   right: 20px;
   border: none;
   font-size: 20px;
@@ -73,6 +131,7 @@ nav {
 }
 
 .mainMenu {
+  flex-grow: 0; 
   max-width: 1600px;
   margin: 0 auto;
   flex: 1 1 auto;
