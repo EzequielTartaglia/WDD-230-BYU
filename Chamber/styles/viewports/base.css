@@ -17,6 +17,13 @@ nav {
 }
 
 
+.title {
+  font-size: 12px;
+}
+.primaryTitle{
+  font-size: 18px;
+}
+
 .hamburger {
   display: block;
   order: 1;
