@@ -95,6 +95,7 @@ nav {
 .socialsHeader a:hover {
   color: #ce7420; 
 }
+
 .hamburger {
   display: none;
   position: absolute;
@@ -120,17 +121,19 @@ nav {
   outline: none;
 }
 
-nav {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
 .hamburger.active ~ nav {
   display: block;
 }
 
-.mainMenu {
+.toggleMenu{
+  display: none;
+}
+
+.mainMenu li a:hover {
+  color: #ce7420;
+}
+
+.mainMenu{
   flex-grow: 0; 
   max-width: 1600px;
   margin: 0 auto;

@@ -21,8 +21,43 @@ nav {
   display: block;
   order: 1;
 }
+.mainMenu{
+  display: none;
+}
+.toggleMenu{
+  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  flex-grow: 0; 
+  max-width: 1600px;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no wrap;
+  padding: 20px 20px;
+}
 
-.mainMenu {
+.toggleMenu li{
+  display: block;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+.toggleMenu li a {
+  text-decoration: none;
+  color: #0a0c0c;
+}
+
+.toggleMenu li a:hover {
+  color: #ce7420;
+}
+
+.toggleMenu {
   flex-wrap: wrap;
   border: none;
   border-top: 1.5px solid #8484af;
@@ -31,7 +66,7 @@ nav {
   flex-direction: column;
 
 }
-.mainMenu.active {
+.toggleMenu.active {
   display: block;
 }
 .socialsHeader {
