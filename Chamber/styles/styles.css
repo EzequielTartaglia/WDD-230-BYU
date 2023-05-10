@@ -208,6 +208,9 @@ nav {
   background: linear-gradient(to right, #A4E3F8, #4ab5f3, #A4E3F8);
   grid-column-gap: 4px;
   grid-row-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
   
 /* Footer */
