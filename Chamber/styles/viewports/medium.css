@@ -18,14 +18,15 @@ nav {
   text-align: center;
 }
 
-
 .hamburger {
   display: block;
   order: 1;
 }
+
 .mainMenu{
   display: none;
 }
+
 .toggleMenu{
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   flex-grow: 0; 
@@ -68,9 +69,11 @@ nav {
   flex-direction: column;
 
 }
+
 .toggleMenu.active {
   display: block;
 }
+
 .socialsHeader {
   display: flex;
   align-items: center;
