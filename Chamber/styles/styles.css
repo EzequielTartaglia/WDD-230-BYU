@@ -66,11 +66,6 @@ nav {
   align-items: center;
 }
 
-.mainMenu li a {
-  text-decoration: none;
-  color: #0a0c0c;
-}
-
 .socialsHeader {
   display: flex;
   align-items: center;
@@ -170,6 +165,7 @@ nav {
   text-decoration: none;
   color: #0a0c0c;
 }
+
 .mainMenu li a:hover {
   color: #ce7420;
 }
