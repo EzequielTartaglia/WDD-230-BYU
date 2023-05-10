@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./styles/styles.css"/>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/viewports/base.css"media="screen and (max-width: 600px)">
-    <link rel="stylesheet" href="./styles/viewports/medium.css" media="screen and (min-width: 601px) and (max-width: 1024px)" >
-    <link rel="stylesheet" href="./styles/viewports/large.css" media="screen and (min-width: 1025px)">
+    <link rel="stylesheet" href="./styles/viewports/medium.css" media="screen and (min-width: 32em)" >
+    <link rel="stylesheet" href="./styles/viewports/large.css" media="screen and (min-width: 64em)">
     <title>Chamber Exchange | Home</title>
 </head>
 <body>
@@ -66,10 +66,88 @@
 
   </header>
 
-    <main>
-    <br>
-    <br>
-  </main>
+  <main>
+    <section class="hero-section">
+        <div class="welcome-message">
+            <h2>Welcome, We are Argentina</h2>
+        </div>
+        <div class="join-btn" onclick="window.location.href='https://josuebce.github.io/wdd230/chamber/join.html';">
+            <h2>Join the Chamber</h2>
+        </div>
+        <picture>
+
+            <source media="(min-width: 64em)" srcset="/wdd230/chamber/images/large.webp">
+            <source media="(min-width: 32em)" srcset="/wdd230/chamber/images/medium.webp">
+            <img src="/wdd230/images/hero-image.jpg" alt="Hero Image">
+        </picture>
+    </section>
+    <section>
+        <h2>Ribbon Cutting</h2>
+        <h3>The diamond Shack 💎</h3>
+        <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00PM</p>
+        <a href="contact.html#contact-form" id="more-info">
+            <p>more info...</p>
+        </a>
+    </section>
+    <section class="weather-section">
+        <!-- Keeps Placeholders for the Weather Information -->
+        <h2>Weather</h2>
+        <div class="weather">
+            <img id="weather-img" src="https://openweathermap.org/img/w/50n.png" alt="MIST">
+            <div class="temp"><span id="my-temp">56</span></div>
+        </div>
+        <h4 id="weather-descrip">MIST</h4>
+        <p>Wind Speed: <span id="my-wind">1.14</span></p>
+        <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        <p>Humidity: <span id="humidity">99%</span></p>
+    </section>
+    <section>
+        <h2>New Release</h2>
+        <p>"Be part of our Chamber and discover the great benefits for small and medium businesses. We are releasing
+            a new program with additional training for the next business generation, e-commerce policies, and best
+            practices, to make your business grow and be an essential part of our collaborative community."</p>
+    </section>
+    <div id="spotlights">
+
+    
+        <div class="spotlight">
+            <h2>Marolio S.A.</h2>
+            <div class="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-aM8-eUuTmMtiiG8dO8bah_Bj89UgjHY4oNyU1uontA&amp;s" alt="Marolio S.A." loading="lazy">
+            </div>
+            <h4>Food Company</h4>
+            <hr>
+            <p>La Reja-Moreno - Bs. As. Argentina</p>
+            <p><a href="https://www.marolio.com.ar/" target="_blank"> https://www.marolio.com.ar/</a></p>
+        </div>
+        
+        <div class="spotlight">
+            <h2>Pampa Energía S.A.</h2>
+            <div class="images">
+                <img src="https://play-lh.googleusercontent.com/xMCpcGe-i3oE3AmjaYoD7GNE6Ea6pipcdmHmjC8HsGBVUe0BOf2oSMUmC6zZhJcCBA=s256-rw" alt="Pampa Energía S.A." loading="lazy">
+            </div>
+            <h4>Utilities Company</h4>
+            <hr>
+            <p>Maipu 1, Buenos Aires, C1425DS Argentina</p>
+            <p><a href="http://www.pampaenergia.com/" target="_blank"> http://www.pampaenergia.com/</a></p>
+        </div>
+        
+        <div class="spotlight">
+            <h2>Accenture</h2>
+            <div class="images">
+                <img src="https://cdn.join.com/5b741e1ed6ed89002375215b/accenture-logo-l.jpg" alt="Accenture" loading="lazy">
+            </div>
+            <h4>Business Counsulting</h4>
+            <hr>
+            <p>Parque Patricios. CABA, Buenos Aires,</p>
+            <p><a href="https://www.accenture.com/" target="_blank"> https://www.accenture.com/</a></p>
+        </div>
+        </div>
+    <section class="join-us">
+        <button class="btn-2" onclick="window.location.href='https://josuebce.github.io/wdd230/chamber/join.html';">Join Us! </button>
+        <h5>Discover how to join the chamber of commerce and how it will benefit your organization!</h5>
+    </section>
+</main>
     
     <footer>
         
