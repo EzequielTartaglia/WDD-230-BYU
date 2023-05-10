@@ -1,3 +1,5 @@
+/* Header */
+
 .headerInfo {
   display: flex;
   justify-content: space-between; 
@@ -96,6 +98,7 @@ nav {
 }
 
 /* Footer */
+
 footer {
     text-align: center;
     padding: 10px 10px;
