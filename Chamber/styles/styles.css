@@ -204,7 +204,9 @@ nav {
 
 /* Main */
 
-
+.grid-container{
+  background: linear-gradient(to right, #A4E3F8, #4ab5f3, #A4E3F8);
+}
   
 /* Footer */
 footer {

@@ -11,8 +11,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      grid-column-gap: 2px;
+      grid-row-gap: 1px;
     }
     
     .gridArea1 { grid-area: 1 / 1 / 2 / 5; }
