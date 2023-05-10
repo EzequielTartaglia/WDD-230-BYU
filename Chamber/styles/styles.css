@@ -1,4 +1,8 @@
-
+#now {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: large;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +16,18 @@ body {
 
 /* Header */
 
+.currentDatetime {
+  margin: 0 auto;
+  background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+#now{
+  font-size: 18px;
+}
 header {
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   padding-bottom: 1px;
@@ -64,6 +80,20 @@ header {
 nav {
   display: flex;
   align-items: center;
+}
+
+.mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+.mainMenu li {
+  margin-right: 10px;
+}
+
+.mainMenu li a {
+  text-decoration: none;
+  color: #0a0c0c;
 }
 
 .socialsHeader {
@@ -145,7 +175,6 @@ nav {
   flex-direction: row;
   flex-wrap: no wrap;
   padding: 20px 20px;
-  list-style: none;
 }
 
 .mainMenu li {
@@ -157,15 +186,12 @@ nav {
   font-size: 1.2rem;
   text-transform: capitalize;
   padding: 10px 20px;
-  margin-right: 10px;
-
 }
 
 .mainMenu li a {
   text-decoration: none;
   color: #0a0c0c;
 }
-
 .mainMenu li a:hover {
   color: #ce7420;
 }
@@ -175,27 +201,7 @@ nav {
   margin-top: 10px;
   text-align: center;
 }
-
-.currentDatetime {
-  margin: 0 auto;
-  background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  letter-spacing: 1px;
-}
-#now{
-  font-size: 18px;
-  text-align: center;
-  padding: 0.5rem;
-  font-size: large;
-}
-
-/* Main */
-
 /* Footer */
-
 footer {
   max-width: 1600px;
   width: 100%;
