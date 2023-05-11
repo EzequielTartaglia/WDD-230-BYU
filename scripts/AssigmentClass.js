@@ -11,7 +11,7 @@ const lesson2 = new Assigment("Lesson 02","./Lesson 2/design-principles.html","D
 lessonList.push(lesson2)
 const lesson3 = new Assigment("Lesson 03","./Lesson 3","Chamber Exchange Site Plan")
 lessonList.push(lesson3)
-const lesson4 = new Assigment("Lesson 04","","Link")
+const lesson4 = new Assigment("Lesson 04","./Chamber","Chamber Home Page")
 lessonList.push(lesson4)
 const lesson5 = new Assigment("Lesson 05","","Link")
 lessonList.push(lesson5)

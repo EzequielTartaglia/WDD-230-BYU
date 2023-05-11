@@ -1,4 +1,4 @@
-.float-buttons {
+  .float-buttons {
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -12,16 +12,23 @@
     width: 70px;
     height: 70px;
     border-radius: 20%;
+    background: linear-gradient(to right, #5088e9, #f0fdd9, #5088e9);
+    border: #1559cecb solid 1px;
     margin-bottom: 10px;
-    transition: all 0.8s ease-in-out;
     text-decoration: none;
   }
   
+  .float-button:hover {
+    background: linear-gradient(to right, #5c90e9, #d3ddc1, #5c90e9);
+    border: #f5f5f5 solid 1px;
 
-  
-  .float-button.home i{
-    color: #fff;
-    font-size: 40px;
+  }
+  .float-button:hover.home i {
+    color: #f5f5f5;
   }
   
+  .float-button.home i{
+    color: #1559cecb;
+    font-size: 40px;
+  }
   
