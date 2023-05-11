@@ -132,8 +132,8 @@
   }
   .spotlights {
     border: solid #e7e6e5;
-    grid-area: 1 / 4 / 7 / 5;
-    padding: 40px 10px;
+    grid-area: 1 / 4 / 7 / 4;
+    padding: 40px 0;
 
 }
   .gridArea6 {
