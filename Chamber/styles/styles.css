@@ -1,8 +1,4 @@
-#now {
-  text-align: center;
-  padding: 0.5rem;
-  font-size: large;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +22,11 @@ body {
   letter-spacing: 1px;
 }
 #now{
-  font-size: 18px;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: large;
 }
+
 header {
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   padding-bottom: 1px;
@@ -122,10 +121,14 @@ nav {
 }
 #linkedIn:hover,#facebook:hover{
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 
 }
 .socialsHeader a:hover {
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .hamburger {
@@ -147,6 +150,8 @@ nav {
 
 .hamburger i:hover {
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .hamburger:focus {
@@ -155,6 +160,7 @@ nav {
 
 .hamburger.active ~ nav {
   display: block;
+  
 }
 
 .toggleMenu {
@@ -163,6 +169,8 @@ nav {
 
 .mainMenu li a:hover {
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .mainMenu {
@@ -194,6 +202,8 @@ nav {
 }
 .mainMenu li a:hover {
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 }
 .currentDate {
   background-color: aqua;
@@ -237,6 +247,8 @@ footer a:hover {
   text-decoration: none;
   color: #ce7420;
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .footerContainer {

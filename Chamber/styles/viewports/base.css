@@ -43,6 +43,8 @@ nav {
   flex-wrap: no wrap;
   padding: 20px 20px;
   height: 275px;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .toggleMenu li{
@@ -63,6 +65,8 @@ nav {
 
 .toggleMenu li a:hover {
   color: #ce7420;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .toggleMenu {
@@ -72,7 +76,6 @@ nav {
   margin-bottom: -30px;
   display: none;
   flex-direction: column;
-
 }
 .toggleMenu.active {
   display: block;

@@ -21,10 +21,12 @@
   .float-button:hover {
     background: linear-gradient(to right, #5c90e9, #d3ddc1, #5c90e9);
     border: #f5f5f5 solid 1px;
+    transition: all 0.2s ease-in-out;
 
   }
   .float-button:hover.home i {
     color: #f5f5f5;
+    transition: all 0.2s ease-in-out;
   }
   
   .float-button.home i{
