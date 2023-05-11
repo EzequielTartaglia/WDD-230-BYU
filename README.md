@@ -6,6 +6,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 
 - Design Principles Document:  https://ezequieltartaglia.github.io/wdd230/Lesson%202/design-principles.html
 - Chamber Exchange Site Plan: https://ezequieltartaglia.github.io/wdd230/Lesson%203/
+- Chamber Home Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/
 
 ## Codepen activities
 
