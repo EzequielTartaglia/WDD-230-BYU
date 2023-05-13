@@ -20,6 +20,8 @@ body {
   margin-bottom: 10px;
   border-radius: 3px;
   letter-spacing: 1px;
+  box-shadow: 1px 1px px #034c64;
+
 }
 #now{
   text-align: center;
@@ -229,7 +231,7 @@ nav {
 /* Main */
 
 .grid-container{
-  background: linear-gradient(to right, #A4E3F8, #4ab5f3, #A4E3F8);
+  background: linear-gradient(to right, #00445a, #A4E3F8, #00445a);
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   align-items: center;
@@ -242,8 +244,8 @@ nav {
   overflow: hidden; 
   text-overflow: ellipsis; 
   white-space: nowrap;
-  background: linear-gradient(to right, #A4E3F8, #4ab5f3, #A4E3F8);
- 
+  background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+
 }
 
 .gridAreatitle{
