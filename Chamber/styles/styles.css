@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(40, 41, 41);
+  background-color: #282929;
 }
 
 /* Header */
@@ -25,6 +25,18 @@ body {
   text-align: center;
   padding: 0.5rem;
   font-size: large;
+  
+}
+#banner {
+  width: 100%;
+  margin: auto;
+  display: none;
+  background: linear-gradient(to right, #00698b, #ec8e35, #00698b);
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  
 }
 
 header {
@@ -75,6 +87,8 @@ header {
 .primaryTitle {
   font-size: 22px;
   font-style: italic;
+  font-weight: bold;
+
 }
 nav {
   display: flex;
