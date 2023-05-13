@@ -8,7 +8,7 @@ button.addEventListener("click", () => {
         const span = document.createElement("span");
         const button = document.createElement("button");
 
-        span.innerText = input.value;
+        span.innerText = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         spanContent = span.innerText;
 
         button.innerText = "🗑️";
