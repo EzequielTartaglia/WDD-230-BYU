@@ -1,9 +1,83 @@
-li {
-    margin-bottom: 10px;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
 
-  li button {
-    font-size: 8px;
-    margin-left: 20px;
+body {
+    background-color: rgb(40, 41, 41);
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: linear-gradient(#12a7e2, #6cffb5);
+    margin-bottom: 30px;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+ul {
+    margin: 10px 0;
+    width: 90%;
+    padding: 0;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#item{
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
+
+}
+
+#addChapterBtn{
+    background-color: #07090a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul > li {
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+li span {
+    flex-grow: 1;
+}
+
+li button {
+    font-size: 14px;
+    margin-left: 10px;
     color: #666;
-  }
+}
