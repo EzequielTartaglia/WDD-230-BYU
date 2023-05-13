@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const currentDate = new Date();
   const currentDay = currentDate.getDay();
 
-  if (currentDay === 1 || currentDay === 6) {
+  if (currentDay === 1 || currentDay === 2) {
     banner.style.display = 'block';
   }
 });
