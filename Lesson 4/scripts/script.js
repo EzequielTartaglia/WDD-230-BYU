@@ -6,43 +6,39 @@ button.addEventListener("click", () => {
     if (input.value.length > 0) {
         const li = document.createElement("li");
         const span = document.createElement("span");
-        const button = document.createElement("button");
+        const deleteButton = document.createElement("button");
 
         //First character capitalized
         span.innerText = input.value.charAt(0).toUpperCase() + input.value.slice(1);
-        spanContent = span.innerText;
+        const spanContent = span.innerText;
 
-        button.innerText = "🗑️";
-        buttonContent = button.innerText;
-        button.classList.add("deleteButton");
+        deleteButton.innerText = "🗑️";
+        deleteButton.classList.add("deleteButton");
 
         // HTML render output
-        li.innerHTML = `<li>${spanContent}
-        <button class="deleteButton">
-        ${buttonContent}
-        </button>
-        </li>`;
+        li.innerHTML = `
+            <span>${spanContent}</span>
+            <button class="deleteButton">${deleteButton.innerText}</button>
+        `;
 
         ulContainer.appendChild(li);
 
         // Reset the value in input
         input.value = "";
 
-        addDeleteButtonEventListeners();
+        //Funtion of delete (event)
+        const deleteButtonElement = li.querySelector(".deleteButton");
+        deleteButtonElement.addEventListener("click", () => {
+            ulContainer.removeChild(li);
+        });
 
         //Focus on input again
         input.focus();
     }
 });
 
-const addDeleteButtonEventListeners = () => {
-    const deleteButtons = document.querySelectorAll(".deleteButton");
-    deleteButtons.forEach((deleteButton) => {
-        deleteButton.addEventListener("click", () => {
-            alert("Hola");
-        });
-    });
-}
+
+
 
 
 //Current Date

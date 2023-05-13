@@ -54,6 +54,11 @@ body {
     width: 150px;
     cursor: pointer;
 }
+#addChapterBtn:hover,.deleteButton:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
 ul {
     width: 90%;
     padding: 0;
@@ -64,7 +69,6 @@ ul {
     position: relative;
     margin: 5px 0;
     width: 100%;
-    padding: 10px;
     background-color: rgb(243, 243, 243);
     border-radius: 12px;
     border: solid 1px #999;
