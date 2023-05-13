@@ -41,23 +41,25 @@ body {
 
 #addChapterBtn,
 .deleteButton {
-  border: solid 0.1px rgb(8, 8, 8);
+  border: solid 1px rgb(8, 8, 8);
   border-radius: 6px;
   padding: 5px;
   font-weight: bold;
   background-color: black;
   color: aliceblue;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.555);
-  transition: all 0.4s;
   width: 150px;
   cursor: pointer;
 }
 #addChapterBtn:hover,
 .deleteButton:hover {
-  background-color: aliceblue;
-  color: black;
+    background: linear-gradient(#12a7e2, #532ed8);
+  color: rgb(255, 255, 255);
 }
+.deleteButton:hover{
+    border: solid 1px rgb(8, 8, 8);
 
+}
 ul {
   width: 90%;
   padding: 0;

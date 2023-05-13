@@ -13,7 +13,7 @@ const lesson3 = new Assigment("Lesson 03","./Lesson 3","Chamber Exchange Site Pl
 lessonList.push(lesson3)
 const lesson4 = new Assigment("Lesson 04","./Chamber","Chamber Home Page")
 lessonList.push(lesson4)
-const lesson5 = new Assigment("Lesson 05","","Link")
+const lesson5 = new Assigment("Lesson 05","./Lesson 5","Book of Mormon - Top 25")
 lessonList.push(lesson5)
 const lesson6 = new Assigment("Lesson 06","","Link")
 lessonList.push(lesson6)
