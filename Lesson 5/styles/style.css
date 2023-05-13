@@ -57,7 +57,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .deleteButton:hover {
-  border: solid 1px rgb(255, 255, 255);
+  border: solid 1px #bbbbbb;
 }
 ul {
   width: 90%;
