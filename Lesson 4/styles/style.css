@@ -51,7 +51,7 @@ ul {
 
 }
 
-#addChapterBtn{
+#addChapterBtn,.deleteButton{
     background-color: #07090a;
     color: #fff;
     border: none;
@@ -81,3 +81,27 @@ li button {
     margin-left: 10px;
     color: #666;
 }
+
+
+footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #0182be;
+    font-weight: 500;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: #077eee;
+    font-weight: 500;
+  }
+  
+  #firstLineFooter{
+    padding: 0;
+    color: #ffffff;
+  }
