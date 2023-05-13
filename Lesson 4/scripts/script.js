@@ -28,6 +28,9 @@ button.addEventListener("click", () => {
         input.value = "";
 
         addDeleteButtonEventListeners();
+
+        //Focus on input again
+        input.focus();
     }
 });
 
