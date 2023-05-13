@@ -8,6 +8,7 @@ button.addEventListener("click", () => {
         const span = document.createElement("span");
         const button = document.createElement("button");
 
+        //First character capitalized
         span.innerText = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         spanContent = span.innerText;
 
