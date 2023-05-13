@@ -236,9 +236,32 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 20px;
-
 }
-  
+.grid-container > div {
+  max-width: 100%; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+
+.gridAreatitle{
+color: #00698b;
+font-size: 18px;
+padding: 20px 10px;
+margin-bottom: 10px;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.gridAreaContent{
+  color: #0a0c0c;
+  font-size: 18px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
 /* Footer */
 footer {
   width: 100%;
