@@ -413,7 +413,8 @@ main button:hover {
 }
 
 #join button{
-  width: 100%;
+   width: 100%;
+   margin-top: 30px;
   -webkit-text-stroke: 1px #000000;
   -webkit-text-fill-color: #fffdfb;
 }
