@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
   transition: all 0.3s;
   max-width: 1800px;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 
 body {
@@ -221,7 +221,7 @@ nav {
 }
 
 /* Main */
-main{
+main {
   max-width: 1750px;
 }
 main button {
@@ -290,8 +290,7 @@ main button:hover {
   font-weight: bold;
   font-size: 17px;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-stroke: 0.5px #000000;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-fill-color: #000000;
 }
 .gridAreaContent p {
   margin-bottom: 10px;
@@ -301,7 +300,6 @@ main button:hover {
   font-size: 14px;
   text-decoration: none;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-stroke: 0.5px #000000;
   -webkit-text-fill-color: #00445a;
   transition: all 0.3s;
 }
@@ -310,14 +308,13 @@ main button:hover {
   letter-spacing: 0.1px;
   text-decoration: none;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-stroke: 0.5px #000000;
   -webkit-text-fill-color: #ce7420;
 }
 #hero {
   position: relative;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
 }
-#hero img{
+#hero img {
   margin-top: -110px;
   min-height: 720px;
 }
@@ -326,8 +323,7 @@ main button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 0 0 15px #ffffff;
-  -webkit-text-stroke: 1px #000000;
+  text-shadow: 0 0 15px #000000;
   -webkit-text-fill-color: #ce7420;
 }
 
@@ -338,12 +334,13 @@ main button:hover {
   transform: translate(-50%, -50%);
   text-transform: capitalize;
   white-space: nowrap;
+  -webkit-text-fill-color: #ffffff;
 }
 #weather {
   position: relative;
   width: 100%;
 }
-.grades{
+.grades {
   position: absolute;
   margin: 0 auto;
   width: 80%;
@@ -417,17 +414,22 @@ main button:hover {
   margin-top: 10px;
 }
 
-#join button{
-   width: 100%;
-   margin-top: 30px;
-  -webkit-text-stroke: 1px #000000;
-  -webkit-text-fill-color: #fffdfb;
+#join button {
+  width: 100%;
+  margin-top: 30px;
+  -webkit-text-stroke: 0px #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  font-weight: bold;
 }
+
 .spotlights {
   position: relative;
   width: 100%;
 }
-.gridArea3,.gridArea6,.gridArea7,.gridArea8{
+.gridArea3,
+.gridArea6,
+.gridArea7,
+.gridArea8 {
   width: 100%;
 }
 /* Footer */
