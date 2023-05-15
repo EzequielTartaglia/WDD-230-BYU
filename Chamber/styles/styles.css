@@ -270,6 +270,25 @@ nav {
   -webkit-text-stroke: 0.5px #000000;
   -webkit-text-fill-color: #ffffff;
 }
+.gridAreaContent p{
+  margin-bottom: 10px;
+}
+.gridAreaContent a{
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  text-shadow: 0 0 20px #e6e4e4;
+  -webkit-text-stroke: 0.5px #000000;
+  -webkit-text-fill-color: #00445a;
+}
+.gridAreaContent a:hover{
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 0 0 20px #e6e4e4;
+  -webkit-text-stroke: 0.5px #000000;
+  -webkit-text-fill-color: #2916d3;
+}
 /* Footer */
 footer {
   width: 100%;
