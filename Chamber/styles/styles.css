@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   transition: all 0.3s;
-
 }
 
 body {
@@ -221,7 +220,7 @@ nav {
 
 /* Main */
 
-main button{
+main button {
   padding: 10px 15px;
   background-color: #00445a;
   border-radius: 12px;
@@ -231,13 +230,12 @@ main button{
   border: none;
   box-shadow: 1px 1px 5px #000000;
 }
-main button:hover{
+main button:hover {
   padding: 10px 15px;
   background-color: #ce7420;
   border-radius: 12px;
   letter-spacing: 0.6px;
 }
-
 
 .grid-container {
   background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
@@ -273,7 +271,6 @@ main button:hover{
   -webkit-text-stroke: 0.7px #000000;
   -webkit-text-fill-color: #ce7420;
   width: 100%;
-
 }
 .gridAreatitle h4 {
   margin-top: 10px;
@@ -312,8 +309,8 @@ main button:hover{
   -webkit-text-fill-color: #ce7420;
 }
 #hero {
- position: relative;
-  background-image: url('./images/ce-logo.png');
+  position: relative;
+  background-image: url("./images/ce-logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,14 +326,14 @@ main button:hover{
   -webkit-text-fill-color: #ce7420;
 }
 
-#hero .gridAreaContent button{
+#hero .gridAreaContent button {
   position: absolute;
   top: 90%;
   left: 85%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
-#weather{
+#weather {
   position: relative;
 }
 
@@ -346,22 +343,33 @@ main button:hover{
   right: 0;
   height: 2px;
   margin: 0 auto;
-  bottom: 50%;
+  bottom: 35%;
   transform: translateY(50%);
   background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
   border: none;
   width: 80%;
 }
 
-#weather .stadistics{
+#weatherStatus {
+  position: absolute;
+  left: 10;
+  right: 0;
+  margin: 0 auto;
+  bottom: 37.5%;
+  text-align: right;
+  font-size: 20px;
+  margin-right: 10%;
+}
+#weather .stadistics {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
 }
-#weather .stadistics p{
+#weather .stadistics p {
   display: absolute;
   width: 50%;
+  margin-top: -20px;
 }
 #weather ul > li {
   position: relative;
