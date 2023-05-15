@@ -102,7 +102,14 @@ nav {
   width: 100%;
   height: auto;
 }
-
+#hero .gridAreatitle {
+  top: 10%;
+  left: 50%;
+}
+#hero .gridAreaContent button {
+  top: 90%;
+  left: 80%;
+}
 /* Footer */
 
 footer {

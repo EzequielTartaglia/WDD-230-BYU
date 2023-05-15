@@ -329,9 +329,10 @@ main button:hover {
 #hero .gridAreaContent button {
   position: absolute;
   top: 90%;
-  left: 85%;
+  left: 75%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 #weather {
   position: relative;

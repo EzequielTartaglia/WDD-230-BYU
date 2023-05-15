@@ -6,7 +6,14 @@
   width: 100%;
   height: auto;
 }
-
+#hero .gridAreatitle {
+  top: 50%;
+  left: 50%;
+}
+#hero .gridAreaContent button {
+  top: 90%;
+  left: 75%;
+}
 /* Footer */
 
 hr {

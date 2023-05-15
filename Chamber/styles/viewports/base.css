@@ -116,7 +116,14 @@ nav {
   height: auto;
   min-height: 450px;
 }
-
+#hero .gridAreatitle {
+  top: 10%;
+  left: 50%;
+}
+#hero .gridAreaContent button {
+  top: 90%;
+  left: 50%;
+}
 /* Footer */
   footer {
     padding: 10px;
