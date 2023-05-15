@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   transition: all 0.3s;
+  max-width: 1800px;
+  margin: 0 auto ;
 }
 
 body {
@@ -337,6 +339,7 @@ main button:hover {
 }
 #weather {
   position: relative;
+  width: 100%;
 }
 .grades{
   position: absolute;
@@ -417,6 +420,13 @@ main button:hover {
    margin-top: 30px;
   -webkit-text-stroke: 1px #000000;
   -webkit-text-fill-color: #fffdfb;
+}
+.spotlights {
+  position: relative;
+  width: 100%;
+}
+.gridArea6,.gridArea7,.gridArea8{
+  width: 100%;
 }
 /* Footer */
 footer {
