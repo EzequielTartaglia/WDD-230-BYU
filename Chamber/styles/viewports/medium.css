@@ -1,6 +1,6 @@
 .headerInfo {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   height: auto;
 }
@@ -16,17 +16,16 @@ nav {
   text-align: center;
 }
 
-
 .hamburger {
   display: block;
   order: 1;
 }
-.mainMenu{
+.mainMenu {
   display: none;
 }
-.toggleMenu{
+.toggleMenu {
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
-  flex-grow: 0; 
+  flex-grow: 0;
   max-width: 1600px;
   margin: 0 auto;
   flex: 1 1 auto;
@@ -38,7 +37,7 @@ nav {
   height: 275px;
 }
 
-.toggleMenu li{
+.toggleMenu li {
   display: block;
   width: 100%;
   justify-content: space-between;
@@ -65,7 +64,6 @@ nav {
   margin-bottom: -30px;
   display: none;
   flex-direction: column;
-
 }
 .toggleMenu.active {
   display: block;
@@ -73,7 +71,7 @@ nav {
 .socialsHeader {
   display: flex;
   align-items: center;
-  margin-top: 10px;  
+  margin-top: 10px;
   padding-right: 60px;
 }
 
@@ -81,7 +79,6 @@ nav {
   margin-right: 10px;
   margin-bottom: 10px;
   font-size: 20px;
-  
 }
 
 .socialsHeader a {
@@ -89,7 +86,6 @@ nav {
   align-items: center;
   margin-right: 10px;
   color: #0a0c0c;
-
 }
 
 .socialsHeader a:hover {
@@ -97,7 +93,7 @@ nav {
 }
 /* Main */
 
-#hero img{
+#hero img {
   opacity: 85%;
   width: 100%;
   height: auto;
@@ -113,112 +109,111 @@ nav {
 /* Footer */
 
 footer {
-    text-align: center;
-    padding: 10px 10px;
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: 500;
-  }
-  
-  footer a:hover {
-    text-decoration: none;
-    color: #ce7420;
-    font-weight: 500;
-  }
-  
-  .footerContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .footerLogoContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-basis: 33%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    font-size: 20px;
-  }
-  
-  #footerLogoInfo {
-    width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    height: auto;
-  }
+  text-align: center;
+  padding: 10px 10px;
+}
 
-  #footerTitle {
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: 3px;
-    font-size: 16px;
+footer a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
 
-  }
-  #logoFooter {
-    width: 320px;
-    padding-right: 90px;
-  }
-  
-  .contacts {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 33%;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-  
-  .contacts p {
-    margin-bottom: -5px;
-    margin: 0;
-  }
-  
-  hr {
-    height: 2px;
-    margin: 20px 0;
-    background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
-    border: none;
-    width: 100%;
-  }
-  
-  #firstLineFooter,
-  #secondLineFooter {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #firstLineFooter {
-    width: 100%;
-    padding: 0;
-    color: #0a0c0c;
-    text-align: center;
-    font-size: 13px;
-  }
-  #firstLineFooter p {
-    margin-bottom: 5px;
-    margin-right: 10px;
-  }
-  
-  #secondLineFooter {
-    color: #039ba0;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  #firstLineFooter p:not(:last-child)::after {
-    content: " |";
-    display: inline;
-  }
-  
+footer a:hover {
+  text-decoration: none;
+  color: #ce7420;
+  font-weight: 500;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLogoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 20px;
+}
+
+#footerLogoInfo {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: auto;
+}
+
+#footerTitle {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+#logoFooter {
+  width: 320px;
+  padding-right: 90px;
+}
+
+.contacts {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 16px;
+}
+
+.contacts p {
+  margin-bottom: -5px;
+  margin: 0;
+}
+
+hr {
+  height: 2px;
+  margin: 20px 0;
+  background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
+  border: none;
+  width: 100%;
+}
+
+#firstLineFooter,
+#secondLineFooter {
+  display: flex;
+  flex-direction: row;
+}
+
+#firstLineFooter {
+  width: 100%;
+  padding: 0;
+  color: #0a0c0c;
+  text-align: center;
+  font-size: 13px;
+}
+#firstLineFooter p {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+#secondLineFooter {
+  color: #039ba0;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#firstLineFooter p:not(:last-child)::after {
+  content: " |";
+  display: inline;
+}
