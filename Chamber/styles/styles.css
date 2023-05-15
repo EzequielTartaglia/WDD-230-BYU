@@ -227,7 +227,6 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  
 }
 .grid-container > div {
   max-width: 100%;
@@ -252,9 +251,9 @@ nav {
   font-size: 18px;
   text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-stroke: 0.7px #000000;
-  -webkit-text-fill-color: #ce7420;  
+  -webkit-text-fill-color: #ce7420;
 }
-.gridAreatitle h4{
+.gridAreatitle h4 {
   margin-top: 10px;
   -webkit-text-stroke: 0.7px #000000;
   -webkit-text-fill-color: #ce7420;
@@ -270,10 +269,10 @@ nav {
   -webkit-text-stroke: 0.5px #000000;
   -webkit-text-fill-color: #ffffff;
 }
-.gridAreaContent p{
+.gridAreaContent p {
   margin-bottom: 10px;
 }
-.gridAreaContent a{
+.gridAreaContent a {
   margin-top: 10px;
   font-size: 14px;
   text-decoration: none;
@@ -282,9 +281,9 @@ nav {
   -webkit-text-fill-color: #00445a;
   transition: all 0.3s;
 }
-.gridAreaContent a:hover{
+.gridAreaContent a:hover {
   margin-top: 10px;
-letter-spacing: 0.3px;
+  letter-spacing: 0.1px;
   text-decoration: none;
   text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-stroke: 0.5px #000000;
