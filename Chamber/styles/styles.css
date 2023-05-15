@@ -221,7 +221,9 @@ nav {
 }
 
 /* Main */
-
+main{
+  max-width: 1750px;
+}
 main button {
   padding: 10px 15px;
   background-color: #00445a;
@@ -425,7 +427,7 @@ main button:hover {
   position: relative;
   width: 100%;
 }
-.gridArea6,.gridArea7,.gridArea8{
+.gridArea3,.gridArea6,.gridArea7,.gridArea8{
   width: 100%;
 }
 /* Footer */
