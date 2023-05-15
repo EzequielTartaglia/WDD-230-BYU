@@ -336,17 +336,28 @@ main button:hover{
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
+#weather{
+  position: relative;
+}
+
 #weather hr {
+  position: absolute;
+  left: 0;
+  right: 0;
   height: 2px;
-  margin: 10px auto;
+  margin: 0 auto;
+  bottom: 50%;
+  transform: translateY(50%);
   background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
   border: none;
   width: 80%;
 }
 
 #weather .stadistics{
-  display: absolute;
-  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 #weather .stadistics p{
   display: absolute;
