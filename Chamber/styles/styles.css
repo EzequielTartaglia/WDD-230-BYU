@@ -444,6 +444,7 @@ footer a:hover {
 }
 
 .footerContainer {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -467,10 +468,10 @@ footer a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 17px;
+  font-size: 20px;
 }
-#footerTile {
-  font-size: 18px;
+#footerTitle {
+  font-size: 24px;
   font-style: italic;
   font-weight: 600;
   margin-bottom: 3px;
@@ -492,7 +493,7 @@ footer a:hover {
   flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contacts p {

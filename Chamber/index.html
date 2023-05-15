@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unlock endless business opportunities with our chamber. Join us today and thrive in a collaborative guild dedicated to driving growth and success.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unlock endless business opportunities with our chamber. Join us today and thrive in a collaborative guild dedicated to driving growth and success."
+    />
     <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles/floatButtons.css" />
-    <link rel="stylesheet" href="./styles/styles.css"/>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/viewports/base.css"media="screen and (max-width: 600px)">
-    <link rel="stylesheet" href="./styles/viewports/medium.css" media="screen and (min-width: 601px) and (max-width: 1024px)" >
-    <link rel="stylesheet" href="./styles/viewports/large.css" media="screen and (min-width: 1025px)">
-    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/base.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/medium.css"
+      media="screen and (min-width: 601px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/large.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <link rel="stylesheet" href="./styles/grid.css" />
     <title>Chamber Exchange | Home</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <seccion class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/ce-logo.png" alt="Chamber Exchange Logo"
+            /></a>
+          </div>
+          <div class="titleContainer">
+            <div class="title primaryTitle">Chamber Exchange</div>
+            <div class="title">Guild of Commerce</div>
+          </div>
+        </div>
 
-  <header>
-    <seccion class="headerInfo">
-    <div class="logoContainer">
-      <div class="logo">
-        <a href="index.html"><img src="./images/ce-logo.png" alt="Chamber Exchange Logo"></a>
-      </div>
-      <div class="titleContainer">
-        <div class="title primaryTitle">Chamber Exchange</div>
-        <div class="title">Guild of Commerce</div>
-      </div>
-    </div>
-  
-    <nav>
-      <ul class="mainMenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Beneficts</a></li>
-        <li><a href="#">Join</a></li>
-      </ul>
-    </nav>
-  
-    <div class="socialsHeader">
-      <a href="https://www.facebook.com/profile"><i class="fab fa-facebook-square" id="facebook"></i></a>
-      <a href="https://www.linkedin.com/in/profile"><i class="fab fa-linkedin" id="linkedIn"></i></a>
-      <button class="hamburger" id="hamburgerChamber"><i class="fas fa-bars"></i></button>
-    </div>
-    
-    
-    </seccion>
-    <section class="currentDatetime">
-      <div id="now"></div>
-    </section>
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Beneficts</a></li>
+            <li><a href="#">Join</a></li>
+          </ul>
+        </nav>
 
-    <!-- Menu hamburguer modal -->
-    <div id="modal">
-      <ul class="toggleMenu">
+        <div class="socialsHeader">
+          <a href="https://www.facebook.com/profile"
+            ><i class="fab fa-facebook-square" id="facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/profile"
+            ><i class="fab fa-linkedin" id="linkedIn"></i
+          ></a>
+          <button class="hamburger" id="hamburgerChamber">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </seccion>
+      <section class="currentDatetime">
+        <div id="now"></div>
+      </section>
+
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Education</a></li>
           <li><a href="#">Beneficts</a></li>
           <li><a href="#">Join</a></li>
-      </ul>
+        </ul>
+      </div>
+    </header>
+    <div id="banner" class="hidden">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
     </div>
-
-  </header>
-  <div id="banner" class="hidden">
-    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-  </div>
     <main>
       <div class="float-buttons home">
         <a href="../index.html" class="float-button home">
@@ -82,138 +101,157 @@
       </div>
 
       <div class="grid-container">
-
-       <div class="gridArea1">
-        <div class="gridAreatitle" id="event">
-          <h2>Event</h2>
-          <h4>⭐Webinar: Connecting Chambers & Guilds⭐</h4>
+        <div class="gridArea1">
+          <div class="gridAreatitle" id="event">
+            <h2>Event</h2>
+            <h4>⭐Webinar: Connecting Chambers & Guilds⭐</h4>
+          </div>
+          <div class="gridAreaContent">
+            <p>
+              Join us for the grand opening of the Diamond Shack, Thursday at
+              7:00 p.m.
+            </p>
+            <a href="#">More info...</a>
+          </div>
         </div>
-        <div class="gridAreaContent">
-        <p>Join us for the grand opening of the Diamond Shack, Thursday at 7:00 p.m.</p>
-        <a href="#">More info...</a>
-
-      </div>
-      </div>
-       <div class="gridArea2" id="weather">        
-        <div class="gridAreatitle">
-        <h2>Weather</h2>
-      </div>
-      <div class="gridAreaContent">
-        <div class="grades">
-         <img src="./images/weather-status-png.png" alt="Status Image" id="weatherStatusImg">
-         <p id="weatherDegree">33°C</p> 
+        <div class="gridArea2" id="weather">
+          <div class="gridAreatitle">
+            <h2>Weather</h2>
+          </div>
+          <div class="gridAreaContent">
+            <div class="grades">
+              <img
+                src="./images/weather-status-png.png"
+                alt="Status Image"
+                id="weatherStatusImg"
+              />
+              <p id="weatherDegree">33°C</p>
+            </div>
+            <p id="weatherStatus">Partly Cloudy</p>
+            <hr />
+            <div class="stadistics">
+              <ul>
+                <li>
+                  <p>Wind speed:</p>
+                  <p id="windSpeed">2.5 km/h</p>
+                </li>
+                <li>
+                  <p>Wind chill:</p>
+                  <p id="windChill">N/A</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      <p id="weatherStatus">Partly Cloudy</p>
-      <hr/>
-      <div class="stadistics">
-        <ul>
-          <li><p>Wind speed:</p> <p id="windSpeed">2.5 km/h</p></li>
-          <li><p>Wind chill:</p> <p id="windChill">N/A</p></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-       <div class="gridArea3" id="join">        
-        <div class="gridAreatitle">
-          <button> Join Us!</button>
+        <div class="gridArea3" id="join">
+          <div class="gridAreatitle">
+            <button>Join Us!</button>
+          </div>
+          <div class="gridAreaContent">
+            <p>
+              Discover how to join the chamber of commerce and how it benefit
+              your organization!
+            </p>
+          </div>
         </div>
-      <div class="gridAreaContent">
-      <p>Discover how to join the chamber of commerce and how it benefit your organization!</p>
-    </div>
-  </div>
-       <div class="gridArea4" id="hero">
-         <img src="./images/hero-chamber.webp" alt="Hero Image">
-         <div class="gridAreatitle">
-           <h2>Chamber Exchange : Guild of Commerce</h2>
-      </div>
-      <div class="gridAreaContent">
-      <button> Join the chamber</button>
-    </div>
-  </div>
-       <div class="gridArea5" id="newsRelease">
-        <div class="gridAreatitle">
-        <h2>News release</h2>
-      </div>
-      <div class="gridAreaContent">
-      <p>Chamber Exchange Guild of Commerce is proud to unveil a series of dynamic initiatives aimed at empowering businesses and fostering collaboration within the local community. These strategic efforts include a comprehensive business mentoring program, specialized workshops for small business development, engaging networking events, effective advocacy for pro-business policies, and robust government relations.</p>
-    </div>
-  </div>
+        <div class="gridArea4" id="hero">
+          <img src="./images/hero-chamber.webp" alt="Hero Image" />
+          <div class="gridAreatitle">
+            <h2>Chamber Exchange : Guild of Commerce</h2>
+          </div>
+          <div class="gridAreaContent">
+            <button>Join the chamber</button>
+          </div>
+        </div>
+        <div class="gridArea5" id="newsRelease">
+          <div class="gridAreatitle">
+            <h2>News release</h2>
+          </div>
+          <div class="gridAreaContent">
+            <p>
+              Chamber Exchange Guild of Commerce is proud to unveil a series of
+              dynamic initiatives aimed at empowering businesses and fostering
+              collaboration within the local community. These strategic efforts
+              include a comprehensive business mentoring program, specialized
+              workshops for small business development, engaging networking
+              events, effective advocacy for pro-business policies, and robust
+              government relations.
+            </p>
+          </div>
+        </div>
 
-      <div class="spotlights">
-        <div class="gridArea6">
+        <div class="spotlights">
+          <div class="gridArea6">
             <div class="gridAreatitle">
               <h2>Spotlight 1</h2>
             </div>
             <div class="gridAreaContent">
               <p>Heehehehehe</p>
-              <br>
-            <p>Heehehehehe</p>
-        </div>
-      </div>
+              <br />
+              <p>Heehehehehe</p>
+            </div>
+          </div>
           <div class="gridArea7">
             <div class="gridAreatitle">
-            <h2>Spotlight 2</h2>
+              <h2>Spotlight 2</h2>
+            </div>
+            <div class="gridAreaContent">
+              <p>Heehehehehe</p>
+              <br />
+              <p>Heehehehehe</p>
+            </div>
           </div>
-          <div class="gridAreaContent">
-          <p>Heehehehehe</p>
-          <br>
-          <p>Heehehehehe</p>
-        </div>
-      </div>
           <div class="gridArea8">
             <div class="gridAreatitle">
-            <h2>Spotlight 3</h2>
+              <h2>Spotlight 3</h2>
+            </div>
+            <div class="gridAreaContent">
+              <p>Heehehehehe</p>
+              <br />
+              <p>Heehehehehe</p>
+            </div>
           </div>
-          <div class="gridAreaContent">
-          <p>Heehehehehe</p>
-          <br>
-          <p>Heehehehehe</p>
         </div>
       </div>
-        </div>
+    </main>
 
-      </div>
-      
-      
-  </main>
-    
     <footer>
-        
-        <div class="footerContainer">
+      <div class="footerContainer">
         <div class="footerLogoContainer">
-        <div id="footerLogoImg">
-            <a href="index.html"><img id="logoFooter" src="./images/ce-logo.png" alt="Logo Photo"></a>
-        </div>
-        <div id="footerLogoInfo">
-            <p id="footerTile">Chamber Exchange: Guild of Commerce</p>
+          <div id="footerLogoImg">
+            <a href="index.html"
+              ><img id="logoFooter" src="./images/ce-logo.png" alt="Logo Photo"
+            /></a>
+          </div>
+          <div id="footerLogoInfo">
+            <p id="footerTitle">Chamber Exchange: Guild of Commerce</p>
             <p>10 Saint George</p>
             <p>Texas, United States of America</p>
-        </div>
-    </div>
-        <div class="contacts">
-            <p>info@chamberexchange.org</p>
-            <p>(+1) 224 857 965</p>
-            <p><a href="#">📌Location Map </a></p>
           </div>
-          
-        
-        <hr/>
+        </div>
+        <div class="contacts">
+          <p>info@chamberexchange.org</p>
+          <p>(+1) 224 857 965</p>
+          <p><a href="#">📌Location Map </a></p>
+        </div>
+
+        <hr />
         <div>
-            <div id="firstLineFooter">
-                <p>              &copy;<span id="currentYear"></span> Chamber Exchange</p> 
-              <p><a href="https://www.linkedin.com/in/ezequieltartaglia/"
+          <div id="firstLineFooter">
+            <p>&copy;<span id="currentYear"></span> Chamber Exchange</p>
+            <p>
+              <a href="https://www.linkedin.com/in/ezequieltartaglia/"
                 >Ezequiel M. Tartaglia</a
               >
-               </p>
-              <p> WDD 230 Project </p> 
-              <p id="secondLineFooter"></p>
-            </div>
-            
+            </p>
+            <p>WDD 230 Project</p>
+            <p id="secondLineFooter"></p>
           </div>
-       
+        </div>
+      </div>
     </footer>
-    
+
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-</body>
+  </body>
 </html>
