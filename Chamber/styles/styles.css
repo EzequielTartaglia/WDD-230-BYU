@@ -344,6 +344,28 @@ main button:hover{
   width: 80%;
 }
 
+#weather .stadistics{
+  display: absolute;
+  width: 100%;
+}
+#weather .stadistics p{
+  display: absolute;
+  width: 50%;
+}
+#weather ul > li {
+  position: relative;
+  padding: 2px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
 /* Footer */
 footer {
   width: 100%;
