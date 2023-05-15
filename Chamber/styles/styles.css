@@ -244,19 +244,22 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  text-shadow: 0 0 20px #084f66;
+  text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-stroke: 0.7px #000000;
   -webkit-text-fill-color: #ce7420;
 }
 
 
 .gridAreaContent {
-  color: #0a0c0c;
-  font-size: 18px;
   padding: 0 10px;
-  margin-bottom: 10px;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  text-shadow: 0 0 20px #e6e4e4;
+  -webkit-text-stroke: 0.5px #000000;
+  -webkit-text-fill-color: #ffffff;
 }
 /* Footer */
 footer {
