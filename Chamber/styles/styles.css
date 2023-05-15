@@ -311,11 +311,11 @@ main button:hover {
 }
 #hero {
   position: relative;
-  background-image: url("./images/ce-logo.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+}
+#hero img{
+  margin-top: -110px;
+  min-height: 720px;
 }
 #hero .gridAreatitle {
   position: absolute;
