@@ -1,9 +1,8 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -21,13 +20,11 @@ body {
   border-radius: 3px;
   letter-spacing: 1px;
   box-shadow: 1px 1px px #034c64;
-
 }
-#now{
+#now {
   text-align: center;
   padding: 0.5rem;
   font-size: large;
-  
 }
 #banner {
   width: 100%;
@@ -38,7 +35,6 @@ body {
   font-weight: bold;
   padding: 10px;
   text-align: center;
-  
 }
 
 header {
@@ -90,7 +86,6 @@ header {
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
-
 }
 nav {
   display: flex;
@@ -129,22 +124,20 @@ nav {
   margin-right: 10px;
   text-decoration: none;
   color: #1558ce;
-
 }
-#linkedIn,#facebook{
+#linkedIn,
+#facebook {
   color: #1558ce;
   font-size: 25px;
 }
-#linkedIn:hover,#facebook:hover{
+#linkedIn:hover,
+#facebook:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
-
-
 }
 .socialsHeader a:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
-
 }
 
 .hamburger {
@@ -167,7 +160,6 @@ nav {
 .hamburger i:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
-
 }
 
 .hamburger:focus {
@@ -176,7 +168,6 @@ nav {
 
 .hamburger.active ~ nav {
   display: block;
-  
 }
 
 .toggleMenu {
@@ -186,7 +177,6 @@ nav {
 .mainMenu li a:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
-
 }
 
 .mainMenu {
@@ -219,7 +209,6 @@ nav {
 .mainMenu li a:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
-
 }
 .currentDate {
   background-color: aqua;
@@ -230,8 +219,8 @@ nav {
 
 /* Main */
 
-.grid-container{
-  background: linear-gradient(to right, #00445a, #A4E3F8, #00445a);
+.grid-container {
+  background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   align-items: center;
@@ -240,15 +229,14 @@ nav {
   padding: 20px;
 }
 .grid-container > div {
-  max-width: 100%; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
-
 }
 
-.gridAreatitle{
+.gridAreatitle {
   margin-bottom: 10px;
   padding: 20px 10px;
   align-items: center;
@@ -256,10 +244,13 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-color: #ce7420;
+  text-shadow: 0 0 20px #084f66;
+  -webkit-text-stroke: 0.7px #000000;
+  -webkit-text-fill-color: #ce7420;
 }
 
-.gridAreaContent{
+
+.gridAreaContent {
   color: #0a0c0c;
   font-size: 18px;
   padding: 0 10px;
@@ -290,7 +281,6 @@ footer a:hover {
   color: #ce7420;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
-
 }
 
 .footerContainer {
