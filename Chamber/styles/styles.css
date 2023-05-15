@@ -319,11 +319,6 @@ main button:hover{
   background-repeat: no-repeat;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
 }
-#hero img{
-  opacity: 85%;
-  width: 100%;
-  height: auto;
-}
 #hero .gridAreatitle {
   position: absolute;
   top: 50%;
