@@ -75,7 +75,7 @@
   .spotlights {
     border: solid #00445a25;
     box-shadow: 3px 3px 30px #034c64;
-      display: grid;
+    display: grid;
     gap: 1em;
     grid-area: 3 / 1 / 5 / 5;
     height: auto;

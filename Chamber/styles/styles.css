@@ -337,21 +337,29 @@ main button:hover {
   position: relative;
 }
 .grades{
-  margin: 0 auto;
-  width: 100%;
   position: absolute;
+  margin: 0 auto;
+  width: 80%;
   left: 0;
   right: 0;
-  bottom: 62.5%;
+  bottom: 81%;
   transform: translateY(50%);
   border: none;
-  background-color: #000000;
 }
-#weatherStatusImg{
-  background-color: #00445a;
+#weatherStatusImg {
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
 }
-#weatherDegree{
-  background-color: #00445a;
+
+#weatherDegree {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
 #weather hr {
