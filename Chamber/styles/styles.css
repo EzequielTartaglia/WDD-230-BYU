@@ -269,6 +269,8 @@ nav {
   text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-stroke: 0.7px #000000;
   -webkit-text-fill-color: #ce7420;
+  width: 100%;
+
 }
 .gridAreatitle h4 {
   margin-top: 10px;
@@ -313,13 +315,18 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
-
+}
+#hero img{
+  opacity: 85%;
 }
 #hero .gridAreatitle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 0 0 15px #ffffff;
+  -webkit-text-stroke: 1px #000000;
+  -webkit-text-fill-color: #ce7420;
 }
 
 #hero .gridAreaContent button{
