@@ -18,6 +18,8 @@ button{
   border: solid 1px #000000;
   cursor: pointer;
   font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px #000000;
 }
 button:hover{
   padding: 10px 15px;
@@ -36,7 +38,7 @@ button:hover{
   margin-bottom: 10px;
   border-radius: 3px;
   letter-spacing: 1px;
-  box-shadow: 1px 1px px #034c64;
+  box-shadow: 1px 1px 5px #034c64;
 }
 #now {
   text-align: center;
@@ -318,6 +320,8 @@ nav {
 }
 #hero img{
   opacity: 85%;
+  width: 100%;
+  height: auto;
 }
 #hero .gridAreatitle {
   position: absolute;
