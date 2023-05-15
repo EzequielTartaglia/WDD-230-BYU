@@ -254,9 +254,11 @@ nav {
   -webkit-text-stroke: 0.7px #000000;
   -webkit-text-fill-color: #ce7420;  
 }
-
-
-
+.gridAreatitle h4{
+  margin-top: 10px;
+  -webkit-text-stroke: 0.7px #000000;
+  -webkit-text-fill-color: #ce7420;
+}
 .gridAreaContent {
   padding: 0 10px;
   align-items: center;
