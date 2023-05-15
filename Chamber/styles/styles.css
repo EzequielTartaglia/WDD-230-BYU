@@ -227,6 +227,7 @@ nav {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  
 }
 .grid-container > div {
   max-width: 100%;
@@ -234,9 +235,12 @@ nav {
   text-overflow: ellipsis;
   white-space: nowrap;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .gridAreatitle {
+  max-width: 100%;
   margin-bottom: 10px;
   padding: 20px 10px;
   align-items: center;
@@ -246,7 +250,7 @@ nav {
   font-size: 18px;
   text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-stroke: 0.7px #000000;
-  -webkit-text-fill-color: #ce7420;
+  -webkit-text-fill-color: #ce7420;  
 }
 
 
