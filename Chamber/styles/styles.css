@@ -412,6 +412,11 @@ main button:hover {
   margin-top: 10px;
 }
 
+#join button{
+  width: 100%;
+  -webkit-text-stroke: 1px #000000;
+  -webkit-text-fill-color: #fffdfb;
+}
 /* Footer */
 footer {
   width: 100%;
