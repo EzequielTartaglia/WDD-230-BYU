@@ -11,23 +11,6 @@ body {
   background-color: #282929;
 }
 
-button{
-  padding: 10px 15px;
-  background-color: #00445a;
-  border-radius: 12px;
-  border: solid 1px #000000;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
-  box-shadow: 1px 1px 5px #000000;
-}
-button:hover{
-  padding: 10px 15px;
-  background-color: #ce7420;
-  border-radius: 12px;
-  letter-spacing: 0.6px;
-}
-
 /* Header */
 
 .currentDatetime {
@@ -237,6 +220,24 @@ nav {
 }
 
 /* Main */
+
+main button{
+  padding: 10px 15px;
+  background-color: #00445a;
+  border-radius: 12px;
+  border: solid 1px #000000;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px #000000;
+}
+main button:hover{
+  padding: 10px 15px;
+  background-color: #ce7420;
+  border-radius: 12px;
+  letter-spacing: 0.6px;
+}
+
 
 .grid-container {
   background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
