@@ -336,6 +336,13 @@ main button:hover{
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
+#weather hr {
+  height: 2px;
+  margin: 10px auto;
+  background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
+  border: none;
+  width: 80%;
+}
 
 /* Footer */
 footer {

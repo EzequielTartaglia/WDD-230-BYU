@@ -168,7 +168,7 @@ nav {
     flex-direction: column;
     align-items: center;
   }
-  
+
   /* Not show the "|" between the lines */
   #firstLineFooter p:not(:last-child)::after {
     display: none;
