@@ -3,10 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  transition: all 0.3s;
+
 }
 
 body {
   background-color: #282929;
+}
+
+button{
+  padding: 10px 15px;
+  background-color: #00445a;
+  border-radius: 12px;
+  border: solid 1px #000000;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover{
+  padding: 10px 15px;
+  background-color: #ce7420;
+  border-radius: 12px;
+  letter-spacing: 0.6px;
 }
 
 /* Header */
@@ -289,6 +306,30 @@ nav {
   -webkit-text-stroke: 0.5px #000000;
   -webkit-text-fill-color: #ce7420;
 }
+#hero {
+ position: relative;
+  background-image: url('./images/ce-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+
+}
+#hero .gridAreatitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero .gridAreaContent button{
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
 /* Footer */
 footer {
   width: 100%;
