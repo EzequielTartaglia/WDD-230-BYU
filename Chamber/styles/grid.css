@@ -42,13 +42,14 @@
   height: 250px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .gridArea7 {
   grid-area: 7 / 1 / 7 / 5;
   height: 250px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
+  margin-bottom: 5px;
 }
 
 .gridArea3 {
@@ -56,6 +57,7 @@
 }
 .gridArea8 {
   display: none;
+  
 }
 
 /* Medium */
