@@ -426,6 +426,22 @@ main button:hover {
   position: relative;
   width: 100%;
 }
+.spotlights .gridAreaContent img{
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: -20px;
+  margin-bottom: -18px;  
+}
+.spotlights .gridAreaContent hr{
+  height: 2px;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+#spotlightsOneSlogan, .spotlights .gridAreaContent p{
+  font-size: 15px;
+}
+
 .gridArea3,
 .gridArea6,
 .gridArea7,
