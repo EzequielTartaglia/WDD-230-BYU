@@ -144,7 +144,7 @@ nav {
   
   .footerLogoContainer,
   .footerContactInfoContainer {
-    margin: 0px;
+    margin: 0;
     margin-bottom: 20px;
     flex-direction: column;
     flex-basis: 100%;
@@ -180,14 +180,18 @@ nav {
   #footerLogoInfo p{
     margin: 2px;
   }
-  
+
   #firstLineFooter,
   #secondLineFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  #firstLineFooter p,#secondLineFooter p {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
   /* Not show the "|" between the lines */
   #firstLineFooter p:not(:last-child)::after {
     display: none;
