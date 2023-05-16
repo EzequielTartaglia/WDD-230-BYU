@@ -18,7 +18,6 @@ nav {
   text-align: center;
 }
 
-
 .title {
   font-size: 12px;
 }
@@ -34,19 +33,21 @@ nav {
   display: none;
 }
 .toggleMenu{
-  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
-  flex-grow: 0; 
   max-width: 1600px;
-  margin: 0 auto;
-  flex: 1 1 auto;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no wrap;
-  padding: 20px 20px;
   height: 275px;
+  flex-grow: 0; 
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  margin: 0 auto;
+  padding: 20px 20px;
   transition: all 0.2s ease-in-out;
-
+  border: none;
+  border-top: 1.5px solid #8484af;
+  margin-bottom: -30px;
+  display: none;
+  flex-direction: column;
 }
 
 .toggleMenu li{
@@ -71,14 +72,6 @@ nav {
 
 }
 
-.toggleMenu {
-  flex-wrap: wrap;
-  border: none;
-  border-top: 1.5px solid #8484af;
-  margin-bottom: -30px;
-  display: none;
-  flex-direction: column;
-}
 .toggleMenu.active {
   display: block;
 }
@@ -108,7 +101,12 @@ nav {
 .socialsHeader a:hover {
   color: #ce7420;
 }
-
+#facebook{
+  margin-left: 10px;
+}
+#hamburgerChamber i{
+margin-left: 40px;
+}
 /* Main */
 
 #hero img{
