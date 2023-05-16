@@ -1,8 +1,10 @@
 * {
-  margin: auto 0;
+  margin: 0 auto ;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  max-width: 1800px;
+
 }
 
 /* Template design */
@@ -50,8 +52,10 @@ h2,h3,h4{
 }
 
 hr {
+  max-width: 95%;
   height: 3px;
-  margin: 35px 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
   background: linear-gradient(#eff5e0, #cdd6d2);
 }
 
