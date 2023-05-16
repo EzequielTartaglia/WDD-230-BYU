@@ -30,9 +30,14 @@
 #spotlightsOneSlogan, .spotlights .gridAreaContent p{
   font-size: 15px;
 }
+#spotlightTwo img{
+  padding: 0px;
+  margin-top: -18px;
+}
 #spotlightTwo h2{
   font-size: 24px;
 }
+
 /* Footer */
 
 hr {
