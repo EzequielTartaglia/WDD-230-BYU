@@ -70,14 +70,16 @@ nav {
 .socialsHeader {
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  padding-right: 60px;
+  margin-top: 10px;  
+  padding-right: 50px;
 }
 
 .socialsHeader i {
-  margin-right: 10px;
+  margin-right: -5px;
+  margin-left: 1px;
   margin-bottom: 10px;
   font-size: 20px;
+  
 }
 
 .socialsHeader a {
