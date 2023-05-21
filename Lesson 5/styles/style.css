@@ -39,6 +39,7 @@ body {
   text-align: left;
   max-width: 80%;
   margin-bottom: 2px;
+  overflow: auto;
 }
 
 #addChapterBtn,
@@ -85,9 +86,9 @@ ul > li {
 }
 
 li span {
-  flex: 1;
   font-size: 20px;
   padding: 10px;
+  width: 80%;
 }
 
 .deleteButton {
