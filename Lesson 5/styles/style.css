@@ -56,11 +56,11 @@ body {
 }
 #addChapterBtn:hover,
 .deleteButton:hover {
-  background: linear-gradient(#0a77a1, #dbdae0);
+  background: linear-gradient(#12a7e2, #532ed8);
   color: rgb(255, 255, 255);
 }
 .deleteButton:hover {
-  border: solid 1px #bbbbbb;
+  border: solid 1px #000000;
 }
 ul {
   width: 90%;
