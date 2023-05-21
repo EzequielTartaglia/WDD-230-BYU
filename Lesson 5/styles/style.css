@@ -56,8 +56,8 @@ body {
 }
 #addChapterBtn:hover,
 .deleteButton:hover {
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+  background: linear-gradient(#0a77a1, #dbdae0);
+  color: rgb(255, 255, 255);
 }
 .deleteButton:hover {
   border: solid 1px #bbbbbb;
