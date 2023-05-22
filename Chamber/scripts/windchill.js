@@ -16,10 +16,15 @@ const windChill = (tempCelsius, windMph) => {
   ).toFixed(2);
 };
 
+//convert °c to °f
+const fahrenheitTemperature = (celsiusTemperature * 9/5) + 32;
+//convert km/h to m/hs
+const windSpeedMph = windSpeedKmph / 1.60934;
+
 //Valid range to Wind chill
-if (celsiusTemperature <= 50 && windSpeedKmph > 3.0) {
-  //convert km/h to m/hs
-  const windSpeedMph = windSpeedKmph / 1.60934;
+if (fahrenheitTemperature >= 50 && windSpeedMph > 3.0) {
+
+
 
   //Output
   windChillSpan.textContent = `${windChill(celsiusTemperature, windSpeedMph)}`;
