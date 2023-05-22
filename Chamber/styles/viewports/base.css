@@ -119,9 +119,9 @@ nav {
 #hero img {
   position: relative;
   margin-top: 0;
-  padding-left: -30px;
+  margin-left: -25px;
   opacity: 85%;
-  width: 100%;
+  width: 170%;
   height: 100%;
 }
 /* Image for week 6 */

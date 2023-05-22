@@ -156,7 +156,7 @@
         </div>
         <div class="gridArea4" id="hero">
           <!-- Original -->
-<!--           <img
+          <!--           <img
             src="./images/Hero-File/hero-chamber.webp"
             alt="Hero Image"
             id="hero-img"
@@ -165,9 +165,18 @@
           /> -->
 
           <!-- For Week 6 -->
-          <img src="./images/Hero-File/wdd230-org.jpg" alt="Hero Image" width="500"
-          height="500"/>
- 
+          <img
+          srcset="
+            ./images/Hero-File/wdd230-tablet.webp 500w,
+            ./images/Hero-File/wdd230-1500.webp 600w
+          "
+          sizes="(max-width: 600px) 100vw,
+                 (max-width: 1024px) 50vw,
+                 800px"
+          src="./images/Hero-File/wdd230-mobile.webp"
+          alt="Elva dressed as a fairy"
+        />
+        
 
           <div class="gridAreatitle">
             <h2>Chamber Exchange : Guild of Commerce</h2>
