@@ -22,8 +22,8 @@ if (celsiusTemperature <= 50 && windSpeedKmph > 3.0) {
   const windSpeedMph = windSpeedKmph / 1.60934;
 
   //Output
-  windChillSpan.innerText = `${windChill(celsiusTemperature, windSpeedMph)}`;
+  windChillSpan.textContent = `${windChill(celsiusTemperature, windSpeedMph)}`;
 } 
 else {
-  windChillSpan.innerText = "N/A";
+  windChillSpan.textContent = "N/A";
 }
