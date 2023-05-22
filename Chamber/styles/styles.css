@@ -51,7 +51,7 @@ header {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
 }
 
 .logoTitleContainer {
@@ -70,6 +70,8 @@ header {
   justify-content: center;
   align-items: center;
   height: 90px;
+  margin-left: -50px;
+
 }
 
 .logo img {
@@ -80,6 +82,8 @@ header {
 .titleContainer {
   display: flex;
   flex-direction: column;
+  margin-left: -25px;
+
 }
 
 .title {

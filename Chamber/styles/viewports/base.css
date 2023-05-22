@@ -1,4 +1,5 @@
 /* Header */
+
 .headerInfo {
   display: flex;
   justify-content: space-between;
@@ -10,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 50px;
 }
 
 nav {
@@ -32,7 +33,7 @@ nav {
   display: none;
 }
 .toggleMenu {
-  max-width: 1600px;
+  max-width: 100%;
   width: 100%;
   height: 275px;
   flex-grow: 0;
