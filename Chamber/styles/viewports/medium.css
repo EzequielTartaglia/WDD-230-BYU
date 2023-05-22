@@ -99,6 +99,18 @@ nav {
   width: 100%;
   height: auto;
 }
+
+/* Image for week 6 */
+#hero{
+  width: 100%;
+}
+#hero img {
+  opacity: 85%;
+  width: 100%;
+  height: auto + 10%;
+}
+/* Image for week 6 */
+
 #hero .gridAreatitle {
   top: 75%;
   left: 50%;
