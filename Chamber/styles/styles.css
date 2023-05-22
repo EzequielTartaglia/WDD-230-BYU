@@ -407,10 +407,10 @@ main button:hover {
   right: 0;
   bottom: 0;
 }
-#weather .stadistics p {
+#weather .stadistics span {
   display: absolute;
   width: 50%;
-  margin-top: -20px;
+  margin-bottom: 3px;
 }
 #weather ul > li {
   position: relative;
