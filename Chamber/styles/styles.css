@@ -314,7 +314,7 @@ main button:hover {
   position: relative;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
 }
-#hero img {
+#hero-img {
   margin-top: -110px;
   min-height: 720px;
 }
