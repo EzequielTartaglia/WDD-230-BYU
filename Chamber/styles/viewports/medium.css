@@ -108,6 +108,8 @@ nav {
   opacity: 85%;
   width: 100%;
   height: auto + 10%;
+  object-fit: cover; 
+
 }
 /* Image for week 6 */
 

@@ -165,18 +165,29 @@
           /> -->
 
           <!-- For Week 6 -->
-          <img
-          srcset="
-            ./images/Hero-File/wdd230-tablet.webp 500w,
-            ./images/Hero-File/wdd230-1500.webp 600w
-          "
-          sizes="(max-width: 600px) 100vw,
-                 (max-width: 1024px) 50vw,
-                 800px"
-          src="./images/Hero-File/wdd230-mobile.webp"
-          alt="Elva dressed as a fairy"
-        />
-        
+          <picture>
+
+            <!-- Mobile -->
+            <source
+              srcset="./images/Hero-File/wdd230-1500.webp"
+              media="(max-width: 600px)"
+            />
+
+            <!-- Tablet -->
+            <source
+              srcset="./images/Hero-File/wdd230-1500.webp"
+              media="(max-width: 1024px)"
+            />
+
+            <!-- Desktop -->
+            <img
+              src="./images/Hero-File/wdd230-1500.webp"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 1024px) 80vw,
+                     800px"
+              alt="Elva dressed as a fairy"
+            />
+          </picture>
 
           <div class="gridAreatitle">
             <h2>Chamber Exchange : Guild of Commerce</h2>

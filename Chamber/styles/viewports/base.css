@@ -113,16 +113,17 @@ nav {
   min-height: 450px;
 }
 /* Image for week 6 */
-#hero{
+#hero {
   width: 100%;
 }
+
 #hero img {
   position: relative;
   margin-top: 0;
-  margin-left: -25px;
   opacity: 85%;
-  width: 170%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
 }
 /* Image for week 6 */
 
