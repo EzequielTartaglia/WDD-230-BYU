@@ -394,12 +394,12 @@ main button:hover {
 
 #weatherStatus {
   position: absolute;
-  left: 10px;
-  right: 0;
   margin: 0 auto;
+  left: 50px;
+  right: 0;
   bottom: 34.5%;
-  text-align: right;
-  font-size: 23px;
+  text-align: center;
+  font-size: 22px;
   margin-right: 10%;
 }
 #weather .stadistics {
