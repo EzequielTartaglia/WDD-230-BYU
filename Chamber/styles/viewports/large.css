@@ -41,7 +41,7 @@
   margin-top: 0;
   margin-bottom: 5px;
 }
-#spotlightsOneSlogan, .spotlights .gridAreaContent p{
+.spotlightsSlogan, .spotlights .gridAreaContent p{
   font-size: 15px;
 }
 #spotlightTwo img{
