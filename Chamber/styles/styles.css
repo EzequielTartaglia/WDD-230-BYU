@@ -24,11 +24,14 @@ body {
   letter-spacing: 1px;
   box-shadow: 1px 1px 5px #034c64;
 }
-#now {
-  text-align: center;
-  padding: 0.5rem;
+.currentDatetime #now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   font-size: large;
 }
+
 #banner {
   width: 100%;
   margin: auto;
