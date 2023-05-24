@@ -7,7 +7,7 @@
 }
 .gridArea4 {
   grid-area: 1 / 1 / 2 / 5;
-  height: 450px;
+  height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
@@ -35,18 +35,16 @@
   box-shadow: 3px 3px 30px #034c64;
     padding: 10px;
   grid-area: 6 / 1 / 7 / 5;
-  height: 540px;
+  height: auto;
 }
 .gridArea6 {
   grid-area: 6 / 1 / 5 / 5;
-  height: 250px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
   margin-bottom: 5px;
 }
 .gridArea7 {
   grid-area: 7 / 1 / 7 / 5;
-  height: 250px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
   margin-bottom: 5px;
@@ -69,7 +67,7 @@
   }
   .gridArea4 {
     grid-area: 1 / 1 / 2 / 5;
-    height: 450px;
+    height: 500px;
   }
   .gridArea5 {
     grid-area: 2 / 1 / 3 / 5;
