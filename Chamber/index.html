@@ -166,31 +166,19 @@
 
           <!-- For Week 6 -->
           <picture>
-            <!-- Mobile -->
             <source
+              media="(max-width:31.25rem)"
               srcset="./images/Hero-File/wdd230-mobile.webp"
-              media="(max-width: 600px)"
             />
-
-            <!-- Tablet -->
             <source
+              media="(max-width: 45rem)"
               srcset="./images/Hero-File/wdd230-tablet.webp"
-              media="(max-width: 1024px)"
             />
-
-            <!-- Desktop -->
-            <img
-              src="./images/Hero-File/wdd230-1500.webp"
-              srcset="
-                ./images/Hero-File/wdd230-1500.webp   1500w,
-                ./images/Hero-File/wdd230-tablet.webp 1024w,
-                ./images/Hero-File/wdd230-mobile.webp  600w
-              "
-              sizes="(max-width: 600px) 100vw,
-           (max-width: 1024px) 80vw,
-           800px"
-              alt="Hero Photo"
+            <source
+              media="(max-width: 51.25rem)"
+              srcset="./images/Hero-File/wdd230-1500.webp"
             />
+            <img src="./images/Hero-File/wdd230-1500.webp" alt="Hero Image" />
           </picture>
 
           <div class="gridAreatitle">
