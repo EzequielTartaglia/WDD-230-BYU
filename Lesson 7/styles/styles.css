@@ -35,7 +35,9 @@ main{
   display: flex;
   flex-direction: column;
 }
+
 .imageContainer img{
+border: #000000 3px solid;
 object-fit: cover;
 width: 300px;
 height: 400px;
