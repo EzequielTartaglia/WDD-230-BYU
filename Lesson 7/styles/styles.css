@@ -21,6 +21,28 @@ header div, footer{
     padding: 20px 10px;
 }
 
+main{
+  max-width: 1000px;
+  width: 90%;
+  margin: auto; 
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:#dfffdd;
+}
+#imagesContainer{
+  display: flex;
+  flex-direction: column;
+}
+.imageContainer img{
+object-fit: cover;
+width: 400px;
+height: auto;
+max-width: 90%;
+margin: 10px;
+}
+
 footer {
     height: auto;
     text-align: center;
