@@ -47,6 +47,24 @@
   font-size: 24px;
 }
 
+/* Main Discover */
+
+#main-discover .gridAreatitle h2 {
+  max-width: 100%;
+  margin-top: -350px;
+  margin-bottom: 30px;
+  padding: 20px 10px;  
+  font-size: 30px;
+}
+#main-discover .gridAreatitle p {
+font-size: 22px;
+}
+#main-discover .gridAreaContent button{
+  margin-top: -20px;
+  margin-left: 60px;
+}
+/* Main Discover end */
+
 /* Footer */
 
 hr {
