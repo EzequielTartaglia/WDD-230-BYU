@@ -33,7 +33,7 @@
 .spotlights {
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
-    padding: 10px;
+  padding: 10px;
   grid-area: 6 / 1 / 7 / 5;
   height: auto;
 }
@@ -55,42 +55,41 @@
 }
 .gridArea8 {
   display: none;
-  
 }
 
 /* Discover page */
 
-.gridArea1Discover{
+.gridArea1Discover {
   grid-area: 1 / 1 / 2 / 5;
   height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
-.gridArea2Discover{
+.gridArea2Discover {
   grid-area: 2 / 1 / 3 / 5;
   height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
-.gridArea3Discover{
+.gridArea3Discover {
   grid-area: 3 / 1 / 4 / 5;
   height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
-.gridArea4Discover{
+.gridArea4Discover {
   grid-area: 4 / 1 / 5 / 5;
   height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
-.gridArea5Discover{
+.gridArea5Discover {
   grid-area: 5 / 1 / 6 / 5;
   height: 350px;
   border: solid #00445a25;
   box-shadow: 3px 3px 30px #034c64;
 }
-.gridArea6Discover{
+.gridArea6Discover {
   grid-area: 6 / 1 / 7 / 5;
   height: 350px;
   border: solid #00445a25;
@@ -112,15 +111,15 @@
     height: 220px;
   }
 
- .gridArea3 {
+  .gridArea3 {
     grid-area: 5 / 1 / 6 / 5;
     height: 175px;
     display: block;
     border: solid #00445a25;
     box-shadow: 3px 3px 30px #034c64;
-    }
+  }
 
-  .spotlights{
+  .spotlights {
     height: 500px;
   }
 
@@ -147,30 +146,36 @@
 
   /* Discover page */
 
-.gridArea1Discover{
-  grid-area: 1 / 1 / 2 / 5;
-  height: 500px;
-}
-.gridArea2Discover{
-  grid-area: 2 / 1 / 3 / 5;
-  height: 500px;
-}
-.gridArea3Discover{
-  grid-area: 3 / 1 / 4 / 5;
-  height: 500px;
-}
-.gridArea4Discover{
-  grid-area: 4 / 1 / 5 / 5;
-  height: 500px;
-}
-.gridArea5Discover{
-  grid-area: 5 / 1 / 6 / 5;
-  height: 500px;
-}
-.gridArea6Discover{
-  grid-area: 6 / 1 / 7 / 5;
-  height: 500px;
-}
+  .gridArea1Discover {
+    grid-area: 1 / 1 / 2 / 5;
+    height: 500px;
+    width: 100%;
+  }
+  .gridArea2Discover {
+    grid-area: 2 / 1 / 3 / 5;
+    height: 500px;
+    width: 100%;
+  }
+  .gridArea3Discover {
+    grid-area: 3 / 1 / 4 / 5;
+    height: 500px;
+    width: 100%;
+  }
+  .gridArea4Discover {
+    grid-area: 4 / 1 / 5 / 5;
+    height: 500px;
+    width: 100%;
+  }
+  .gridArea5Discover {
+    grid-area: 5 / 1 / 6 / 5;
+    height: 500px;
+    width: 100%;
+  }
+  .gridArea6Discover {
+    grid-area: 6 / 1 / 7 / 5;
+    height: 500px;
+    width: 100%;
+  }
 }
 
 /* Large */
@@ -207,11 +212,10 @@
   .spotlights {
     border: solid #00445a25;
     box-shadow: 3px 3px 30px #034c64;
-      grid-area: 1 / 4 / 7 / 4;
+    grid-area: 1 / 4 / 7 / 4;
     padding: 10px;
     height: 825px;
-
-}
+  }
   .gridArea6 {
     grid-area: 1 / 1 / 3 / 5;
     height: 262.5px;
@@ -226,32 +230,38 @@
     height: 262.5px;
     border: solid #00445a25;
     box-shadow: 3px 3px 30px #034c64;
-    }
+  }
   /* Discover page */
 
-  .gridArea1Discover{
+  .gridArea1Discover {
     grid-area: 2 / 2 / 1 / 4;
     height: 550px;
     margin-top: 5px;
+    width: 100%;
   }
-  .gridArea2Discover{
+  .gridArea2Discover {
     grid-area: 3 / 2 / 2 / 4;
     height: 550px;
+    width: 100%;
   }
-  .gridArea3Discover{
+  .gridArea3Discover {
     grid-area: 4 / 2 / 3 / 4;
     height: 550px;
+    width: 100%;
   }
-  .gridArea4Discover{
+  .gridArea4Discover {
     grid-area: 5 / 2 / 4 / 4;
     height: 550px;
+    width: 100%;
   }
-  .gridArea5Discover{
+  .gridArea5Discover {
     grid-area: 6 / 2 / 5 / 4;
     height: 550px;
+    width: 100%;
   }
-  .gridArea6Discover{
+  .gridArea6Discover {
     grid-area: 7 / 2 / 6 / 4;
     height: 550px;
+    width: 100%;
   }
 }
