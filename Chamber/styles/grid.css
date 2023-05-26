@@ -58,6 +58,44 @@
   
 }
 
+/* Discover page */
+
+.gridArea1Discover{
+  grid-area: 1 / 1 / 2 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
+.gridArea2Discover{
+  grid-area: 2 / 1 / 3 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
+.gridArea3Discover{
+  grid-area: 3 / 1 / 4 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
+.gridArea4Discover{
+  grid-area: 4 / 1 / 5 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
+.gridArea5Discover{
+  grid-area: 5 / 1 / 6 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
+.gridArea6Discover{
+  grid-area: 6 / 1 / 7 / 5;
+  height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
+}
 /* Medium */
 @media screen and (min-width: 600px) {
   .grid-container {
@@ -107,6 +145,32 @@
     display: none;
   }
 
+  /* Discover page */
+
+.gridArea1Discover{
+  grid-area: 1 / 1 / 2 / 5;
+  height: 500px;
+}
+.gridArea2Discover{
+  grid-area: 2 / 1 / 3 / 5;
+  height: 500px;
+}
+.gridArea3Discover{
+  grid-area: 3 / 1 / 4 / 5;
+  height: 500px;
+}
+.gridArea4Discover{
+  grid-area: 4 / 1 / 5 / 5;
+  height: 500px;
+}
+.gridArea5Discover{
+  grid-area: 5 / 1 / 6 / 5;
+  height: 500px;
+}
+.gridArea6Discover{
+  grid-area: 6 / 1 / 7 / 5;
+  height: 500px;
+}
 }
 
 /* Large */
@@ -163,5 +227,31 @@
     border: solid #00445a25;
     box-shadow: 3px 3px 30px #034c64;
     }
+  /* Discover page */
 
+  .gridArea1Discover{
+    grid-area: 2 / 1 / 1 / 3;
+    height: 600px;
+    margin-top: 5px;
+  }
+  .gridArea2Discover{
+    grid-area: 3 / 3 / 2 / 5;
+    height: 600px;
+  }
+  .gridArea3Discover{
+    grid-area: 4 / 1 / 3 / 3;
+    height: 600px;
+  }
+  .gridArea4Discover{
+    grid-area: 5 / 3 / 4 / 5;
+    height: 600px;
+  }
+  .gridArea5Discover{
+    grid-area: 6 / 1 / 5 / 3;
+    height: 600px;
+  }
+  .gridArea6Discover{
+    grid-area: 7 / 3 / 6 / 5;
+    height: 600px;
+  }
 }

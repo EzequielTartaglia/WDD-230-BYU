@@ -128,22 +128,22 @@ align-items: center;
   min-height: 450px;
 }
 /* Image for week 6 */
-#hero {
+#hero, #discoverPicture1 {
   width: 100%;
 }
 
-#hero picture {
+#hero picture, #discoverPicture1 picture {
   height: 100%;
   opacity: 85%;
   object-fit: cover;
 }
 /* Image for week 6 */
 
-#hero .gridAreatitle {
+#hero .gridAreatitle, #discoverPicture1 .gridAreatitle {
   top: 70%;
   left: 50%;
 }
-#hero .gridAreaContent button {
+#hero .gridAreaContent button, #discoverPicture1 .gridAreaContent button {
   top: 90%;
   left: 50%;
 }
