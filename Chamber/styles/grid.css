@@ -235,7 +235,7 @@
     margin-top: 5px;
   }
   .gridArea2Discover{
-    grid-area: 3 / 3 / 2 / 5;
+    grid-area: 3 / 1 / 2 / 3;
     height: 600px;
   }
   .gridArea3Discover{
@@ -243,7 +243,7 @@
     height: 600px;
   }
   .gridArea4Discover{
-    grid-area: 5 / 3 / 4 / 5;
+    grid-area: 5 / 1 / 4 / 3;
     height: 600px;
   }
   .gridArea5Discover{
@@ -251,7 +251,7 @@
     height: 600px;
   }
   .gridArea6Discover{
-    grid-area: 7 / 3 / 6 / 5;
+    grid-area: 7 / 1 / 6 / 3;
     height: 600px;
   }
 }
