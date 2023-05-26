@@ -152,12 +152,10 @@ nav {
 .hamburger {
   display: none;
   position: absolute;
-  right: 20px;
+  right: 40px;
   border: none;
   font-size: 20px;
   cursor: pointer;
-  width: 70px;
-  height: 70px;
   background: none;
   transition: all 0.8s ease-in-out;
 }

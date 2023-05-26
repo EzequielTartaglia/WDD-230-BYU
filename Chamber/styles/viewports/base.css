@@ -15,7 +15,9 @@
 }
 
 nav {
-  text-align: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .title {
@@ -28,6 +30,8 @@ nav {
 .hamburger {
   display: block;
   order: 1;
+  position: absolute;
+  right: 20px;
 }
 .mainMenu {
   display: none;
@@ -99,11 +103,18 @@ nav {
   color: #ce7420;
 }
 #facebook {
-  margin-left: 10px;
+  position: absolute;
+  order: 2;
+  right: 90px;
+  width: 0;
 }
-#hamburgerChamber i {
-  margin-left: 40px;
+#linkedIn{
+  position: absolute;
+  order: 2;
+  right: 65px;
+  width: 0;
 }
+
 /* Main */
 
 #hero-img {
