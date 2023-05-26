@@ -142,6 +142,13 @@ nav {
 .spotlights .gridAreaContent p {
   font-size: 16px;
 }
+/* Main discover*/
+.section-title{
+  margin-bottom: 40px;
+  padding-top: 40px;
+  font-size: 44px;
+}
+/* Main discover end*/
 /* Footer */
 
 footer {

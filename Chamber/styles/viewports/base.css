@@ -151,6 +151,14 @@ align-items: center;
 .spotlights .gridAreaContent p {
   font-size: 15px;
 }
+/* Main discover*/
+.section-title{
+  margin-bottom: 30px;
+  padding-top: 30px;
+  font-size: 40px;
+}
+/* Main discover end*/
+
 /* Footer */
 footer {
   padding: 10px;

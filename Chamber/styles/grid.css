@@ -93,8 +93,6 @@
 .gridArea6Discover{
   grid-area: 6 / 1 / 7 / 5;
   height: 350px;
-  border: solid #00445a25;
-  box-shadow: 3px 3px 30px #034c64;
 }
 /* Medium */
 @media screen and (min-width: 600px) {
@@ -230,28 +228,28 @@
   /* Discover page */
 
   .gridArea1Discover{
-    grid-area: 2 / 1 / 1 / 3;
-    height: 600px;
+    grid-area: 2 / 2 / 1 / 4;
+    height: 550px;
     margin-top: 5px;
   }
   .gridArea2Discover{
-    grid-area: 3 / 1 / 2 / 3;
-    height: 600px;
+    grid-area: 3 / 2 / 2 / 4;
+    height: 550px;
   }
   .gridArea3Discover{
-    grid-area: 4 / 1 / 3 / 3;
-    height: 600px;
+    grid-area: 4 / 2 / 3 / 4;
+    height: 550px;
   }
   .gridArea4Discover{
-    grid-area: 5 / 1 / 4 / 3;
-    height: 600px;
+    grid-area: 5 / 2 / 4 / 4;
+    height: 550px;
   }
   .gridArea5Discover{
-    grid-area: 6 / 1 / 5 / 3;
-    height: 600px;
+    grid-area: 6 / 2 / 5 / 4;
+    height: 550px;
   }
   .gridArea6Discover{
-    grid-area: 7 / 1 / 6 / 3;
-    height: 600px;
+    grid-area: 7 / 2 / 6 / 4;
+    height: 550px;
   }
 }
