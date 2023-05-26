@@ -227,6 +227,7 @@ nav {
 /* Main */
 main {
   max-width: 1750px;
+  background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
 }
 main button {
   padding: 10px 15px;
@@ -464,10 +465,6 @@ main button:hover {
 /* Main end*/
 
 /* Main discover*/
-
-#mainDiscover{
-  width: 100%;
-}
 
 /* Main discover end*/
 
