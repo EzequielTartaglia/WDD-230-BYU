@@ -159,7 +159,8 @@ nav {
 font-size: 20px;
 }
 #main-discover .gridAreaContent button{
-  margin-left: 20px;
+  top: 90%;
+  left: 85%;
 }
 /* Main discover end*/
 /* Footer */
