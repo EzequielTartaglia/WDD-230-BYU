@@ -315,7 +315,7 @@ main button:hover {
   text-shadow: 0 0 20px #e6e4e4;
   -webkit-text-fill-color: #ce7420;
 }
-#hero, #discoverPicture1 {
+#hero, .discoverPicture {
   position: relative;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
 }
@@ -325,7 +325,7 @@ main button:hover {
 }
 
 /* Image for week 6 */
-#hero img, #discoverPicture1 img {
+#hero img, .discoverPicture img {
   position: absolute;
   top: 0;
   left: 0;
@@ -336,7 +336,7 @@ main button:hover {
 }
 /* Image for week 6 */
 
-#hero .gridAreatitle,#discoverPicture1 .gridAreatitle {
+#hero .gridAreatitle,.discoverPicture .gridAreatitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -345,7 +345,7 @@ main button:hover {
   -webkit-text-fill-color: #ce7420;
 }
 
-#hero .gridAreaContent button, #discoverPicture1 .gridAreaContent button {
+#hero .gridAreaContent button, .discoverPicture .gridAreaContent button {
   position: absolute;
   top: 90%;
   left: 75%;

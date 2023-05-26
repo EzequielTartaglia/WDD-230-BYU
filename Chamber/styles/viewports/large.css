@@ -6,19 +6,19 @@
   object-fit: contain;
 }
 /* Image for week 6 */
-#hero,#discoverPicture1 {
+#hero,.discoverPicture {
   width: 100%;
 }
-#hero picture,#discoverPicture1 picture {
+#hero picture,.discoverPicture picture {
   opacity: 85%;
 }
 /* Image for week 6 */
 
-#hero .gridAreatitle, #discoverPicture1 .gridAreatitle {
+#hero .gridAreatitle, .discoverPicture .gridAreatitle {
   top: 80%;
   left: 50%;
 }
-#hero .gridAreaContent button, #discoverPicture1 .gridAreaContent button {
+#hero .gridAreaContent button, .discoverPicture .gridAreaContent button {
   top: 90%;
   left: 75%;
 }
