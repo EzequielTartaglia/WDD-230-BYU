@@ -44,6 +44,11 @@ body {
 }
 
 header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  font-size: 12px;
+  z-index: 2;
   background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
   padding-bottom: 1px;
 }
@@ -91,11 +96,13 @@ header {
 .title {
   font-size: 14px;
 }
+
 .primaryTitle {
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -127,6 +134,7 @@ nav {
   margin-bottom: 10px;
   font-size: 20px;
 }
+
 .socialsHeader a {
   display: flex;
   align-items: center;
@@ -134,16 +142,19 @@ nav {
   text-decoration: none;
   color: #1558ce;
 }
+
 #linkedIn,
 #facebook {
   color: #1558ce;
   font-size: 25px;
 }
+
 #linkedIn:hover,
 #facebook:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
 }
+
 .socialsHeader a:hover {
   color: #ce7420;
   transition: all 0.2s ease-in-out;
@@ -229,6 +240,15 @@ main {
   max-width: 1750px;
   background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
 }
+
+#totalVisitors {
+  position: fixed;
+  left: 20px;
+  bottom: 15px;
+  font-size: 12px;
+  z-index: 2;
+  color: #e4f7c3;
+}
 main button {
   padding: 10px 15px;
   background-color: #00445a;
@@ -306,7 +326,8 @@ main button:hover {
   width: 95%;
   border-radius: 12px;
   border: solid #00445a25;
-  box-shadow: 3px 3px 30px #034c64;}
+  box-shadow: 3px 3px 30px #034c64;
+}
 
 #chart-stadistics h2 {
   margin-top: 0;
@@ -326,9 +347,14 @@ main button:hover {
   font-size: 18px;
   box-shadow: 1px 1px 5px #000000;
   border: none;
-  -webkit-text-stroke:  #dbdbdb;
+  -webkit-text-stroke: #dbdbdb;
   -webkit-text-fill-color: #dbdbdb;
 }
+
+.chart:nth-child(1) {
+  margin-bottom: 7px;
+}
+
 .chart:hover {
   background-color: #ce7420;
   color: #e6e4e4;
@@ -336,7 +362,7 @@ main button:hover {
 }
 button.active {
   background-color: #ce7420;
-  -webkit-text-stroke:  #dbdbdb;
+  -webkit-text-stroke: #dbdbdb;
   -webkit-text-fill-color: #dbdbdb;
   border: none;
   letter-spacing: 0.6px;
@@ -547,7 +573,7 @@ canvas {
   -webkit-text-fill-color: #ce7420;
   width: 100%;
 }
-.section-title h1{
+.section-title h1 {
   font-size: 36px;
 }
 /* Main discover end*/
@@ -562,6 +588,9 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 10px 10px;
+  z-index: 1;
+  position: absolute;
+  font-size: 12px;
 }
 
 footer a {
@@ -670,4 +699,3 @@ hr {
   content: " |";
   display: inline;
 }
-
