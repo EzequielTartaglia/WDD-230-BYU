@@ -157,7 +157,7 @@ function getChart(chartValue) {
             backgroundColor: "rgba(255, 99, 132, 0.2)",
             borderColor: "#ce7420",
             pointBackgroundColor: "#ce7420",
-            pointBorderColor: "#000",
+            pointBorderColor: "#fff",
             pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgb(255, 99, 132)",
           },
