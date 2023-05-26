@@ -93,6 +93,8 @@
 .gridArea6Discover{
   grid-area: 6 / 1 / 7 / 5;
   height: 350px;
+  border: solid #00445a25;
+  box-shadow: 3px 3px 30px #034c64;
 }
 /* Medium */
 @media screen and (min-width: 600px) {
