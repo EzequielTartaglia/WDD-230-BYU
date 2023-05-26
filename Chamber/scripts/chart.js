@@ -59,32 +59,22 @@ function getChart(chartValue) {
       type: "bar",
       data: {
         labels: [
-          "Habilidad 1",
-          "Habilidad 2",
-          "Habilidad 3",
-          "Habilidad 4",
-          "Habilidad 5",
-          "Habilidad 6",
-          "Habilidad 7",
-          "Habilidad 8",
-          "Habilidad 9",
-          "Habilidad 10",
+          "Quantity of members (thousands)",
+          "Members contributions (thousands)",
+          "Average age of members",
+          "New jobs (thousands)",
+          "Currently projects",
         ],
         datasets: [
           {
-            label: "Nivel de habilidad",
-            data: [90, 75, 80, 85, 70, 10, 58, 64, 97, 51, 84, 70],
+            label: "Membership stadistics",
+            data: [90, 150, 40, 54, 70],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(255, 159, 64, 0.2)",
               "rgba(255, 205, 86, 0.2)",
               "rgba(75, 192, 192, 0.2)",
               "rgba(54, 162, 235, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(201, 203, 207, 0.2)",
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(255, 159, 64, 0.2)",
-              "rgba(255, 205, 86, 0.2)",
             ],
             borderColor: [
               "rgb(255, 99, 132)",
@@ -92,11 +82,6 @@ function getChart(chartValue) {
               "rgb(255, 205, 86)",
               "rgb(75, 192, 192)",
               "rgb(54, 162, 235)",
-              "rgb(153, 102, 255)",
-              "rgb(201, 203, 207)",
-              "rgb(255, 99, 132)",
-              "rgb(255, 159, 64)",
-              "rgb(255, 205, 86)",
             ],
             fill: false,
             borderWidth: 1,
@@ -139,7 +124,7 @@ function getChart(chartValue) {
         title: {
           display: true,
           text: "Guild's Members",
-          fontColor: "#000",
+          fontColor: "#fff",
         },
         layout: {
           padding: {
@@ -173,7 +158,7 @@ function getChart(chartValue) {
             borderColor: "#ce7420",
             pointBackgroundColor: "#ce7420",
             pointBorderColor: "#000",
-            pointHoverBackgroundColor: "#000",
+            pointHoverBackgroundColor: "#fff",
             pointHoverBorderColor: "rgb(255, 99, 132)",
           },
         ],
@@ -190,7 +175,7 @@ function getChart(chartValue) {
               ticks: {
                 beginAtZero: true,
                 max: 100,
-                fontColor: "#000",
+                fontColor: "#fff",
               },
               gridLines: {
                 display: true,
@@ -201,7 +186,7 @@ function getChart(chartValue) {
           xAxes: [
             {
               ticks: {
-                fontColor: "#000",
+                fontColor: "#fff",
               },
               gridLines: {
                 display: false,
@@ -212,7 +197,7 @@ function getChart(chartValue) {
         title: {
           display: true,
           text: "Niveles de habilidad",
-          fontColor: "#000",
+          fontColor: "#fff",
         },
         layout: {
           padding: {
@@ -225,4 +210,6 @@ function getChart(chartValue) {
   }
 }
 //Start with texas stadistics chart at the begining
+texasStadisticsButton.click();
+guildMemberBtn.click();
 texasStadisticsButton.click();

@@ -162,6 +162,9 @@ font-size: 20px;
   top: 90%;
   left: 85%;
 }
+#chart-container{
+  max-width: 90%;
+}
 canvas {
   max-width: 100%;
   width: 600px;
@@ -169,6 +172,7 @@ canvas {
   margin: 0 auto;
   max-height: 500px;
 }
+
 /* Main discover end*/
 /* Footer */
 

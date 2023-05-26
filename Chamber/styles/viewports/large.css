@@ -70,6 +70,9 @@ canvas {
   margin: 0 auto;
   max-height: 500px;
 }
+#chart-container{
+  width: 60%;
+}
 /* Main Discover end */
 
 /* Footer */
