@@ -63,6 +63,13 @@ font-size: 22px;
   top: 85%;
   left: 85%;
 }
+canvas {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  max-height: 500px;
+}
 /* Main Discover end */
 
 /* Footer */

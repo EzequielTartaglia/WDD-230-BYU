@@ -38,6 +38,7 @@
     />
         <link rel="stylesheet" href="./styles/grid.css" />
     <title>Chamber Exchange | Discover</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header>
@@ -102,6 +103,21 @@
           </a>
         </div>
         <div class="section-title">Discover Texas</div>
+
+    <section id="chart-stadistics" class="section-title">
+      <h2>Stadistics</h2>
+      <div>
+      <button class="btn chart" id="texasBtn">Texas Stadistics</button>
+      <button class="btn chart" id="guildBtn" class="active">Guild's Members</button>
+      </div>
+      <ul>
+        <div id="chart-container">
+          <canvas id="myChart"></canvas>
+          <canvas id="myChart2"></canvas>
+        </div>
+        
+      </ul>
+    </section>
         <div class="grid-container">
           
           <div class="gridArea1Discover discoverPicture"> 
@@ -256,7 +272,7 @@
           </div>
         </div>
       </footer>
-
+      <script src="./scripts/chart.js" defer></script>
       <script src="./scripts/lazyload.js" defer></script>
       <script src="./scripts/script.js" defer></script>
       <script src="./scripts/index.js" defer></script>
