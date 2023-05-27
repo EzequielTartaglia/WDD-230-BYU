@@ -36,7 +36,7 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-        <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
     <title>Chamber Exchange | Discover</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
@@ -57,7 +57,7 @@
 
         <nav>
           <ul class="mainMenu">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Education</a></li>
             <li><a href="#">Beneficts</a></li>
@@ -92,203 +92,231 @@
         </ul>
       </div>
     </header>
-      <div id="banner" class="hidden">
-        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    <div id="banner" class="hidden">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+
+    <main id="main-discover">
+      <div class="float-buttons home">
+        <a href="../index.html" class="float-button home">
+          <i class="fas fa-home"></i>
+        </a>
       </div>
-      
-      <main id="main-discover">
-        <div class="float-buttons home">
-          <a href="../index.html" class="float-button home">
-            <i class="fas fa-home"></i>
-          </a>
-        </div>
-        <div class="float-buttons views">
-          <button class="float-button views" id="viewsButton">
-            <i class="fas fa-eye-slash"></i>
-          </button>
-        </div>
-        <div id="totalVisitorsContainer">
-          <p class="section-title">Visitors:</p>
-         <span class="button" id="totalVisitors">Loading..</span>
+      <div class="float-buttons views">
+        <button class="float-button views" id="viewsButton">
+          <i class="fas fa-eye-slash"></i>
+        </button>
       </div>
-        <div class="section-title" id="mainTitle">
-          <h1>Discover Texas</h1>
-        </div>
-
-    <section id="chart-stadistics" class="section-title">
-      <h2>Stadistics</h2>
-      <div>
-      <button class="chart" id="texasBtn">Texas Stadistics</button>
-      <button class="chart active" id="guildBtn">Guild's Members</button>
+      <div id="totalVisitorsContainer">
+        <p class="section-title">Visitors:</p>
+        <span class="button" id="totalVisitors">Loading..</span>
       </div>
-      <ul>
-        <li id="chart-container">
-          <canvas id="myChart"></canvas>
-          <canvas id="myChart2"></canvas>
-        </li>
-        
-      </ul>
-    </section>
-    <h2 class="section-title">Favorites places for our turists</h2>
-        <div class="grid-container">
-          
-          <div class="gridArea1Discover discoverPicture"> 
-            <picture id="discoverPicture1">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/big-bend-national-park.webp"
-                alt="Big Bend National Park"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>Discover Big Bend National Park</h2>
-              <p>Big Bend National Park is a vast and breathtaking natural reserve located in Texas, USA. With its stunning desert landscapes, towering canyons, and winding river, it offers a unique and unforgettable experience for nature enthusiasts.</p>     
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
+      <div class="section-title" id="mainTitle">
+        <h1>Discover Texas</h1>
+      </div>
 
-            </div>
-          </div> 
-          <div class="gridArea2Discover discoverPicture"> 
-            <picture id="discoverPicture2">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/justice-palace.webp"
-                alt="Justice Palace"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>Justice Palace</h2>
-              <p>The Justice Palace stands as an iconic landmark representing justice and the rule of law. With its striking architecture and rich history, it serves as a symbol of the legal system's importance in upholding fairness and protecting the rights of individuals. Explore the grand halls and courtrooms within, witnessing the administration of justice and immersing yourself in the significance of this esteemed institution.</p>
-
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
-            </div>
-          </div> 
-          <div class="gridArea3Discover discoverPicture"> 
-            <picture id="discoverPicture3">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/galveston-island.webp"
-                alt="Galveston Island"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>Galveston Island</h2>
-              <p>Galveston Island, located on the Gulf of Mexico in Texas, is a captivating coastal destination that offers a perfect blend of natural beauty and rich history. With its pristine beaches, vibrant culture, and charming Victorian-era architecture, it provides a delightful escape for visitors seeking relaxation, exploration, and a touch of nostalgia.</p>
-
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
-            </div>
-          </div> 
-          <div class="gridArea4Discover discoverPicture"> 
-            <picture id="discoverPicture4">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/canyon-lindaMoon.webp"
-                alt="Linda Moon Canyon"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>Linda Moon Canyon</h2>
-              <p>Linda Moon Canyon is a hidden gem nestled in the heart of nature's embrace. Located in a remote and untouched wilderness, this breathtaking canyon offers a tranquil escape for outdoor enthusiasts and adventure seekers. With its towering cliffs, lush vegetation, and winding trails, Linda Moon Canyon invites you to immerse yourself in its natural splendor.</p>
-
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
-            </div>
-          </div> 
-          <div class="gridArea5Discover discoverPicture"> 
-            <picture id="discoverPicture5">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/the-captain.webp"
-                alt="The Captain"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>The Captain</h2>
-              <p>Discover the majestic allure of "The Captain," a towering mountain that stands as an icon in the heart of Texas. With its rugged peaks and awe-inspiring vistas, this natural wonder beckons adventurers and nature enthusiasts alike to explore its magnificent slopes.</p>
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
-            </div>
-          </div> 
-          <div class="gridArea6Discover discoverPicture"> 
-            <picture id="discoverPicture6">
-              <img
-                src="https://placehold.co/300x400/dddddd/dddddd"
-                data-src="images/Discover/sonora-caves.webp"
-                alt="Sonora Caves"
-                
-              />
-            </picture>
-  
-            <div class="gridAreatitle">
-              <h2>Sonora Caves</h2>
-              <p>Explore the hidden wonders of Sonora Caves, an enchanting underground realm that holds breathtaking beauty and captivating mysteries. Descend into the depths of these remarkable caverns and witness a world unlike any other. Marvel at the intricate formations of stalactites and stalagmites that have been meticulously shaped by time and nature's artistry.</p>
-            </div>
-            <div class="gridAreaContent">
-              <button>Learn more</button>
-            </div>
+      <section id="chart-stadistics" class="section-title">
+        <h2>Stadistics</h2>
+        <div>
+          <button class="chart" id="texasBtn">Texas Stadistics</button>
+          <button class="chart active" id="guildBtn">Guild's Members</button>
         </div>
+        <ul>
+          <li id="chart-container">
+            <canvas id="myChart"></canvas>
+            <canvas id="myChart2"></canvas>
+          </li>
+        </ul>
+      </section>
+      <h2 class="section-title">Favorites places for our turists</h2>
+      <div class="grid-container">
+        <div class="gridArea1Discover discoverPicture">
+          <picture id="discoverPicture1">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/big-bend-national-park.webp"
+              alt="Big Bend National Park"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Discover Big Bend National Park</h2>
+            <p>
+              Big Bend National Park is a vast and breathtaking natural reserve
+              located in Texas, USA. With its stunning desert landscapes,
+              towering canyons, and winding river, it offers a unique and
+              unforgettable experience for nature enthusiasts.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
         </div>
-      </main>
+        <div class="gridArea2Discover discoverPicture">
+          <picture id="discoverPicture2">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/justice-palace.webp"
+              alt="Justice Palace"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Justice Palace</h2>
+            <p>
+              The Justice Palace stands as an iconic landmark representing
+              justice and the rule of law. With its striking architecture and
+              rich history, it serves as a symbol of the legal system's
+              importance in upholding fairness and protecting the rights of
+              individuals. Explore the grand halls and courtrooms within,
+              witnessing the administration of justice and immersing yourself in
+              the significance of this esteemed institution.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea3Discover discoverPicture">
+          <picture id="discoverPicture3">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/galveston-island.webp"
+              alt="Galveston Island"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Galveston Island</h2>
+            <p>
+              Galveston Island, located on the Gulf of Mexico in Texas, is a
+              captivating coastal destination that offers a perfect blend of
+              natural beauty and rich history. With its pristine beaches,
+              vibrant culture, and charming Victorian-era architecture, it
+              provides a delightful escape for visitors seeking relaxation,
+              exploration, and a touch of nostalgia.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea4Discover discoverPicture">
+          <picture id="discoverPicture4">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/canyon-lindaMoon.webp"
+              alt="Linda Moon Canyon"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Linda Moon Canyon</h2>
+            <p>
+              Linda Moon Canyon is a hidden gem nestled in the heart of nature's
+              embrace. Located in a remote and untouched wilderness, this
+              breathtaking canyon offers a tranquil escape for outdoor
+              enthusiasts and adventure seekers. With its towering cliffs, lush
+              vegetation, and winding trails, Linda Moon Canyon invites you to
+              immerse yourself in its natural splendor.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea5Discover discoverPicture">
+          <picture id="discoverPicture5">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/the-captain.webp"
+              alt="The Captain"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>The Captain</h2>
+            <p>
+              Discover the majestic allure of "The Captain," a towering mountain
+              that stands as an icon in the heart of Texas. With its rugged
+              peaks and awe-inspiring vistas, this natural wonder beckons
+              adventurers and nature enthusiasts alike to explore its
+              magnificent slopes.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+        <div class="gridArea6Discover discoverPicture">
+          <picture id="discoverPicture6">
+            <img
+              src="https://placehold.co/300x400/dddddd/dddddd"
+              data-src="images/Discover/sonora-caves.webp"
+              alt="Sonora Caves"
+            />
+          </picture>
+
+          <div class="gridAreatitle">
+            <h2>Sonora Caves</h2>
+            <p>
+              Explore the hidden wonders of Sonora Caves, an enchanting
+              underground realm that holds breathtaking beauty and captivating
+              mysteries. Descend into the depths of these remarkable caverns and
+              witness a world unlike any other. Marvel at the intricate
+              formations of stalactites and stalagmites that have been
+              meticulously shaped by time and nature's artistry.
+            </p>
+          </div>
+          <div class="gridAreaContent">
+            <button>Learn more</button>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
-        <div class="footerContainer">
-          <div class="footerLogoContainer">
-            <div id="footerLogoImg">
-              <a href="index.html"
-                ><img
-                  id="logoFooter"
-                  src="./images/ce-logo.webp"
-                  alt="Logo Photo"
-              /></a>
-            </div>
-            <div id="footerLogoInfo">
-              <p id="footerTitle">Chamber Exchange: Guild of Commerce</p>
-              <p>10 Saint George</p>
-              <p>Texas, United States of America</p>
-            </div>
+      <div class="footerContainer">
+        <div class="footerLogoContainer">
+          <div id="footerLogoImg">
+            <a href="index.html"
+              ><img
+                id="logoFooter"
+                src="./images/ce-logo.webp"
+                alt="Logo Photo"
+            /></a>
           </div>
-          <div class="contacts">
-            <p>info@chamberexchange.org</p>
-            <p>(+1) 224 857 965</p>
-            <p><a href="#">📌Location Map </a></p>
-          </div>
-  
-          <hr />
-          <div>
-            <div id="firstLineFooter">
-              <p>&copy;<span id="currentYear"></span> Chamber Exchange</p>
-              <p>
-                <a href="https://www.linkedin.com/in/ezequieltartaglia/"
-                  >Ezequiel M. Tartaglia</a
-                >
-              </p>
-              <p>WDD 230 Project</p>
-              <p id="secondLineFooter"></p>
-            </div>
+          <div id="footerLogoInfo">
+            <p id="footerTitle">Chamber Exchange: Guild of Commerce</p>
+            <p>10 Saint George</p>
+            <p>Texas, United States of America</p>
           </div>
         </div>
-      </footer>
-      <script src="./scripts/pageViews.js" defer></script>
-      <script src="./scripts/chart.js" defer></script>
-      <script src="./scripts/lazyload.js" defer></script>
-      <script src="./scripts/script.js" defer></script>
-      <script src="./scripts/index.js" defer></script>
+        <div class="contacts">
+          <p>info@chamberexchange.org</p>
+          <p>(+1) 224 857 965</p>
+          <p><a href="#">📌Location Map </a></p>
+        </div>
+
+        <hr />
+        <div>
+          <div id="firstLineFooter">
+            <p>&copy;<span id="currentYear"></span> Chamber Exchange</p>
+            <p>
+              <a href="https://www.linkedin.com/in/ezequieltartaglia/"
+                >Ezequiel M. Tartaglia</a
+              >
+            </p>
+            <p>WDD 230 Project</p>
+            <p id="secondLineFooter"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/pageViews.js" defer></script>
+    <script src="./scripts/chart.js" defer></script>
+    <script src="./scripts/lazyload.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
