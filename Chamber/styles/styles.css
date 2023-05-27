@@ -350,6 +350,7 @@ main button:hover {
 #chart-container {
   margin: 0 auto;
   margin-top: 50px;
+  list-style: none;
 }
 #guildBtn.active + #chart-container #myChart2 {
   display: none;
