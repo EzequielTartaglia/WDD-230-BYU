@@ -5,7 +5,7 @@ const totalVisitors = document.getElementById("totalVisitors");
 const visitorsKey = localStorage.getItem("visitors");
 //IF the value in null → create a new key visitors with 0 as a value.
 if (!visitorsKey) {
-  localStorage.setItem("visitors", JSON.stringify('0'));
+  localStorage.setItem("visitors", JSON.stringify(0));
 } 
 //If exist visitors
 else {
