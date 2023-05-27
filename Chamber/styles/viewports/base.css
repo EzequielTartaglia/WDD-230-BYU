@@ -167,6 +167,35 @@ canvas {
   max-width: 90%;
   height:300px;
 }
+#totalVisitorsContainer {
+  display: none;
+  position: fixed;
+  width: 50%;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: 2;
+  padding: 20px 15px;
+  background-color: #00445a;
+  color: white;
+  border-radius: 12px;
+  border: solid 1px #000000;
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px #000000;
+  overflow: hidden;
+  text-align: center;
+}
+#totalVisitorsContainer.active ~ #viewsButton{
+  display: block;
+}
+#totalVisitorsContainer p{
+  margin-top: -30px;
+  font-size: 22px;
+}
+#totalVisitorsContainer button{
+  font-size: 22px;
+}
 /* Main discover end*/
 
 /* Footer */

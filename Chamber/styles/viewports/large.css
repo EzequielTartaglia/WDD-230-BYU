@@ -75,6 +75,16 @@ canvas {
 #chart-container{
   width: 60%;
 }
+#totalVisitorsContainer {
+  bottom: 35%;
+}
+#totalVisitorsContainer p{
+  margin-top: -50px;
+  font-size: 26px;
+}
+#totalVisitorsContainer button{
+  font-size: 26px;
+}
 /* Main Discover end */
 
 /* Footer */

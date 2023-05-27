@@ -20,3 +20,21 @@ const menu = document.querySelector('.toggleMenu');
       document.body.style.overflow = ''; 
     }
   });
+
+  const viewsButton = document.getElementById('viewsButton');
+  const totalVisitorsContainer = document.getElementById('totalVisitorsContainer');
+  
+  viewsButton.addEventListener('click', function() {
+    totalVisitorsContainer.classList.toggle('active');
+    
+    if (totalVisitorsContainer.classList.contains('active')) {
+      viewsButton.innerHTML='<i class="fas fa-eye"></i>'
+      totalVisitorsContainer.style.display = 'block';
+      document.body.style.overflow = 'hidden'; 
+    } else {
+      viewsButton.innerHTML='<i class="fas fa-eye-slash"></i>'
+      totalVisitorsContainer.style.display = 'none';
+      document.body.style.overflow = ''; 
+    }
+  });
+  

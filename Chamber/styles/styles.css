@@ -241,13 +241,26 @@ main {
   background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
 }
 
-#totalVisitors {
+#totalVisitorsContainer {
+  display: none;
   position: fixed;
-  left: 20px;
-  bottom: 15px;
-  font-size: 12px;
+  width: 20%;
+  left: 40%;
+  bottom: 50%;
   z-index: 2;
-  color: #e4f7c3;
+  padding: 20px 15px;
+  background-color: #00445a;
+  color: white;
+  border-radius: 12px;
+  border: solid 1px #000000;
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 5px #000000;
+  overflow: hidden;
+  text-align: center;
+}
+#totalVisitorsContainer.active ~ #viewsButton{
+  display: block;
 }
 main button {
   padding: 10px 15px;
