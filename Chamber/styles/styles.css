@@ -679,7 +679,12 @@ footer a:hover {
   margin-bottom: -5px;
   margin: 0;
 }
-
+.fa-thumbtack{
+  color: rgb(139, 12, 3);
+}
+.contacts a:hover .fa-thumbtack{
+  color: #ce7420;
+}
 hr {
   height: 2px;
   margin: 20px 0;
