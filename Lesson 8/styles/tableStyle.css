@@ -28,19 +28,25 @@ table td:hover {
   color: rgb(74, 74, 74);
   font-weight: bold;
 }
-table td:nth-child(2):hover  {
-    cursor: pointer;
-  }
-  
-.tablePicture img{
-    border-radius: 12px;
-    background-color: aqua;
-    width: 40px;
+
+.tablePicture img {
+  border-radius: 12px;
+  width: 40px;
 }
+.tablePicture img:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
   th,
   td {
-    padding: 10px;
+    padding: 5px 0px;
     font-size: 10px;
+  }
+  .tablePicture img {
+    width: 30px;
   }
 }
