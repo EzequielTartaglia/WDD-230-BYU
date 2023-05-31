@@ -1,0 +1,37 @@
+table {
+    margin: 30px auto;
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding: 10px;
+  }
+  
+  tr:hover td:last-child {
+  border-radius: 0   10px 10px 0 ;
+}
+tr:hover td:first-child{
+    border-radius: 10px  0    0 10px ;
+  
+}
+
+  th,
+  td {
+    padding: 15px;
+    word-wrap: break-word;
+  }
+  
+  tr:hover > td {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: black;
+  }
+  
+  @media screen and (max-width: 768px) {
+    th,
+    td {
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+  
