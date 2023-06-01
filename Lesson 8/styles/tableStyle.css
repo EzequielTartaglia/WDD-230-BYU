@@ -6,11 +6,20 @@ table {
   border-spacing: 0 10px;
   padding: 10px;
 }
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+  color: #000;
+}
 
-tr:hover td:last-child {
+tr:nth-child(odd) {
+  background-color: #ffffff; 
+  color: #000;
+}
+tr td:last-child {
   border-radius: 0 10px 10px 0;
 }
-tr:hover td:first-child {
+
+tr td:first-child {
   border-radius: 10px 0 0 10px;
 }
 
@@ -21,7 +30,7 @@ td {
 }
 
 tr:hover > td {
-  background-color: #f1f1f1;
+  background: linear-gradient(#12a7e2, #6cffb5);
   color: black;
 }
 table td:hover {
@@ -29,10 +38,22 @@ table td:hover {
   font-weight: bold;
 }
 
-.tablePicture img {
-  border-radius: 12px;
+.tablePicture button {
+  border-radius: 120px;
   width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
+
+.tablePicture button img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .tablePicture img:hover {
   cursor: pointer;
 }
