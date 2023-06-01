@@ -19,14 +19,14 @@ const lesson7 = new Assigment("Lesson 07","./Lesson 7/lazyload.html","Progressiv
 lessonList.push(lesson7)
 const lesson7b = new Assigment("Lesson 07","./Chamber/discover.html","Chamber Discover Page")
 lessonList.push(lesson7b)
+const lesson8 = new Assigment("Lesson 08","./Lesson 8/tablebuild.html","Table Build")
+lessonList.push(lesson8)
 const lesson9 = new Assigment("Lesson 09","","Link")
 lessonList.push(lesson9)
 const lesson10 = new Assigment("Lesson 10","","Link")
 lessonList.push(lesson10)
 const lesson11 = new Assigment("Lesson 11","","Link")
 lessonList.push(lesson11)
-const lesson12 = new Assigment("Lesson 12","","Link")
-lessonList.push(lesson12)
 
 const assigmentsList = document.getElementById("assigmentsList");
 

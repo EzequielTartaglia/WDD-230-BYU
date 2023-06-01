@@ -33,11 +33,11 @@ tr:hover > td {
   background: linear-gradient(#12a7e2, #6cffb5);
   color: black;
 }
-table td:hover {
+/* table td:hover {
   color: rgb(74, 74, 74);
   font-weight: bold;
 }
-
+ */
 .tablePicture button {
   border-radius: 120px;
   width: 40px;
