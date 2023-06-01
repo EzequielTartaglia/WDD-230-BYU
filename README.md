@@ -9,6 +9,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 - Chamber Home Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/
 - Book of Mormon - Top 25: https://ezequieltartaglia.github.io/wdd230/Lesson%205/bom.html
 - Progressive Loading of Images (lazyload): https://ezequieltartaglia.github.io/wdd230/Lesson%207/lazyload.html
+- Table build: https://ezequieltartaglia.github.io/wdd230/Lesson%208/tablebuild.html
 
 ## Codepen activities
 
