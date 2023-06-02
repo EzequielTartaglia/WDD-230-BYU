@@ -260,7 +260,7 @@ main {
   overflow: hidden;
   text-align: center;
 }
-#totalVisitorsContainer.active ~ #viewsButton{
+#totalVisitorsContainer.active ~ #viewsButton {
   display: block;
 }
 main button {
@@ -278,6 +278,10 @@ main button:hover {
   padding: 10px 15px;
   background-color: #ce7420;
   border-radius: 12px;
+  letter-spacing: 0.6px;
+}
+a {
+  text-decoration: none;
   letter-spacing: 0.6px;
 }
 
@@ -411,17 +415,20 @@ canvas {
 .gridAreaContent a {
   margin-top: 10px;
   font-size: 14px;
+  letter-spacing: 0px;
   text-decoration: none;
-  text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-fill-color: #00445a;
   transition: all 0.3s;
 }
 .gridAreaContent a:hover {
+  -webkit-text-fill-color: #ce7420;
+  letter-spacing: 0.6px;
+}
+.gridAreaContent button:hover a {
   margin-top: 10px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.8px;
   text-decoration: none;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-fill-color: #ce7420;
+  -webkit-text-fill-color: #ffffff;
 }
 #hero,
 .discoverPicture {
@@ -464,6 +471,7 @@ canvas {
   transform: translate(-50%, -50%);
   text-transform: capitalize;
   white-space: nowrap;
+  padding: 10px 20px;
   -webkit-text-fill-color: #ffffff;
 }
 #weather {
@@ -543,14 +551,16 @@ canvas {
   margin-top: 10px;
 }
 
+#hero button,
 #join button {
-  width: 100%;
-  margin-top: 30px;
   -webkit-text-stroke: 0px #ffffff;
   -webkit-text-fill-color: #ffffff;
   font-weight: bold;
 }
-
+#join button {
+  width: 100%;
+  margin-top: 30px;
+}
 .spotlights {
   position: relative;
   width: 100%;
@@ -679,10 +689,10 @@ footer a:hover {
   margin-bottom: -5px;
   margin: 0;
 }
-.fa-thumbtack{
+.fa-thumbtack {
   color: rgb(139, 12, 3);
 }
-.contacts a:hover .fa-thumbtack{
+.contacts a:hover .fa-thumbtack {
   color: #ce7420;
 }
 hr {
