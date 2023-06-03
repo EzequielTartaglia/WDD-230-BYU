@@ -418,6 +418,7 @@ canvas {
   letter-spacing: 0px;
   text-decoration: none;
   transition: all 0.3s;
+  color: #ffffff;
 }
 .gridAreaContent a:hover {
   -webkit-text-fill-color: #ce7420;
@@ -552,10 +553,11 @@ canvas {
 }
 
 #hero button,
-#join button {
+#join button a{
   -webkit-text-stroke: 0px #ffffff;
   -webkit-text-fill-color: #ffffff;
   font-weight: bold;
+  
 }
 #join button {
   width: 100%;
