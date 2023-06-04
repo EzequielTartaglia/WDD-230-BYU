@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Unlock endless business opportunities with our chamber. Join us today and thrive in a collaborative guild dedicated to driving growth and success."
+      content="Thanks page for new members of the Chamber"
     />
     <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
     <link
@@ -35,8 +35,9 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <title>Chamber Exchange | Join</title>
+    <title>Chamber Exchange | Thanks</title>
   </head>
+
   <body>
     <header>
       <div class="headerInfo">
@@ -89,79 +90,20 @@
         </ul>
       </div>
     </header>
+
     <main>
-      <div class="section-title" id="mainTitle">
-        <h1>Join to Chamber Exchange</h1>
-      </div>
-
-      <section class="form-section">
-        <form action="thankyou.html" method="post">
-          <label for="firstName">First Name <span id="asterisk">*</span></label>
-          <input type="text" name="firstName" id="firstName" required />
-
-          <label for="lastName">Last Name <span id="asterisk">*</span></label>
-          <input type="text" name="lastName" id="lastName" required />
-
-          <label for="positionTitle"
-            >Business Position Title
-            <span id="optionalInput">(optional)</span></label
-          >
-          <input
-            type="text"
-            name="positionTitle"
-            id="positionTitle"
-            title="Please enter a valid business position title (minimum 7 characters with only letters, hyphens, and spaces)."
-          />
-          <p id="validationMessage"></p>
-
-          <label for="email">Email <span id="asterisk">*</span></label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="example@example.com"
-            required
-          />
-
-          <label for="phone">Phone <span id="asterisk">*</span></label>
-          <input type="tel" name="phone" id="phone" required />
-
-          <label for="business"
-            >Business Name <span id="asterisk">*</span></label
-          >
-          <input type="tel" name="business" id="business" required />
-
-          <label for="membershipLevel">Membership</label>
-          <select name="membershipLevel" id="membershipLevel">
-            <option value="" selected disabled>Select Membership Level</option>
-            <option value="NP Membership">NP Membership</option>
-            <option value="Bronze Membership">Bronze Membership</option>
-            <option value="Silver Membership">Silver Membership</option>
-            <option value="Gold Membership">Gold Membership</option>
-          </select>
-
-          <label for="comments"
-            >Aditional comments
-            <span id="optionalInput">(optional)</span></label
-          >
-          <textarea name="comments" id="comments"></textarea>
-
-          <!-- Hidden field for current date and time -->
-          <input
-            type="hidden"
-            name="formLoadedDateTime"
-            id="formLoadedDateTime"
-          />
-
-          <p id="validationMessageSubmit"></p>
-          <input id="submitBtn" type="submit" value="Join to Chamber" disabled/>
-        </form>
-      </section>
       <div class="float-buttons home">
         <a href="../index.html" class="float-button home">
           <i class="fas fa-home"></i>
         </a>
       </div>
+
+      <div class="section-title" id="mainTitle">
+        <h1>Thanks for Join us <span id="joinedMember"></span>!</h1>
+      </div>
+      <section class="form-section">
+        <div id="newMember"></div>
+      </section>
     </main>
 
     <footer>
@@ -205,6 +147,6 @@
     </footer>
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    <script src="./scripts/formValidation.js" defer></script>
+    <script src="./scripts/formResponse.js" defer></script>
   </body>
 </html>

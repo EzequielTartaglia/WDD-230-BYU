@@ -284,7 +284,9 @@ a {
   text-decoration: none;
   letter-spacing: 0.6px;
 }
-
+#moreInfoLink{
+  color: #000000;
+}
 .grid-container {
   background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
   grid-column-gap: 4px;
@@ -553,11 +555,10 @@ canvas {
 }
 
 #hero button,
-#join button a{
+#join button a {
   -webkit-text-stroke: 0px #ffffff;
   -webkit-text-fill-color: #ffffff;
   font-weight: bold;
-  
 }
 #join button {
   width: 100%;
@@ -606,6 +607,106 @@ canvas {
 }
 /* Main discover end*/
 
+/* Main Join */
+.form-section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 70px;
+}
+form {
+  width: 70%;
+  max-width: 640px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px #000000;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+#asterisk {
+  color: #cf2c20;
+  font-weight: bold;
+}
+#optionalInput{
+  font-size: 12px;
+}
+input {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #080808;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.788);
+  color: rgb(0, 0, 0);
+}
+input[type="text"],input[type="email"],input[type="tel"],form select, form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+input:required {
+  border-right: 3px solid #cf2c20;
+}
+input:required:valid {
+  border: 1px solid green;
+  border-right: 3px solid green;
+}
+input:focus {
+  border-right: 0px solid #cf2c20;
+}
+input[type="submit"] {
+  background-color: #00445a;
+  border: none;
+  border-radius: 12px;
+  padding: 13px 20px;
+  text-decoration: none;
+  margin: 4px auto;
+  display: block;
+  cursor: pointer;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-text-stroke: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+input[type="submit"]:hover {
+  background-color: #ec8e35;
+  text-decoration: none;
+  margin: 4px auto;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+input[type="submit"]:disabled {
+  background-color: #b8b8b8;
+  -webkit-text-stroke: #757474;
+  -webkit-text-fill-color: #757474;  
+  cursor:default;
+  letter-spacing: 0px;
+}
+
+#validationMessage,#validationMessageSubmit{
+  color: #cf2c20;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;  
+}
+form select,form textarea{
+  border-radius: 6px;
+}
+/* Main Join end */
+
 /* Footer */
 footer {
   width: 100%;
@@ -618,7 +719,7 @@ footer {
   padding: 10px 10px;
   z-index: 1;
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 footer a {
@@ -655,7 +756,7 @@ footer a:hover {
 #footerLogoInfo {
   width: 100%;
   margin-top: 0;
-  margin-left: 0px;
+  margin-left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -201,6 +201,14 @@ canvas {
 }
 /* Main discover end*/
 
+/* Main Join */
+
+#submitBtn{
+  font-size: 10px;
+}
+
+/* Main Join end */
+
 /* Footer */
 footer {
   padding: 10px;
