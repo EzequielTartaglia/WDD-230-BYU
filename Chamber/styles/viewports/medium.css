@@ -43,7 +43,6 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 20px 20px;
-  height: 275px;
 }
 
 .toggleMenu li {
