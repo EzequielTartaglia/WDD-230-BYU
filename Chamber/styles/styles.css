@@ -631,7 +631,7 @@ label {
   color: #cf2c20;
   font-weight: bold;
 }
-#optionalInput{
+.optionalInput{
   font-size: 12px;
 }
 input {
