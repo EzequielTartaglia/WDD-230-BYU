@@ -21,12 +21,12 @@ const lesson7b = new Assigment("Lesson 07","./Chamber/discover.html","Chamber Di
 lessonList.push(lesson7b)
 const lesson8 = new Assigment("Lesson 08","./Lesson 8/tablebuild.html","Table Build")
 lessonList.push(lesson8)
-const lesson9 = new Assigment("Lesson 08","./Chamber/join.html","Chamber Join Page | Chamber Thanks Page (form's response)")
+const lesson8b = new Assigment("Lesson 08","./Chamber/join.html","Chamber Join Page | Chamber Thanks Page (form's response)")
+lessonList.push(lesson8b)
+const lesson9 = new Assigment("Lesson 09","","Link")
 lessonList.push(lesson9)
 const lesson10 = new Assigment("Lesson 10","","Link")
 lessonList.push(lesson10)
-const lesson11 = new Assigment("Lesson 11","","Link")
-lessonList.push(lesson11)
 
 const assigmentsList = document.getElementById("assigmentsList");
 
