@@ -627,7 +627,7 @@ label {
   display: inline-block;
   font-weight: bold;
 }
-#asterisk {
+.asterisk {
   color: #cf2c20;
   font-weight: bold;
 }
