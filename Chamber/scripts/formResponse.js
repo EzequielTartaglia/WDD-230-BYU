@@ -22,7 +22,7 @@ const newMember = document.getElementById("newMember")
 
 newMember.innerHTML = `
         <form class="gridAreaContent" style="padding: 20px; background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
-        border-radius: 2px; box-shadow: 3px 3px 30px #034c64; word-wrap: break-word; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px;">
+        border-radius: 2px; box-shadow: 3px 3px 15px #034c64; word-wrap: break-word; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px;">
             <label style="display: flex; align-items: center; font-weight: bold; color: #fff;" id="firstNameResponse"><u>Name</u>:</label>
             <span>${formatValue(firstName)}</span>
             <label style="display: flex; align-items: center; font-weight: bold; color: #fff;" id="lastNameResponse"><u>Last Name</u>:</label>
