@@ -438,13 +438,17 @@ canvas {
   position: relative;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
 }
-.discoverPicture:hover img {
-  opacity: 0.1;
-  transition: all 0.5s ease-in-out;
+
+.discoverPicture img {
+  transition: opacity 0.5s ease-in-out;
 }
 
-.discoverPicture:hover .gridAreatitle {
+.discoverPicture:hover img {
   opacity: 1;
+}
+
+.discoverPicture:hover img:hover {
+  opacity: 0.2;
 }
 
 #hero-img {
