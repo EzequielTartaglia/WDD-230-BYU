@@ -437,25 +437,29 @@ canvas {
 .discoverPicture {
   position: relative;
   background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
-}
+  transition: all 0.5s ease-in-out;
 
-.discoverPicture img {
-  transition: opacity 0.5s ease-in-out;
 }
-
 .discoverPicture:hover img {
+  opacity: 0.1;
+  transition: all 0.5s ease-in-out;
+}
+
+.discoverPicture:hover .gridAreatitle {
   opacity: 1;
+}
+.discoverPicture:hover img {
+  opacity: 0.1;
 }
 
 .discoverPicture:hover img:hover {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 #hero-img {
   margin-top: -110px;
   min-height: 720px;
 }
-
 
 /* Image for week 6 */
 #hero img,
