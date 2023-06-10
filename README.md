@@ -12,7 +12,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 - Table build: https://ezequieltartaglia.github.io/wdd230/Lesson%208/tablebuild.html
 - Chamber Discover Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/discover.html
 - Chamber Join Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/join.html
-
+- Latter-day Prophets (API): https://ezequieltartaglia.github.io/wdd230/Lesson%209/prophets.html
 ## Codepen activities
 
 W01 Activity: Applied JavaScript: https://codepen.io/ezequieltartaglia/pen/OJBNwdZ
