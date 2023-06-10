@@ -32,7 +32,35 @@ const displayProphets = (dataReceived) => {
 
     // Build the image portrait by setting all the relevant attribute
     portrait.setAttribute('src', object.imageurl);
-    portrait.setAttribute('alt', `Portait of ${object.name} ${object.lastname}`);
+    let termination;
+    switch (object.order) {
+      
+      case 1:
+      case 11:
+      case 21:
+        termination = "st"
+        portrait.setAttribute('alt', `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`);
+        break;
+
+      case 2:
+      case 12:
+      case 22:
+          termination = "nd"
+        portrait.setAttribute('alt', `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`);
+          break;
+
+      case 3:
+      case 13:
+      case 23:
+        termination = "rd"
+        portrait.setAttribute('alt', `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`);
+          break;  
+
+      default:
+        termination = "th"
+        portrait.setAttribute('alt', `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`);
+          break;
+    }
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
