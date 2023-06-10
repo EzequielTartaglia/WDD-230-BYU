@@ -23,7 +23,7 @@ const lesson8 = new Assigment("Lesson 08","./Lesson 8/tablebuild.html","Table Bu
 lessonList.push(lesson8)
 const lesson8b = new Assigment("Lesson 08","./Chamber/join.html","Chamber Join Page | Chamber Thanks Page (form's response)")
 lessonList.push(lesson8b)
-const lesson9 = new Assigment("Lesson 09","","Link")
+const lesson9 = new Assigment("Lesson 09","./Lesson 8/prophets.html","Latter-day Prophets (API)")
 lessonList.push(lesson9)
 const lesson10 = new Assigment("Lesson 10","","Link")
 lessonList.push(lesson10)
