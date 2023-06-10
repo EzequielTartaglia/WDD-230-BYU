@@ -2,15 +2,20 @@
 const url =
   "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 
-//Manipulate the data and save in the array
-async function getProphetData(url) {
+// Get the data
+const getProphetsData = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  displayProphets(data.prophets);
-}
+  return data.prophets;
+};
 
-getProphetData(url);
+// Process the information (to manipulate)
+const fetchDataAndDisplay = async () => {
+  const prophets = await getProphetsData(url);
+  displayProphets(prophets);
+};
 
+// Manipulate the data result
 const displayProphets = (dataReceived) => {
   const cardsContainer = document.getElementById("cardsContainer"); // select the output container element
 
@@ -34,45 +39,23 @@ const displayProphets = (dataReceived) => {
     // Build the image portrait by setting all the relevant attribute
     portrait.setAttribute("src", object.imageurl);
     let termination;
-    switch (object.order) {
-      case 1:
-      case 11:
-      case 21:
-        termination = "st";
-        portrait.setAttribute(
-          "alt",
-          `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`
-        );
-        break;
 
-      case 2:
-      case 12:
-      case 22:
-        termination = "nd";
-        portrait.setAttribute(
-          "alt",
-          `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`
-        );
-        break;
-
-      case 3:
-      case 13:
-      case 23:
-        termination = "rd";
-        portrait.setAttribute(
-          "alt",
-          `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`
-        );
-        break;
-
-      default:
-        termination = "th";
-        portrait.setAttribute(
-          "alt",
-          `Portait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`
-        );
-        break;
+    // Handle special cases for st,nd,rd and th terminations
+    if (object.order % 10 === 1 && object.order !== 11) {
+      termination = "st";
+    } else if (object.order % 10 === 2 && object.order !== 12) {
+      termination = "nd";
+    } else if (object.order % 10 === 3 && object.order !== 13) {
+      termination = "rd";
+    } else {
+      termination = "th";
     }
+
+    portrait.setAttribute(
+      "alt",
+      `Portrait of ${object.name} ${object.lastname} - ${object.order}${termination} Latter-day President`
+    );
+
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute("width", "340");
     portrait.setAttribute("height", "440");
@@ -86,3 +69,5 @@ const displayProphets = (dataReceived) => {
     cardsContainer.appendChild(card);
   }); // end of forEach loop
 }; // end of function expression
+
+fetchDataAndDisplay();
