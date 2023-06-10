@@ -9,7 +9,7 @@
 
 body {
   background-color: rgb(40, 41, 41);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 header,
 footer {
@@ -25,17 +25,17 @@ footer {
   height: auto;
 }
 
-main{
+main {
   max-width: 1400px;
   width: 95%;
-  margin: auto; 
+  margin: auto;
   text-align: center;
   justify-content: center;
   align-items: center;
-  color:#dfffdd;
+  color: #dfffdd;
 }
 
-#floatButtonContainer{
+#floatButtonContainer {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -91,7 +91,6 @@ section p {
   color: #b4b4b4;
   margin: 0;
   padding: 3px 20px;
-
 }
 
 /* Footer styles */
@@ -113,7 +112,7 @@ footer a:hover {
   font-weight: 500;
 }
 
-#firstLineFooter{
+#firstLineFooter {
   padding: 0;
   color: #0a0c0c;
 }
@@ -125,7 +124,6 @@ footer a:hover {
   font-style: italic;
   padding: 0;
 }
-
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
