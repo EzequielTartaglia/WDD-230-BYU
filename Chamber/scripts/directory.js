@@ -49,13 +49,13 @@ const displayProphets = (dataReceived) => {
 
 	//Manipulate the DOM (card)
 	card.innerHTML= `<h2>${name}</h2>
-					 <p>${email}</p>
-					 <p>+${phone} | <a href="${url}">Website</a></p>
-					 <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
-					 <p>Membership: ${membership_level}</p>
-					 <p>Aditional Information: ${additional_information}</p>
-					 `
-
+                  <p class="membership-level">Membership: ${membership_level}</p>
+                  <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
+                  <p class="aditional-info">${additional_information}</p>
+                  <hr>
+                  <p class="email">${email}</p>
+                  <p class="website">+${phone} | <a href="${url}">Website</a></p>
+					        `
     // Append the section(card) with the created elements
     dataContainer.appendChild(card);
   }); // end of forEach loop
