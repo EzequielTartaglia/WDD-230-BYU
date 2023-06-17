@@ -29,7 +29,7 @@ const apiFetch = async() => {
 
     weatherApi.innerHTML=`
                         <h2>OpenWeatherMap.org API Test</h2>
-                        <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
+                        <p>The current temperature in <span id="current-name"></span>, Alaska is <span id="current-temp"></span> </p>
                         <h3>Current Condition Icon</h3>
                         <figure>
                           <img src="" alt="" id="weather-icon" />
@@ -38,11 +38,14 @@ const apiFetch = async() => {
                         `
     //Get the elements made in the innerHTML
     const currentTemp = document.querySelector('#current-temp');
+    const currentName = document.querySelector('#current-name');
     const weatherIcon = document.querySelector('#weather-icon');
     const captionDesc = document.querySelector('figcaption');    
     
     //Manipulate the elements made in the innerHTML
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)} &deg;F</strong>`;
+  
+    currentName.innerHTML = `<strong>${weatherData.name}</strong>`;
       
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
