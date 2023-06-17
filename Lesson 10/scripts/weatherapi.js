@@ -10,6 +10,7 @@ const lon = -147.7164;
 const apiKey = "1c7bef1e6ec014e641fdcf262cd7e6f2";
 const updatedUrl = url.replace("{lat}", lat).replace("{lon}", lon).replace("{API_key}",apiKey);
 
+//Get the data
 const apiFetch = async() => {
     try {
       const response = await fetch(updatedUrl);
@@ -25,9 +26,8 @@ const apiFetch = async() => {
     }
   }
   
-  apiFetch();
-
-const displayResults = (weatherData) => {
+  //Display the data
+  const displayResults = (weatherData) => {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
@@ -41,3 +41,7 @@ const displayResults = (weatherData) => {
 
     captionDesc.textContent = descCapitalized;
   }
+
+  //Display the API
+  apiFetch();
+
