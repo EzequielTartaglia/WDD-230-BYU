@@ -15,6 +15,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 - Progressive Loading of Images (lazyload): https://ezequieltartaglia.github.io/wdd230/Lesson%207/lazyload.html
 - Table build: https://ezequieltartaglia.github.io/wdd230/Lesson%208/tablebuild.html
 - Latter-day Prophets (API): https://ezequieltartaglia.github.io/wdd230/Lesson%209/prophets.html
+- Weather (API): https://ezequieltartaglia.github.io/wdd230/Lesson%2010/weather-api.html
 
 ## Codepen activities
 
