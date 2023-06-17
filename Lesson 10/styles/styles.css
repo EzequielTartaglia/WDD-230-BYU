@@ -32,7 +32,7 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: #dfffdd;
+  color: #f5f5f5;
 }
 
 #floatButtonContainer {
@@ -44,6 +44,10 @@ main {
 h1 {
   text-align: center;
   color: #333;
+  margin: 1rem 0;
+}
+h2,h3{
+  text-align: center;
   margin: 1rem 0;
 }
 
