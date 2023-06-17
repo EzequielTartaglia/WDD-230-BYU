@@ -32,8 +32,12 @@ const displayResults = (weatherData) => {
   
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
-  
+    
+    //Capitalize the words in the description
+    const descCapitalized = desc.replace(/\b\w/g, c => c.toUpperCase());
+
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+    weatherIcon.setAttribute('alt', descCapitalized);
+
+    captionDesc.textContent = descCapitalized;
   }
