@@ -27,6 +27,8 @@ const lesson9a = new Assigment("Lesson 09","./Lesson 9/prophets.html","Latter-da
 lessonList.push(lesson9a)
 const lesson9b = new Assigment("Lesson 09","./Chamber/directory.html","Chamber Directory Page")
 lessonList.push(lesson9b)
+const lesson10 = new Assigment("Lesson 10","./Lesson 10/weather-api.html","Weather API")
+lessonList.push(lesson10)
 
 const assigmentsList = document.getElementById("assigmentsList");
 
