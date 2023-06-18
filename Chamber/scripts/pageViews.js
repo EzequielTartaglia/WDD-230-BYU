@@ -66,28 +66,28 @@ else {
       },
     }).showToast();
   }
-  
   // More than the first visit of the user
   else {
+    /* If the user connect to the website other time in the same day  */
+    if (daysPassed === 0) {
+      Toastify({
+        text: `Welcome back to our Chamber website! We're glad to see you again today.`,
+        className: "info",
+        style: {
+          background: "linear-gradient(to right, #00445a, #129ecc, #00445a)",
+        },
+      }).showToast();
+    }    
     /* If the user connects to the website on a different day */
-    if (!isNaN(daysPassed)) {
+    else if (!isNaN(daysPassed)) {
       Toastify({
         text: `Welcome back to our Chamber website! We're glad to see you again after ${daysPassed} days.`,
         className: "info",
         style: {
           background: "linear-gradient(to right, #00445a, #129ecc, #00445a)",
         },
-      }).showToast();
-    } else {
-      Toastify({
-        text: "Welcome back to our Chamber website!",
-        className: "info",
-        style: {
-          background: "linear-gradient(to right, #00445a, #129ecc, #00445a)",
-        },
-      }).showToast();
-    }
-  }
+    }).showToast();
+  }}
 }
 
 // Get the updated value from localStorage
