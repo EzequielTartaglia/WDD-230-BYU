@@ -49,7 +49,7 @@ const displayResults = (weatherData) => {
                           <ul>
                             <li>
                               <span>Wind speed:</span>
-                              <span id="windSpeed">2.5 km/h</span>
+                              <span id="windSpeed"></span>
                             </li>
                             <li>
                               <span>Wind chill:</span>
@@ -60,29 +60,31 @@ const displayResults = (weatherData) => {
                       </div>
                         `;
   //Get the elements made in the innerHTML
-  const currentTemp = document.querySelector("#weatherDegree");
-  const weatherIcon = document.querySelector("#weatherStatusImg");
-  const captionDesc = document.querySelector("#weatherStatus");
+  const currentTemp = document.getElementById("weatherDegree");
+  const weatherIcon = document.getElementById("weatherStatusImg");
+  const captionDesc = document.getElementById("weatherStatus");
+  const windSpeed = document.getElementById("windSpeed");
 
   //Manipulate the elements made in the innerHTML
 
+  //Grades
   //convert °f to °c
   const celsiusTemperature = (weatherData.main.temp.toFixed(0) / 9) * 5 - 32;
-
   currentTemp.innerHTML = `<strong>${celsiusTemperature.toFixed(
     0
   )} &deg;C</strong>`;
 
+  //Image and description
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
-
   //Capitalize the words in the description
   const descCapitalized = desc.replace(/\b\w/g, (c) => c.toUpperCase());
-
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", descCapitalized);
-
   captionDesc.textContent = descCapitalized;
+
+  //Wind spped
+  windSpeed.textContent = `${weatherData.wind.speed} km/h`;
 };
 
 //Display the API
