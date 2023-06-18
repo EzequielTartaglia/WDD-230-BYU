@@ -28,3 +28,4 @@ if (fahrenheitTemperature >= 50 && windSpeedMph > 3.0) {
 } else {
   windChillSpan.textContent = "N/A";
 }
+

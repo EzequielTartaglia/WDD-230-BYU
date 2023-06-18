@@ -31,33 +31,33 @@ const displayResults = (weatherData) => {
   const weatherApi = document.getElementById("weather");
 
   weatherApi.innerHTML = `
-    <div class="gridAreatitle">
-    <h2>Weather</h2>
-  </div>
-  <div class="gridAreaContent">
-    <div class="grades">
-      <img
-        src=""
-        alt=""
-        id="weatherStatusImg"
-      />
-      <span id="weatherDegree">33°C</span>
-    </div>
-    <span id="weatherStatus">Partly Cloudy</span>
-    <hr />
-    <div class="stadistics">
-      <ul>
-        <li>
-          <span>Wind speed:</span>
-          <span id="windSpeed">2.5 km/h</span>
-        </li>
-        <li>
-          <span>Wind chill:</span>
-          <span id="windChill">N/A</span>
-        </li>
-      </ul>
-    </div>
-  </div>
+                        <div class="gridAreatitle">
+                        <h2>Weather</h2>
+                      </div>
+                      <div class="gridAreaContent">
+                        <div class="grades">
+                          <img
+                            src=""
+                            alt=""
+                            id="weatherStatusImg"
+                          />
+                          <span id="weatherDegree"></span>
+                        </div>
+                        <span id="weatherStatus"></span>
+                        <hr />
+                        <div class="stadistics">
+                          <ul>
+                            <li>
+                              <span>Wind speed:</span>
+                              <span id="windSpeed">2.5 km/h</span>
+                            </li>
+                            <li>
+                              <span>Wind chill:</span>
+                              <span id="windChill">N/A</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                         `;
   //Get the elements made in the innerHTML
   const currentTemp = document.querySelector("#weatherDegree");
@@ -65,9 +65,13 @@ const displayResults = (weatherData) => {
   const captionDesc = document.querySelector("#weatherStatus");
 
   //Manipulate the elements made in the innerHTML
-  currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(
+
+  //convert °f to °c
+  const celsiusTemperature = (weatherData.main.temp.toFixed(0) / 9) * 5 - 32;
+
+  currentTemp.innerHTML = `<strong>${celsiusTemperature.toFixed(
     0
-  )} &deg;F</strong>`;
+  )} &deg;C</strong>`;
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
