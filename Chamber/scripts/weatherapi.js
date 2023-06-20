@@ -71,9 +71,9 @@ const displayResults = (weatherData) => {
   //Grades
   //convert °f to °c
   const celsiusTemperature = (weatherData.main.temp.toFixed(0) / 9) * 5 - 32;
-  currentTemp.innerHTML = `<strong>${celsiusTemperature.toFixed(
+  currentTemp.innerHTML = `<span>${celsiusTemperature.toFixed(
     0
-  )} &deg;C</strong>`;
+  )} &deg;C</span>`;
 
   //Image and description
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
