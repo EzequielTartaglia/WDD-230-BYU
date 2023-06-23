@@ -726,6 +726,14 @@ form select,form textarea{
 }
 /* Main Join end */
 
+/* Main Contact */
+.content-section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 70px;
+}
+/* Main contact end */
+
 /* Footer */
 footer {
   width: 100%;
