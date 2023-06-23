@@ -136,11 +136,6 @@ section a {
   .list section:nth-child(odd) {
 	background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
   }
-  
-img {
-	height: 75px;
-	max-width: 100%; /* Las imágenes pueden ser difíciles - Seattle */
-}
 
 /* Media Queries */
 

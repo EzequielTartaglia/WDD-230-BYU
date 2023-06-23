@@ -796,13 +796,12 @@ footer a:hover {
   margin-bottom: 3px;
 }
 #logoFooter {
-  width: 400px;
+  width:  400px;
   margin-right: -120px;
   padding-right: 50px;
   margin-top: -100px;
   margin-bottom: -120px;
 }
-
 .contacts {
   margin-top: 0px;
   display: flex;
