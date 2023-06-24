@@ -28,7 +28,9 @@
     height: 400px;
     }
   #GoogleMaps:hover{
-      transition: all 0.2s ease-in-out;
-      scale: 1.05;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
   }
   
