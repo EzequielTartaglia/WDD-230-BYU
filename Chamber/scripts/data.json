@@ -111,14 +111,14 @@
       "additional_information": "Trading Academy is a leading provider of innovative certifications in the trading and finances industry."
     },
     {
-      "name": "ABC Corporation",
-      "address": "123 Main Street",
-      "email": "abc_corp@example.com",
+      "name": "Unity Health",
+      "address": "1998 Saint George",
+      "email": "info@unityhealth.com",
       "phone": "123456789",
-      "url": "https://www.abccorp.com",
-      "image": "./images/Directory/image3.webp",
-      "membership_level": "Platinum",
-      "additional_information": "ABC Corporation is a leading provider of innovative solutions in the technology industry."
+      "url": "https://www.unityhealth.com",
+      "image": "./images/Directory/image12.webp",
+      "membership_level": "Gold",
+      "additional_information": "Unity Health is a leading provider of innovative solutions in the health and medicine industry."
     }
   ]
 }
