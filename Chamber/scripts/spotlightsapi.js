@@ -20,74 +20,50 @@ const fetchDataAndDisplay = async () => {
 const displayCompanies = (dataReceived) => {
   const spotlightsContainer = document.getElementById("spotlights");
 
-  dataReceived.forEach(({name,email,phone,image,url,membership_level,additional_information}) => {
-
-    // Display only companies with silver or gold membership_level
-    if (membership_level === "Silver" | membership_level === "Gold") {
-
-    // Create elements to add to the spotlightsContainer element
-    let spotlightOne = document.createElement("div");
-    spotlightOne.setAttribute('class','gridArea6');
-    spotlightOne.setAttribute('id','spotlightOne');
-    
-    let spotlightTwo = document.createElement("div");
-    spotlightTwo.setAttribute('class','gridArea7');
-    spotlightTwo.setAttribute('id','spotlightTwo');
-
-    let spotlightThree = document.createElement("div");
-    spotlightThree.setAttribute('class','gridArea8');
-    spotlightThree.setAttribute('id','spotlightThree');
-
-	//Manipulate the DOM (card)
-	spotlightOne.innerHTML= `<div class="gridAreatitle">
-                          <h2>${name}</h2>
-                        </div>
-                        <div class="gridAreaContent">
-                          <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
-                          <p class="spotlightsSlogan">
-                          <p class="aditional-info">${additional_information}</p>
-                          </p>
-                          <hr />
-                          <p class="email">${email}</p>
-                          <p class="website">+${phone} | <a href="${url}">Website</a></p>
-                        </div>
-                        `
-	//Manipulate the DOM (card)
-	spotlightTwo.innerHTML= `<div class="gridAreatitle">
-                          <h2>${name}</h2>
-                        </div>
-                        <div class="gridAreaContent">
-                          <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
-                          <p class="spotlightsSlogan">
-                          <p class="aditional-info">${additional_information}</p>
-                          </p>
-                          <hr />
-                          <p class="email">${email}</p>
-                          <p class="website">+${phone} | <a href="${url}">Website</a></p>
-                        </div>
-					              `
-	//Manipulate the DOM (card)
-	spotlightThree.innerHTML= `<div class="gridAreatitle">
-                            <h2>${name}</h2>
-                          </div>
-                          <div class="gridAreaContent">
-                            <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
-                            <p class="spotlightsSlogan">
-                            <p class="aditional-info">${additional_information}</p>
-                            </p>
-                            <hr />
-                            <p class="email">${email}</p>
-                            <p class="website">+${phone} | <a href="${url}">Website</a></p>
-                          </div>
-                            `    
-    
-    // Append the section(card) with the created elements
-    spotlightsContainer.appendChild(spotlightOne);
-    spotlightsContainer.appendChild(spotlightTwo);
-    spotlightsContainer.appendChild(spotlightThree);
+  // Function to shuffle the array using Fisher-Yates algorithm
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-   
-  }); // end of forEach loop
+    return array;
+  };
+
+  // Filter and shuffle the companies
+  const filteredCompanies = dataReceived.filter(
+    ({ membership_level }) =>
+      membership_level === "Silver" || membership_level === "Gold"
+  );
+  const shuffledCompanies = shuffleArray(filteredCompanies);
+
+  // Display the first 3 shuffled companies
+  const selectedCompanies = shuffledCompanies.slice(0, 3);
+
+  selectedCompanies.forEach(
+    ({ name, email, phone, image, url, additional_information }, i) => {
+      // Create elements to add to the spotlightsContainer element
+      let spotlight = document.createElement("div");
+      spotlight.setAttribute("class", `gridArea${i + 6}`);
+      spotlight.setAttribute("id", `spotlight${i + 1}`);
+      spotlight.innerHTML = `
+    <div class="gridAreatitle">
+      <h2>${name}</h2>
+    </div>
+    <div class="gridAreaContent">
+      <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
+      <p class="spotlightsSlogan">
+        <p class="aditional-info">${additional_information}</p>
+      </p>
+      <hr />
+      <p class="email">${email}</p>
+      <p class="website">+${phone} | <a href="${url}">Website</a></p>
+    </div>
+  `;
+
+      // Append the spotlight element to the spotlightsContainer
+      spotlightsContainer.appendChild(spotlight);
+    }
+  ); // end of forEach loop
 }; // end of function expression
 
 fetchDataAndDisplay();
