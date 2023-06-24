@@ -9,6 +9,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 - Chamber Home Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/
 - Chamber Directory Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/directory.html
 - Chamber Join Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/join.html
+- Chamber Contact Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/contact.html
 
 - Design Principles Document:  https://ezequieltartaglia.github.io/wdd230/Lesson%202/design-principles.html
 - Book of Mormon - Top 25: https://ezequieltartaglia.github.io/wdd230/Lesson%205/bom.html

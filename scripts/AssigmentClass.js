@@ -29,6 +29,8 @@ const lesson9b = new Assigment("Lesson 09","./Chamber/directory.html","Chamber D
 lessonList.push(lesson9b)
 const lesson10 = new Assigment("Lesson 10","./Lesson 10/weather-api.html","Weather API")
 lessonList.push(lesson10)
+const lesson11 = new Assigment("Lesson 11","./Chamber/contact.html","Chamber Contact Page | Chamber Contact Success Page (form's response)")
+lessonList.push(lesson11)
 
 const assigmentsList = document.getElementById("assigmentsList");
 
