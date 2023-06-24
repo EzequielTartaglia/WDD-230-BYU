@@ -89,6 +89,36 @@
       "image": "./images/Directory/image9.webp",
       "membership_level": "Silver",
       "additional_information": "Clark Enterprises is a family-owned business with a rich heritage in the hospitality industry."
+    },
+    {
+      "name": "Safe wallet",
+      "address": "123 Safe Street",
+      "email": "hello@safewallet.com",
+      "phone": "999999999999",
+      "url": "https://www.abccorp.com",
+      "image": "./images/Directory/image10.webp",
+      "membership_level": "Gold",
+      "additional_information": "Safe wallet is a leading provider of innovative software solutions for businesses investment."
+    },
+    {
+      "name": "ABC Corporation",
+      "address": "123 Main Street",
+      "email": "abc_corp@example.com",
+      "phone": "123456789",
+      "url": "https://www.safewallet.com",
+      "image": "./images/Directory/image3.webp",
+      "membership_level": "Platinum",
+      "additional_information": "ABC Corporation is a leading provider of innovative solutions in the technology industry."
+    },
+    {
+      "name": "ABC Corporation",
+      "address": "123 Main Street",
+      "email": "abc_corp@example.com",
+      "phone": "123456789",
+      "url": "https://www.abccorp.com",
+      "image": "./images/Directory/image3.webp",
+      "membership_level": "Platinum",
+      "additional_information": "ABC Corporation is a leading provider of innovative solutions in the technology industry."
     }
   ]
 }
