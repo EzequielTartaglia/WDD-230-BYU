@@ -21,7 +21,9 @@ const displayCompanies = (dataReceived) => {
   const spotlightsContainer = document.getElementById("spotlights");
 
   dataReceived.forEach(({name,email,phone,image,url,membership_level,additional_information}) => {
-    // Create elements to add to the spotlightsContainer element
+
+    if (membership_level === "Silver" | membership_level === "Gold") {
+       // Create elements to add to the spotlightsContainer element
     let spotlightOne = document.createElement("div");
     spotlightOne.setAttribute('class','gridArea6');
     spotlightOne.setAttribute('id','spotlightOne');
@@ -81,6 +83,8 @@ const displayCompanies = (dataReceived) => {
     spotlightsContainer.appendChild(spotlightOne);
     spotlightsContainer.appendChild(spotlightTwo);
     spotlightsContainer.appendChild(spotlightThree);
+    }
+   
   }); // end of forEach loop
 }; // end of function expression
 
