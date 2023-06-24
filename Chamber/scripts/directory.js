@@ -36,11 +36,11 @@ const getCompaniesData = async (url) => {
 // Process the information (to manipulate)
 const fetchDataAndDisplay = async () => {
   const companies = await getCompaniesData(url);
-  displayProphets(companies);
+  displayCompanies(companies);
 };
 
 // Manipulate the data result
-const displayProphets = (dataReceived) => {
+const displayCompanies = (dataReceived) => {
   const dataContainer = document.getElementById("dataContainer"); // select the output container element
 
   dataReceived.forEach(({name,email,phone,image,url,membership_level,additional_information}) => {
