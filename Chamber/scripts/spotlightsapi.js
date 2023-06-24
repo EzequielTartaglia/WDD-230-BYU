@@ -22,8 +22,10 @@ const displayCompanies = (dataReceived) => {
 
   dataReceived.forEach(({name,email,phone,image,url,membership_level,additional_information}) => {
 
+    // Display only companies with silver or gold membership_level
     if (membership_level === "Silver" | membership_level === "Gold") {
-       // Create elements to add to the spotlightsContainer element
+
+    // Create elements to add to the spotlightsContainer element
     let spotlightOne = document.createElement("div");
     spotlightOne.setAttribute('class','gridArea6');
     spotlightOne.setAttribute('id','spotlightOne');
