@@ -101,14 +101,14 @@
       "additional_information": "Safe wallet is a leading provider of innovative software solutions for businesses investment."
     },
     {
-      "name": "ABC Corporation",
-      "address": "123 Main Street",
-      "email": "abc_corp@example.com",
+      "name": "Trading Academy",
+      "address": "462 Main Street",
+      "email": "info@tradingacademy.com",
       "phone": "123456789",
-      "url": "https://www.safewallet.com",
-      "image": "./images/Directory/image3.webp",
-      "membership_level": "Platinum",
-      "additional_information": "ABC Corporation is a leading provider of innovative solutions in the technology industry."
+      "url": "https://www.tradingacademy.com",
+      "image": "./images/Directory/image11.webp",
+      "membership_level": "Silver",
+      "additional_information": "Trading Academy is a leading provider of innovative certifications in the trading and finances industry."
     },
     {
       "name": "ABC Corporation",
