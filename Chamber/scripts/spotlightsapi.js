@@ -20,7 +20,7 @@ const fetchDataAndDisplay = async () => {
 const displayCompanies = (dataReceived) => {
   const spotlightsContainer = document.getElementById("spotlights");
 
-  dataReceived.forEach(({name,email,phone,image,url,additional_information}) => {
+  dataReceived.forEach(({name,email,phone,image,url,membership_level,additional_information}) => {
     // Create elements to add to the spotlightsContainer element
     let spotlightOne = document.createElement("div");
     spotlightOne.setAttribute('class','gridArea6');
