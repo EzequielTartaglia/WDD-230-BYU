@@ -107,11 +107,51 @@
         <section class="google-maps-section">
           <h2>Visit us</h2>
           <section class="content-section" >
-            <iframe id="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2907270.950743612!2d-101.12421605118543!3d32.19572224126765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas%2C%20EE.%20UU.!3m2!1d31.9685988!2d-99.9018131!5e0!3m2!1ses!2sar!4v1687565887788!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
+            <iframe id="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3360.5516200856982!2d-96.88168722370065!3d32.61813069208787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x864e922ac2d6efd3%3A0xa6baa1affc7e7a5c!2s10%20St%20George%20Pl%2C%20DeSoto%2C%20TX%2075115%2C%20EE.%20UU.!3m2!1d32.6181262!2d-96.87911229999999!5e0!3m2!1ses!2sar!4v1687569517019!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </section>
         </section>
         <section class="google-maps-section"></section>
         
+        <div class="section-title" id="mainTitle">
+          <h1>Contact Information</h1>
+        </div>
+
+        <section class="form-section">
+          <form action="contactSuccess.html" method="post">
+            <label for="firstName">First Name <span class="asterisk">*</span></label>
+            <input type="text" name="firstName" id="firstName" required />
+  
+            <label for="lastName">Last Name <span class="asterisk">*</span></label>
+            <input type="text" name="lastName" id="lastName" required />
+  
+            <label for="email">Email <span class="asterisk">*</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+              required
+            />
+  
+            <label for="phone">Phone <span class="asterisk">*</span></label>
+            <input type="tel" name="phone" id="phone" required />
+
+            <label for="comments"
+              >Aditional comments
+              <span class="optionalInput">(optional)</span></label
+            >
+            <textarea name="comments" id="comments"></textarea>
+  
+            <!-- Hidden field for current date and time -->
+            <input
+              type="hidden"
+              name="formLoadedDateTime"
+              id="formLoadedDateTime"
+            />
+  
+            <p id="validationMessageSubmit"></p>
+            <input id="submitBtn" type="submit" value="Contact Us" disabled/>
+          </form>
+        </section>
 
       </main>
       <footer>
@@ -135,7 +175,7 @@
             <p>info@chamberexchange.org</p>
             <p>(+1) 224 857 965</p>
             <p>
-              <a href="https://goo.gl/maps/z27JExx2pALfbNLCA" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>
+              <a href="https://goo.gl/maps/stS17myutCjhMuL89" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>
             </p>
           </div>
           <hr />
@@ -155,5 +195,6 @@
       </footer>
       <script src="./scripts/script.js" defer></script>
       <script src="./scripts/index.js" defer></script>
+      <script src="./scripts/contactFormValidation.js" defer></script>
   </body>
 </html>

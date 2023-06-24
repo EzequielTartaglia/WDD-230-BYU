@@ -1,10 +1,7 @@
 const firstNameInput = document.getElementById("firstName"); //Required
 const lastNameInput = document.getElementById("lastName"); //Required
-const positionTitleInput = document.getElementById("positionTitle"); //Optional
 const emailInput = document.getElementById("email"); //Required
 const phoneInput = document.getElementById("phone"); //Required
-const membershipLevel = document.getElementById("membershipLevel"); //Selector
-const businessNameInput = document.getElementById("business"); //Required
 const comments = document.getElementById("comments"); //Optional
 
 const submitButton = document.getElementById("submitBtn");
@@ -42,25 +39,6 @@ lastNameInput.addEventListener("input", () => {
   }
 });
 
-/* Position Title */
-const validateBusinessPosition = (title) => {
-  const patron = /^[a-zA-Z\s\-]{7,}$/;
-  return patron.test(title);
-};
-positionTitleInput.addEventListener("input", () => {
-  const title = positionTitleInput.value;
-  const isValid = validateBusinessPosition(title);
-
-  if (isValid) {
-    submitButton.disabled = false;
-    document.getElementById("validationMessage").textContent = "";
-  } else {
-    submitButton.disabled = true;
-    document.getElementById("validationMessage").textContent =
-      "Please enter a valid business position title (minimum 7 characters with only letters, hyphens, and spaces).";
-  }
-});
-
 /* Email */
 const validateEmail = (email) => {
   const patron = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -93,35 +71,17 @@ phoneInput.addEventListener("input", () => {
   }
 });
 
-/* Business Name */
-const validateBusinessName = (businessName) => {
-  const patron = /^[a-zA-Z\s\-]{7,}$/;
-  return patron.test(businessName);
-};
-businessNameInput.addEventListener("input", () => {
-  const businessName = businessNameInput.value.trim();
-  const isValid = validatefirstName(businessName);
-
-  if (isValid || businessName.length === 0) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
-});
-
 /* Submit button */
 const firstName = firstNameInput.value.trim();
 const lastName = lastNameInput.value.trim();
 const email = emailInput.value.trim();
 const phone = phoneInput.value.trim();
-const businessName = businessNameInput.value.trim();
 
 const completedFields =
   firstName !== "" &&
   lastName !== "" &&
   email !== "" &&
-  phone !== "" &&
-  businessName !== "";
+  phone !== "";
 
 if (completedFields) {
   submitButton.disabled = false;
@@ -135,11 +95,8 @@ submitButton.addEventListener("click", (e) => {
 
   const firstName = firstNameInput.value;
   const lastName = lastNameInput.value;
-  const positionTitle = positionTitleInput.value;
   const email = emailInput.value;
   const phone = phoneInput.value;
-  const membershipLevelChosen = membershipLevel.value;
-  const businessName = businessNameInput.value;
   const commentsAdded = comments.value;
 
   /* Time */
@@ -160,18 +117,14 @@ submitButton.addEventListener("click", (e) => {
   const formattedDateTime = `${formattedDate} ${formattedTime}`;
 
   /* Send the URL */
-  const url = `thankyou.html?firstName=${encodeURIComponent(
+  const url = `contactSuccess.html?firstName=${encodeURIComponent(
     firstName
   )}&lastName=${encodeURIComponent(
     lastName
-  )}&positionTitle=${encodeURIComponent(
-    positionTitle
-  )}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(
+  )}&email=${encodeURIComponent(
+    email
+  )}&phone=${encodeURIComponent(
     phone
-  )}&membershipLevel=${encodeURIComponent(
-    membershipLevelChosen
-  )}&businessName=${encodeURIComponent(
-    businessName
   )}&commentsAdded=${encodeURIComponent(
     commentsAdded
   )}&currentDatetime=${encodeURIComponent(formattedDateTime)}`;
