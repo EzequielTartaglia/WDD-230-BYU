@@ -1,111 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="Explore the directory of business that trust in Chamber Exchange."
-        />
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-        <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link rel="stylesheet" href="./styles/normalize.css" />
-        <link rel="stylesheet" href="./styles/lazyload.css" />
-        <link rel="stylesheet" href="./styles/floatButtons.css" />
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <link rel="stylesheet" href="./styles/gridAndListDirectory.css">
-        <link
-          rel="stylesheet"
-          href="./styles/viewports/base.css"
-          media="screen and (max-width: 600px)"
-        />
-        <link
-          rel="stylesheet"
-          href="./styles/viewports/medium.css"
-          media="screen and (min-width: 601px) and (max-width: 1024px)"
-        />
-        <link
-          rel="stylesheet"
-          href="./styles/viewports/large.css"
-          media="screen and (min-width: 1025px)"
-        />
-        <link rel="stylesheet" href="./styles/grid.css" />
-        <title>Chamber Exchange | Directory</title>
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the directory of business that trust in Chamber Exchange."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+    <link rel="stylesheet" href="./styles/floatButtons.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/gridAndListDirectory.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/base.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/medium.css"
+      media="screen and (min-width: 601px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/viewports/large.css"
+      media="screen and (min-width: 1025px)"
+    />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <title>Chamber Exchange | Directory</title>
+  </head>
+  <body>
     <header>
-        <div class="headerInfo">
-          <div class="logoContainer">
-            <div class="logo">
-              <a href="index.html"
-                ><img src="./images/ce-logo.webp" alt="Chamber Exchange Logo"
-              /></a>
-            </div>
-            <div class="titleContainer">
-              <div class="title primaryTitle">Chamber Exchange</div>
-              <div class="title">Guild of Commerce</div>
-            </div>
+      <div class="headerInfo">
+        <div class="logoContainer">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/ce-logo.webp" alt="Chamber Exchange Logo"
+            /></a>
           </div>
-  
-          <nav>
-            <ul class="mainMenu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="discover.html">Discover</a></li>
-              <li><a href="directory.html">Directory</a></li>
-              <li><a href="join.html">Join</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-  
-          <div class="socialsHeader">
-            <a href="https://www.facebook.com/profile"
-              ><i class="fab fa-facebook-square" id="facebook"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/profile"
-              ><i class="fab fa-linkedin" id="linkedIn"></i
-            ></a>
-            <button class="hamburger" id="hamburgerChamber">
-              <i class="fas fa-bars"></i>
-            </button>
+          <div class="titleContainer">
+            <div class="title primaryTitle">Chamber Exchange</div>
+            <div class="title">Guild of Commerce</div>
           </div>
         </div>
-        <h5 class="currentDatetime">
-          <span id="now"></span>
-        </h5>
-  
-        <!-- Menu hamburguer modal -->
-        <div id="modal">
-          <ul class="toggleMenu">
+
+        <nav>
+          <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
-      </header>
+        </nav>
 
-      <main>
-        <div class="menu">
-          <h2 class="section-title">Directory of Registered Businesses in Our Chamber</h2>
-          <button id="grid" class="active"><i class="fas fa-th"></i></button>
-            <button id="list"><i class="fas fa-list-alt"></i></button>
+        <div class="socialsHeader">
+          <a href="https://www.facebook.com/profile"
+            ><i class="fab fa-facebook-square" id="facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/profile"
+            ><i class="fab fa-linkedin" id="linkedIn"></i
+          ></a>
+          <button class="hamburger" id="hamburgerChamber">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
+      <h5 class="currentDatetime">
+        <span id="now"></span>
+      </h5>
 
-        <div class="grid" id="dataContainer">
-        </div>
+      <!-- Menu hamburguer modal -->
+      <div id="modal">
+        <ul class="toggleMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="banner" class="hidden">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </div>
+      <div class="menu">
+        <h2 class="section-title">
+          Directory of Registered Businesses in Our Chamber
+        </h2>
+        <button id="grid" class="active"><i class="fas fa-th"></i></button>
+        <button id="list"><i class="fas fa-list-alt"></i></button>
+      </div>
+
+      <div class="grid" id="dataContainer"></div>
     </main>
 
-      <footer>
+    <footer>
       <div class="footerContainer">
         <div class="footerLogoContainer">
           <div id="footerLogoImg">
@@ -125,7 +133,9 @@
         <div class="contacts">
           <p>info@chamberexchange.org</p>
           <p>(+1) 224 857 965</p>
-          <a href="https://goo.gl/maps/stS17myutCjhMuL89" target="_blank"><i class="fas fa-thumbtack"></i> Location Map </a>
+          <a href="https://goo.gl/maps/stS17myutCjhMuL89" target="_blank"
+            ><i class="fas fa-thumbtack"></i> Location Map
+          </a>
         </div>
 
         <hr />
@@ -144,9 +154,9 @@
       </div>
     </footer>
 
-      <script src="./scripts/lazyload.js" defer></script>
-      <script src="./scripts/script.js" defer></script>
-      <script src="./scripts/index.js" defer></script>
-      <script src="./scripts/directory.js" defer></script>
-</body>
+    <script src="./scripts/lazyload.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
+  </body>
 </html>

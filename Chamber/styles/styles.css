@@ -34,7 +34,7 @@ body {
 
 #banner {
   width: 100%;
-  margin: auto;
+  margin: 10px auto;
   display: none;
   background: linear-gradient(to right, #00698b, #ec8e35, #00698b);
   color: #000000;
