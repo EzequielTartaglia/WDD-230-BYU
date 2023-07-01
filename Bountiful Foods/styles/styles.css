@@ -1,3 +1,28 @@
+/* Root: Sample */
+:root {
+  --primaryColor: #5ef3a9;
+  --secondaryColor: #f77b86;
+  
+  --backgroundPrimaryColor: #5ef3a9;
+  --backgroundSecondaryColor: #cff0df;
+  
+  --backgroundBodyPrimaryColor: #03d86d;
+  --backgroundBodySecondaryColor: #f77b86;
+  
+  --bannerColorPrimary: #dd2f3d;
+  --bannerColorSecondary: #f77b86;
+  --bannerLink-hover: #03d86d;
+
+  --textWhite: #fff;
+  --textMainColor: #000;
+
+  --accentColor: #8d53ab;
+  --accentColorSecondary: #e0f779;
+  --accentColorSecondary-hover: #f77b86;
+  
+  --boxShadow: #8d53ab;
+  }
+
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +31,32 @@
   transition: all 0.3s;
   max-width: 1800px;
   margin: 0 auto;
+  color: var(--textMainColor);
 }
 
 body {
   background-color: #282929;
 }
 
+a{
+  color: var(--accentColorSecondary);
+}
+a:hover {
+  -webkit-text-fill-color: var(--accentColorSecondary-hover);
+  letter-spacing: 0.6px;
+}
+
 /* Header */
 
 .currentDatetime {
   margin: 0 auto;
-  background: linear-gradient(to right, #129ecc, #bdddf0, #129ecc);
+  background: linear-gradient(to right, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
   width: 95%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
   letter-spacing: 1px;
-  box-shadow: 1px 1px 5px #034c64;
+  box-shadow: 1px 1px 5px var(--boxShadow);
 }
 .currentDatetime #now {
   display: flex;
@@ -30,17 +64,22 @@ body {
   align-items: center;
   height: 100%;
   font-size: large;
+  
 }
 
 #banner {
   width: 100%;
   margin: 10px auto;
   display: block;
-  background: linear-gradient(to right, #00698b, #ec8e35, #00698b);
-  color: #000000;
+  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
+  color: var(--textWhite);
   font-weight: bold;
   padding: 10px;
   text-align: center;
+}
+#banner a:hover {
+  -webkit-text-fill-color: var(--bannerLink-hover);
+  letter-spacing: 0.6px;
 }
 
 header {
@@ -49,7 +88,7 @@ header {
   top: 0px;
   font-size: 12px;
   z-index: 2;
-  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  background: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));
   padding-bottom: 1px;
 }
 
@@ -238,7 +277,7 @@ nav {
 /* Main */
 main {
   max-width: 1750px;
-  background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
+  background: linear-gradient(to right, var(--backgroundBodyPrimaryColor), var(--backgroundBodySecondaryColor), var(--backgroundBodyPrimaryColor));
   padding-top: 130px;
 }
 
@@ -288,7 +327,7 @@ a {
   color: #000000;
 }
 .grid-container {
-  background: linear-gradient(to right, #00445a, #a4e3f8, #00445a);
+  background: linear-gradient(to right, var(--backgroundBodyPrimaryColor), var(--backgroundBodySecondaryColor), var(--backgroundBodyPrimaryColor));
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   align-items: center;
@@ -776,7 +815,7 @@ footer {
   width: 100%;
   display: flex;
   margin: auto;
-  background: linear-gradient(to right, #a4e3f8, #d9f0fd, #6fc3e4);
+  background: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));
   align-items: center;
   justify-content: center;
   text-align: center;
