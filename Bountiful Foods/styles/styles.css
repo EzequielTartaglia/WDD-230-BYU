@@ -20,7 +20,7 @@
   --accentColorSecondary: #e0f779;
   --accentColorSecondary-hover: #f77b86;
   
-  --boxShadow: #8d53ab;
+  --boxShadow: 1px 1px 5px #8d53ab;
   }
 
 * {
@@ -56,7 +56,7 @@ a:hover {
   margin-bottom: 10px;
   border-radius: 3px;
   letter-spacing: 1px;
-  box-shadow: 1px 1px 5px var(--boxShadow);
+  box-shadow: var(--boxShadow);
 }
 .currentDatetime #now {
   display: flex;
@@ -190,12 +190,10 @@ nav {
 
 #linkedIn:hover,
 #facebook:hover {
-  color: #ce7420;
   transition: all 0.2s ease-in-out;
 }
 
 .socialsHeader a:hover {
-  color: #ce7420;
   transition: all 0.2s ease-in-out;
 }
 
@@ -211,11 +209,11 @@ nav {
 }
 
 .hamburger i {
-  color: #0f0b0b;
+  color: var(--textMainColor);
 }
 
 .hamburger i:hover {
-  color: #ce7420;
+  color: var(--accentColorSecondary-hover);
   transition: all 0.2s ease-in-out;
 }
 
