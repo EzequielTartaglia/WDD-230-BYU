@@ -1,14 +1,3 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  const banner = document.getElementById('banner');
-  const currentDate = new Date();
-  const currentDay = currentDate.getDay();
-
-  if (currentDay === 1 || currentDay === 2) {
-    banner.style.display = 'block';
-  }
-});
-
-
 const hamburger = document.getElementById('hamburgerChamber');
 const menu = document.querySelector('.toggleMenu');
 
