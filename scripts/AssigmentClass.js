@@ -31,7 +31,7 @@ const lesson10 = new Assigment("Lesson 10","./Lesson 10/weather-api.html","Weath
 lessonList.push(lesson10)
 const lesson11 = new Assigment("Lesson 11","./Chamber/contact.html","Chamber Contact Page | Chamber Contact Success Page (form's response)")
 lessonList.push(lesson11)
-const finalProjectDesign = new Assigment("Final project - Design Document","./Bountiful Foods/Design/index.html","Bountiful Foods | Design planning")
+const finalProjectDesign = new Assigment("Final project - Site Plan","./Bountiful Foods/Design/index.html","Bountiful Foods | Design planning")
 lessonList.push(finalProjectDesign)
 const assigmentsList = document.getElementById("assigmentsList");
 
