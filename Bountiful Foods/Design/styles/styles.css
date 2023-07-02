@@ -20,17 +20,22 @@
   --backgroundPrimaryColor: #5ef3a9;
   --backgroundSecondaryColor: #cff0df;
 
+  --containerBackgroundBodyPrimaryColor: #e7f3a0;
+  --containerBackgroundBodySecondaryColor: #f3f5e7;
+
   --heading-font: "Open Sans";
   --paragraph-font: Helvetica, sans-serif;
 
   --headline-color-on-white: #A4E3F8; /* headlines on a white background */
   --headline-color-on-color: #076fac; /* headlines on a colored background */
   --paragraph-color-on-white: #076fac; /* paragraph text on a white background */
-  --paragraph-color-on-color: #A4E3F8; /* paragraph text on a colored background */
-  --paragraph-background-color: #085E70;
+  --paragraph-color-on-color: #000; /* paragraph text on a colored background */
+  --paragraph-background-color: linear-gradient(to right, var(--containerBackgroundBodyPrimaryColor), var(--containerBackgroundBodySecondaryColor), var(--containerBackgroundBodyPrimaryColor));
   --nav-link-color: #065577;
   --nav-background-color: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));;
   --nav-hover-link-color: #f77b86;
+
+
 }
 
 img {
@@ -112,7 +117,7 @@ justify-content: center;
 }
 
 p.colored {
-  background-color: var(--paragraph-background-color);
+  background: var(--paragraph-background-color);
   color: var(--paragraph-color-on-color);
 }
 
