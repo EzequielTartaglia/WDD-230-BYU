@@ -44,12 +44,12 @@ const displayResults = (weatherData) => {
       <hr />
       <div class="stadistics">
         <ul>
+        <li id="forecastLi">
+        <span id="forecast"></span>
+      </li>
           <li>
             <span>Humidity:</span>
             <span id="humidity"></span>
-          </li>
-          <li id="forecastLi">
-            <span id="forecast"></span>
           </li>
         </ul>
       </div>
