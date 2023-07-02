@@ -4,12 +4,7 @@
 
 Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 
-- Chamber Exchange Site Plan: https://ezequieltartaglia.github.io/wdd230/Lesson%203/
-- Chamber Discover Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/discover.html
-- Chamber Home Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/
-- Chamber Directory Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/directory.html
-- Chamber Join Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/join.html
-- Chamber Contact Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/contact.html
+### Ponder Activities (projects)
 
 - Design Principles Document:  https://ezequieltartaglia.github.io/wdd230/Lesson%202/design-principles.html
 - Book of Mormon - Top 25: https://ezequieltartaglia.github.io/wdd230/Lesson%205/bom.html
@@ -18,7 +13,17 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 - Latter-day Prophets (API): https://ezequieltartaglia.github.io/wdd230/Lesson%209/prophets.html
 - Weather (API): https://ezequieltartaglia.github.io/wdd230/Lesson%2010/weather-api.html
 
-## Codepen activities
+### Chamber of Commerce (project)
+
+- Chamber Exchange Site Plan: https://ezequieltartaglia.github.io/wdd230/Lesson%203/
+- Chamber Discover Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/discover.html
+- Chamber Home Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/
+- Chamber Directory Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/directory.html
+- Chamber Join Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/join.html
+- Chamber Contact Page Build: https://ezequieltartaglia.github.io/wdd230/Chamber/contact.html
+
+### Codepen Activities
 
 W01 Activity: Applied JavaScript: https://codepen.io/ezequieltartaglia/pen/OJBNwdZ
 
+### Final Project
