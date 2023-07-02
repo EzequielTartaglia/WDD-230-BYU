@@ -4,20 +4,20 @@
 const urlJson = "./scripts/data.json";
 
 // Get the data
-const getCompaniesData = async (url) => {
+const getSmoothiesData = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  return data.companies;
+  return data.smoothies;
 };
 
 // Process the information (to manipulate)
 const fetchDataAndDisplay = async () => {
-  const companies = await getCompaniesData(urlJson);
-  displayCompanies(companies);
+  const smoothies = await getSmoothiesData(urlJson);
+  displaySmoothies(smoothies);
 };
 
 // Manipulate the data result
-const displayCompanies = (dataReceived) => {
+const displaySmoothies = (dataReceived) => {
   const spotlightsContainer = document.getElementById("spotlights");
 
   // Function to shuffle the array using Fisher-Yates algorithm
@@ -30,16 +30,16 @@ const displayCompanies = (dataReceived) => {
   };
 
   // Filter and shuffle the companies
-  const filteredCompanies = dataReceived.filter(
+  const filteredSmoothies = dataReceived.filter(
     ({ membership_level }) =>
       membership_level === "Silver" || membership_level === "Gold"
   );
-  const shuffledCompanies = shuffleArray(filteredCompanies);
+  const shuffledSmoothies = shuffleArray(filteredSmoothies);
 
   // Display the first 3 shuffled companies
-  const selectedCompanies = shuffledCompanies.slice(0, 3);
+  const selectedSmoothies = shuffledSmoothies.slice(0, 3);
 
-  selectedCompanies.forEach(
+  selectedSmoothies.forEach(
     ({ name, email, phone, image, url, additional_information }, i) => {
       // Create elements to add to the spotlightsContainer element
       let spotlight = document.createElement("div");
@@ -50,12 +50,10 @@ const displayCompanies = (dataReceived) => {
       <h2>${name}</h2>
     </div>
     <div class="gridAreaContent">
-      <img src="${image}" alt="Logo of ${name}" loading="lazy" width="340" height="440"></img>
+      <img src="${image}" alt="Smoothie of ${name}" loading="lazy" width="340" height="440"></img>
       <p class="spotlightsSlogan">
         <p class="aditional-info">${additional_information}</p>
       </p>
-      <hr />
-      <p class="email">${email}</p>
       <p class="website">+${phone} | <a href="${url}">Website</a></p>
     </div>
   `;
