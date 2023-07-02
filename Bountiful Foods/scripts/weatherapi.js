@@ -1,8 +1,8 @@
 //Get the url to weather API
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&q=Texas&appid={API_key}";
-const lat = 31.9686;
-const lon = -99.9018;
+  "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&q=Carlsbad&appid={API_key}";
+const lat = 33.1581;
+const lon = -117.3506;
 const apiKey = "1c7bef1e6ec014e641fdcf262cd7e6f2";
 const updatedUrl = url
   .replace("{lat}", lat)
