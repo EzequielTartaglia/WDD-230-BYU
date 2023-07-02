@@ -196,9 +196,16 @@ nav {
   color: #1558ce;
   font-size: 25px;
 }
+#twitter{
+  border-radius: 50%;
+  padding: 2.5px;
+  color: #1558ce;
+  font-size: 25px;
+}
 
 #linkedIn:hover,
-#facebook:hover {
+#facebook:hover,
+#twitter:hover {
   transition: all 0.2s ease-in-out;
 }
 

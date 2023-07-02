@@ -31,8 +31,8 @@ const displaySmoothies = (dataReceived) => {
 
   // Filter and shuffle the companies
   const filteredSmoothies = dataReceived.filter(
-    ({ description }) =>
-    description !== "Silver" || description !== "Gold"
+    ({ name }) =>
+    name !== ""
   );
   const shuffledSmoothies = shuffleArray(filteredSmoothies);
 

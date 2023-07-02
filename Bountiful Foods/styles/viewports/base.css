@@ -107,10 +107,16 @@ align-items: center;
 #facebook {
   position: absolute;
   order: 2;
-  right: 90px;
+  right: 117.5px;
   width: 0;
 }
 #linkedIn{
+  position: absolute;
+  order: 2;
+  right: 92.5px;
+  width: 0;
+}
+#twitter{
   position: absolute;
   order: 2;
   right: 65px;
