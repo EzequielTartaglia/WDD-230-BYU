@@ -11,16 +11,15 @@
     width: 70px;
     height: 70px;
     border-radius: 20%;
-    background: linear-gradient(to right, #016485, #e4f7c3, #016485);
-  border: solid 1px #016688;
-  box-shadow: 3px 3px 30px #034c64;
+    background: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));
+    border: solid 1px var(--bannerColorSecondary);
+    box-shadow: 3px 3px 30px #034c64;
     margin-bottom: 10px;
     text-decoration: none;
   }
 
   .float-button:hover {
-    background: linear-gradient(to right, #e4f7c3, #016485, #e4f7c3);
-    border: solid 1px #016485;
+    background: linear-gradient(to right, var(--backgroundSecondaryColor), var(--backgroundPrimaryColor), var(--backgroundSecondaryColor));
     transition: all 0.2s ease-in-out;
 
   }
@@ -30,7 +29,7 @@
   }
   
   .float-button.home i{
-    color: #016485;
+    color: var(--bannerColorSecondary);
     font-size: 40px;
   }
   
