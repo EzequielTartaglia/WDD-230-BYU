@@ -26,12 +26,12 @@
   --heading-font: "Open Sans";
   --paragraph-font: Helvetica, sans-serif;
 
-  --headline-color-on-white: #A4E3F8; /* headlines on a white background */
-  --headline-color-on-color: #076fac; /* headlines on a colored background */
-  --paragraph-color-on-white: #076fac; /* paragraph text on a white background */
+  --headline-color-on-white: #028d48; /* headlines on a white background */
+  --headline-color-on-color: #f3f5e7; /* headlines on a colored background */
+  --paragraph-color-on-white: #000; /* paragraph text on a white background */
   --paragraph-color-on-color: #000; /* paragraph text on a colored background */
   --paragraph-background-color: linear-gradient(to right, var(--containerBackgroundBodyPrimaryColor), var(--containerBackgroundBodySecondaryColor), var(--containerBackgroundBodyPrimaryColor));
-  --nav-link-color: #065577;
+  --nav-link-color: #000;
   --nav-background-color: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));;
   --nav-hover-link-color: #f77b86;
 
