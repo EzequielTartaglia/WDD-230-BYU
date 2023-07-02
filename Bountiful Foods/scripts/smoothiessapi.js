@@ -31,8 +31,8 @@ const displaySmoothies = (dataReceived) => {
 
   // Filter and shuffle the companies
   const filteredSmoothies = dataReceived.filter(
-    ({ membership_level }) =>
-      membership_level === "Silver" || membership_level === "Gold"
+    ({ description }) =>
+    description !== "Silver" || description !== "Gold"
   );
   const shuffledSmoothies = shuffleArray(filteredSmoothies);
 
@@ -40,7 +40,7 @@ const displaySmoothies = (dataReceived) => {
   const selectedSmoothies = shuffledSmoothies.slice(0, 3);
 
   selectedSmoothies.forEach(
-    ({ name, email, phone, image, url, additional_information }, i) => {
+    ({ name,description,src,ingredients }, i) => {
       // Create elements to add to the spotlightsContainer element
       let spotlight = document.createElement("div");
       spotlight.setAttribute("class", `gridArea${i + 6}`);
@@ -50,11 +50,11 @@ const displaySmoothies = (dataReceived) => {
       <h2>${name}</h2>
     </div>
     <div class="gridAreaContent">
-      <img src="${image}" alt="Smoothie of ${name}" loading="lazy" width="340" height="440"></img>
+      <img src="${src}" alt="Smoothie of ${name}" loading="lazy" width="340" height="440"></img>
       <p class="spotlightsSlogan">
-        <p class="aditional-info">${additional_information}</p>
+      <p class="aditional-info">${description}</p>
       </p>
-      <p class="website">+${phone} | <a href="${url}">Website</a></p>
+      <p class="website"><a href="#">Taste it</a></p>
     </div>
   `;
 
