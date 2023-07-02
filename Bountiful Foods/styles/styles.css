@@ -557,7 +557,7 @@ button.active {
 }
 #weather .stadistics span {
   width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 #weather ul > li {
   position: relative;

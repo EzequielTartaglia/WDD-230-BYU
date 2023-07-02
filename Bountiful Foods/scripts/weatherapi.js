@@ -50,7 +50,11 @@ const displayResults = (weatherData) => {
                             <li>
                             <span>Humidity:</span>
                             <span id="humidity"></span>
-                          </li>
+                            </li>
+                            <li>
+                            <span>Forecast:</span>
+                            <span id="forecast"></span>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -60,6 +64,7 @@ const displayResults = (weatherData) => {
   const weatherIcon = document.getElementById("weatherStatusImg");
   const captionDesc = document.getElementById("weatherStatus");
   const humidity = document.getElementById("humidity");
+  const forecast = document.getElementById("forecast");
 
   //Manipulate the elements made in the innerHTML
 
