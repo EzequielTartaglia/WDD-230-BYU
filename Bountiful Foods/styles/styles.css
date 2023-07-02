@@ -532,7 +532,7 @@ button.active {
   right: 0;
   height: 2px;
   margin: 0 auto;
-  bottom: 32.5%;
+  bottom: 42.5%;
   transform: translateY(50%);
   background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
   border: none;
@@ -544,7 +544,7 @@ button.active {
   margin: 0 auto;
   left: 50px;
   right: 0;
-  bottom: 34.5%;
+  bottom: 45.5%;
   text-align: center;
   font-size: 22px;
   margin-right: 10%;
@@ -557,7 +557,7 @@ button.active {
 }
 #weather .stadistics span {
   width: 50%;
-  margin-bottom: 0px;
+  margin-bottom: -10px;
 }
 #weather ul > li {
   position: relative;
