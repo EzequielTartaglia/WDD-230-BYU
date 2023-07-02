@@ -48,9 +48,8 @@ const displayResults = (weatherData) => {
             <span>Humidity:</span>
             <span id="humidity"></span>
           </li>
-          <li>
-            <span>Forecast:</span>
-            <div id="forecast"></div>
+          <li id="forecastLi">
+            <span id="forecast"></span>
           </li>
         </ul>
       </div>
@@ -84,6 +83,9 @@ const displayResults = (weatherData) => {
 
 //Forecast
 const forecastList = weatherData.list;
+const forecastContainer = document.createElement("div");
+forecastContainer.classList.add("forecast-container");
+
 for (let i = 0; i < 3; i++) {
   const forecastItem = forecastList[i * 8];
   const forecastTemperature = ((forecastItem.main.temp - 32) * 5) / 9;
@@ -96,11 +98,14 @@ for (let i = 0; i < 3; i++) {
   forecastElement.classList.add("forecast-item");
   forecastElement.innerHTML = `
     <span class="forecast-day">${forecastDateString}</span>
-    <span class="forecast-temp">${forecastTemperature.toFixed(0)} &deg;C</span>
+    <span class="forecast-temp">${forecastTemperature.toFixed(0)}&deg;C</span>
   `;
 
-  forecast.appendChild(forecastElement);
+  forecastContainer.appendChild(forecastElement);
 }
+
+forecast.appendChild(forecastContainer);
+
 }
 // Display the API
 apiFetch();
