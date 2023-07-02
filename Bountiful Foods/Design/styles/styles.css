@@ -17,6 +17,8 @@
   --accent1-color: #e0f779  ;
   --accent2-color: #03d86d;
 
+  --backgroundPrimaryColor: #5ef3a9;
+  --backgroundSecondaryColor: #cff0df;
 
   --heading-font: "Open Sans";
   --paragraph-font: Helvetica, sans-serif;
@@ -27,8 +29,8 @@
   --paragraph-color-on-color: #A4E3F8; /* paragraph text on a colored background */
   --paragraph-background-color: #085E70;
   --nav-link-color: #065577;
-  --nav-background-color: #A4E3F8;
-  --nav-hover-link-color: #DA904B;
+  --nav-background-color: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));;
+  --nav-hover-link-color: #f77b86;
 }
 
 img {
@@ -115,7 +117,7 @@ p.colored {
 }
 
 .templateMenu {
-  background-color: var(--nav-background-color);
+  background: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
