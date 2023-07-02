@@ -557,7 +557,6 @@ button.active {
 }
 #weather .stadistics span {
   width: 50%;
-  margin-bottom: -5px;
 }
 #weather ul > li {
   position: relative;
@@ -576,7 +575,6 @@ button.active {
   display: flex;
   justify-content: space-between;
 }
-
 .forecast-item {
   text-align: center;
 }

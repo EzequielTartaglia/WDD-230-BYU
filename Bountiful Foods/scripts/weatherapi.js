@@ -98,7 +98,7 @@ for (let i = 0; i < 3; i++) {
   forecastElement.classList.add("forecast-item");
   forecastElement.innerHTML = `
     <span class="forecast-day">${forecastDateString}</span>
-    <span class="forecast-temp">${forecastTemperature.toFixed(0)}&deg;C</span>
+    <span class="forecast-temp"><strong>${forecastTemperature.toFixed(0)}&deg;C</strong></span>
   `;
 
   forecastContainer.appendChild(forecastElement);
