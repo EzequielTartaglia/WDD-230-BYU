@@ -259,8 +259,9 @@ footer a:hover {
   font-size: 16px;
 }
 #logoFooter {
-  width: 320px;
-  padding-right: 90px;
+  width: 250px;
+  margin-top: -30px;
+  margin-bottom: -40px;
 }
 
 .contacts {
@@ -283,7 +284,6 @@ footer a:hover {
 hr {
   height: 2px;
   margin: 20px 0;
-  background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
   border: none;
   width: 100%;
 }

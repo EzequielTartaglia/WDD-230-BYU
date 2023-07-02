@@ -92,7 +92,7 @@ canvas {
 hr {
   height: 2px;
   margin: 20px 0;
-  background: linear-gradient(to right, #15c5c5 10%, #085e70, #15c5c5);
+  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
   border: none;
   width: 100%;
 }
