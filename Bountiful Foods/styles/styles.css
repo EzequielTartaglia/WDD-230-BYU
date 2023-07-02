@@ -373,19 +373,6 @@ a {
   margin-left: 0px;
 }
 
-#chart-stadistics {
-  font-size: 26px;
-  width: 95%;
-  border-radius: 12px;
-  border: solid #00445a25;
-  box-shadow: 3px 3px 15px #034c64;
-}
-
-#guildBtn.active + #chart-container #myChart2 {
-  display: none;
-  max-width: 100%;
-}
-
 button.active {
   background-color: #ce7420;
   -webkit-text-stroke: #dbdbdb;
@@ -741,41 +728,6 @@ form select,form textarea{
   height: auto;
   padding-bottom: 70px;
   margin: 0 auto ;
-}
-.google-maps-section {
-  font-size: 26px;
-  width: 95%;
-  border-radius: 12px;
-  border: solid #00445a25;
-  box-shadow: 3px 3px 15px #034c64;
-}
-.google-maps-section {
-  font-size: 26px;
-  width: 95%;
-  border-radius: 12px;
-  border: solid #00445a25;
-  box-shadow: 3px 3px 15px #034c64;
-}
-
-.google-maps-section h2 {
-  max-width: 100%;
-  margin-bottom: 10px;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-stroke: 0.7px #000000;
-  -webkit-text-fill-color: #faf8f7;
-  width: 100%;
-}
-#chart-container {
-  margin: 0 auto;
-  margin-top: 50px;
-  list-style: none;
 }
 /* Main contact end */
 
