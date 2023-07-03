@@ -33,6 +33,8 @@ const lesson11 = new Assigment("Lesson 11","./Chamber/contact.html","Chamber Con
 lessonList.push(lesson11)
 const finalProjectDesign = new Assigment("Final project - Site Plan","./Bountiful Foods/Design/index.html","Bountiful Foods | Design planning")
 lessonList.push(finalProjectDesign)
+const finalProjectHome = new Assigment("Final project","./Bountiful Foods/index.html","Bountiful Foods | Home")
+lessonList.push(finalProjectHome)
 const assigmentsList = document.getElementById("assigmentsList");
 
 assigmentsList.innerHTML = lessonList.map(element => 
