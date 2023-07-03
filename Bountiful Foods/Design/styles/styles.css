@@ -34,8 +34,6 @@
   --nav-link-color: #000;
   --nav-background-color: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));;
   --nav-hover-link-color: #f77b86;
-
-
 }
 
 img {
