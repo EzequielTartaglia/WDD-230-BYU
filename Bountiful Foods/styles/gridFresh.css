@@ -90,9 +90,9 @@
     .gridArea3 {
         grid-area: 3 / 3 / 3 / 5;
         height: 230px;
-        display: block;
         border: solid #00445a25;
         box-shadow: var(--boxShadowBlack);
+        background-color: aqua;
       }
 
     .gridArea4 {
@@ -102,7 +102,6 @@
     .gridArea8 {
         grid-area: 5 / 3 / 5 / 5;
         height: 230px;
-        display: block;
         border: solid #00445a25;
         box-shadow: var(--boxShadowBlack);
 

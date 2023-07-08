@@ -582,13 +582,6 @@ a {
   margin-top: 0;
   margin-bottom: 1px;
 }
-
-.gridArea3,
-.gridArea6,
-.gridArea7,
-.gridArea8 {
-  width: 100%;
-}
 /* Main end*/
 
 /* Main fresh*/
@@ -601,12 +594,9 @@ a {
   height: 400px;
   opacity: 85%;
 }
-#checkoutOrder {
+#checkoutOrder,#vegetablesOptionsContainer,#creamsJamsOptionsContainer {
   position: relative;
   width: 100%;
-}
-#checkoutOrder {
-  position: relative;
 }
 
 .gridAreatitle {
