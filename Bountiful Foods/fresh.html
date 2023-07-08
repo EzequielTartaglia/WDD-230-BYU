@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles/floatButtons.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link
@@ -99,16 +100,17 @@
         </a>
       </div>
       <div class="grid-container">
-        <div class="gridArea1">
-          <div class="gridAreatitle" id="event">
-            <h2>Event</h2>
-            <h4><i class="fas fa-star"></i> Brand new's <i class="fas fa-star"></i></h4>
+        <div class="gridArea1" id="hero">
+          <picture>
+            <img
+              src="images/Fresh-variations/smoothie-placehold.png"
+              data-src="images/Fresh-variations/default-smoothie.png"
+              alt="Customized Smoothie"
+            />
+          </picture>
+          <div class="gridAreatitle">
           </div>
           <div class="gridAreaContent">
-            <p>
-              Join us for the grand opening of our new downtown branch, the Diamond Shack, on Thursday at 7:00 p.m.
-            </p>
-            <a id="moreInfoLink" href="#">More info...</a>
           </div>
         </div>
         <div class="gridArea2" id="weather">
@@ -129,20 +131,7 @@
 
           <!-- Image optimizated -->
 
-          <picture id="responsiveImage">
-            <!-- Tablet -->
-            <source
-              media="(min-width 600px) and (max-width: 799px)"
-              srcset="./images/photo-hero.webp"
-            />
-            <!-- Desktop -->
-            <source
-              media="(min-width: 1500px)"
-              srcset="./images/photo-hero.webp"
-            />
-            <!-- Mobile -->
-            <img src="./images/photo-hero.webp" alt="Hero Image" />
-          </picture>
+
 
           <div class="gridAreatitle">
             <h2>Bountiful Foods : Sostenible Smoothies</h2>
@@ -285,6 +274,7 @@
 
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
-    
+    <script src="./scripts/lazyload.js" defer></script>
+
   </body>
 </html>
