@@ -358,14 +358,6 @@ a {
   width: 100%;
 }
 
-button.active {
-  background-color: #ce7420;
-  -webkit-text-stroke: #dbdbdb;
-  -webkit-text-fill-color: #dbdbdb;
-  border: none;
-  letter-spacing: 0.6px;
-}
-
 .gridAreatitle h4 {
   margin-top: 10px;
   -webkit-text-stroke: 0.7px var(--textMainColor);
@@ -425,15 +417,7 @@ button.active {
   opacity: 85%;
   padding: 0px;
 }
-#hero .smoothieContainer img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  opacity: 85%;
-}
+
 /* Image for week 6 */
 
 #hero .gridAreatitle,
@@ -577,24 +561,21 @@ button.active {
 }
 /* Main end*/
 
-/* Main discover*/
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  font-size: 42px;
-  font-weight: bold;
-  text-shadow: 0 0 20px var(--textWhite);
-  -webkit-text-stroke: 0.7px #000000;
-  -webkit-text-fill-color: #1b0f04;
+/* Main fresh*/
+#hero .smoothieContainer img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  opacity: 85%;
+}
+#submitSmoothie {
+  position: relative;
   width: 100%;
 }
-#mainTitle h1 {
-  font-size: 46px;
-  color: #00445a;
-}
-/* Main discover end*/
+/* Main fresh end*/
 
 /* Main Join */
 .form-section {
