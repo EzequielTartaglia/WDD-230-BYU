@@ -78,7 +78,7 @@ a:hover {
   
 }
 
-#banner,.divisor {
+#banner,.divisorFooter,.divisorheader {
   width: 100%;
   margin: 10px auto;
   display: block;
@@ -92,10 +92,13 @@ a:hover {
   -webkit-text-fill-color: var(--bannerLink-hover);
   letter-spacing: 0.6px;
 }
-.divisor{
+.divisorFooter{
   margin: 0px auto;
   padding: 4px;
-
+}
+.divisorheader{
+  margin: 0px auto;
+  padding: 10px;
 }
 
 header {
