@@ -2,15 +2,15 @@
 :root {
   --primaryColor: #5ef3a9;
   --secondaryColor: #f77b86;
-  
+
   --backgroundPrimaryColor: #5ef3a9;
   --backgroundSecondaryColor: #cff0df;
-  
+
   --backgroundMainColor: #cff0df;
   --backgroundMainColorGradient: #5ef3a9;
   --backgroundBodyPrimaryColor: #03d86d;
   --backgroundBodySecondaryColor: var(--secondaryColor);
-  
+
   --bannerColorPrimary: #016131;
   --bannerColorSecondary: #028d48;
   --bannerLink-hover: #03d86d;
@@ -21,7 +21,7 @@
   --accentColor: #8d53ab;
   --accentColorSecondary: #e0f779;
   --accentColorSecondary-hover: var(--secondaryColor);
-  
+
   --buttonBackgroundColor: #5ef3a9;
   --buttonBackgroundColor-hover: var(--secondaryColor);
 
@@ -32,7 +32,7 @@
   --boxShadowBlack: 1px 1px 5px #000000;
 
   --textShadow: var(--bannerColorSecondary);
-  }
+}
 
 * {
   margin: 0;
@@ -49,7 +49,7 @@ body {
   background-color: #282929;
 }
 
-a{
+a {
   color: var(--accentColorSecondary);
 }
 a:hover {
@@ -61,7 +61,12 @@ a:hover {
 
 .currentDatetime {
   margin: 0 auto;
-  background: linear-gradient(to right, var(--primaryColor), var(--secondaryColor), var(--primaryColor));
+  background: linear-gradient(
+    to right,
+    var(--primaryColor),
+    var(--secondaryColor),
+    var(--primaryColor)
+  );
   width: 95%;
   padding: 10px;
   margin-bottom: 10px;
@@ -75,14 +80,20 @@ a:hover {
   align-items: center;
   height: 100%;
   font-size: large;
-  
 }
 
-#banner,.divisorFooter,.divisorheader {
+#banner,
+.divisorFooter,
+.divisorheader {
   width: 100%;
   margin: 10px auto;
   display: block;
-  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
+  background: linear-gradient(
+    to right,
+    var(--bannerColorPrimary),
+    var(--bannerColorSecondary),
+    var(--bannerColorPrimary)
+  );
   color: var(--textWhite);
   font-weight: bold;
   padding: 10px;
@@ -92,11 +103,11 @@ a:hover {
   -webkit-text-fill-color: var(--bannerLink-hover);
   letter-spacing: 0.6px;
 }
-.divisorFooter{
+.divisorFooter {
   margin: 0px auto;
   padding: 4px;
 }
-.divisorheader{
+.divisorheader {
   margin: 0px auto;
   padding: 10px;
 }
@@ -107,7 +118,12 @@ header {
   top: 0px;
   font-size: 12px;
   z-index: 2;
-  background: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));
+  background: linear-gradient(
+    to right,
+    var(--backgroundPrimaryColor),
+    var(--backgroundSecondaryColor),
+    var(--backgroundPrimaryColor)
+  );
   padding-bottom: 1px;
 }
 
@@ -206,7 +222,7 @@ nav {
   color: #1558ce;
   font-size: 25px;
 }
-#twitter{
+#twitter {
   border-radius: 50%;
   padding: 2.5px;
   color: #1558ce;
@@ -318,12 +334,17 @@ a {
   text-decoration: none;
   letter-spacing: 0.6px;
 }
-#moreInfoLink{
+#moreInfoLink {
   color: var(--textMainColor);
 }
 
 .grid-container {
-  background: linear-gradient(to bottom, var(--backgroundMainColor), var(--backgroundMainColorGradient), var(--backgroundMainColor)) ;
+  background: linear-gradient(
+    to bottom,
+    var(--backgroundMainColor),
+    var(--backgroundMainColorGradient),
+    var(--backgroundMainColor)
+  );
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   align-items: center;
@@ -336,7 +357,12 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: linear-gradient(to right, var(--containerBackgroundBodyPrimaryColor), var(--containerBackgroundBodySecondaryColor), var(--containerBackgroundBodyPrimaryColor));
+  background: linear-gradient(
+    to right,
+    var(--containerBackgroundBodyPrimaryColor),
+    var(--containerBackgroundBodySecondaryColor),
+    var(--containerBackgroundBodyPrimaryColor)
+  );
   white-space: normal;
   word-wrap: break-word;
 }
@@ -383,7 +409,6 @@ a {
   text-decoration: none;
   transition: all 0.3s;
   -webkit-text-fill-color: var(--bannerColorSecondary);
-
 }
 
 .gridAreaContent a:hover {
@@ -480,7 +505,12 @@ a {
   margin: 0 auto;
   bottom: 42.5%;
   transform: translateY(50%);
-  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
+  background: linear-gradient(
+    to right,
+    var(--bannerColorPrimary),
+    var(--bannerColorSecondary),
+    var(--bannerColorPrimary)
+  );
   border: none;
   width: 80%;
 }
@@ -529,7 +559,7 @@ a {
 #join button a {
   -webkit-text-stroke: 0px #ffffff;
   -webkit-text-fill-color: var(--textMainColor);
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #join button {
@@ -562,7 +592,7 @@ a {
 /* Main end*/
 
 /* Main fresh*/
-#hero .smoothieContainer img{
+#hero .smoothieContainer img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -571,9 +601,49 @@ a {
   height: 400px;
   opacity: 85%;
 }
-#submitSmoothie {
+#checkoutOrder {
   position: relative;
   width: 100%;
+}
+#checkoutOrder {
+  position: relative;
+}
+
+.gridAreatitle {
+  margin-bottom: 10px;
+}
+
+#options {
+  position: relative;
+}
+
+#options ul {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 2px;
+  word-wrap: break-word;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#options ul li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options-label {
+  font-weight: bold;
+  color: var(--textMainColor);
+}
+
+#totalPriceContainer {
+  position: relative;
+  margin-top: 0;
+}
+#submitSmoothie{
+  margin-top: 10px;
 }
 /* Main fresh end*/
 
@@ -601,7 +671,7 @@ label {
   color: #cf2c20;
   font-weight: bold;
 }
-.optionalInput{
+.optionalInput {
   font-size: 12px;
 }
 input {
@@ -613,7 +683,11 @@ input {
   background-color: rgba(255, 255, 255, 0.788);
   color: rgb(0, 0, 0);
 }
-input[type="text"],input[type="email"],input[type="tel"],form select, form textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+form select,
+form textarea {
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
@@ -659,20 +733,22 @@ input[type="submit"]:hover {
 input[type="submit"]:disabled {
   background-color: #b8b8b8;
   -webkit-text-stroke: #757474;
-  -webkit-text-fill-color: #757474;  
-  cursor:default;
+  -webkit-text-fill-color: #757474;
+  cursor: default;
   letter-spacing: 0px;
 }
 
-#validationMessage,#validationMessageSubmit{
+#validationMessage,
+#validationMessageSubmit {
   color: #cf2c20;
   font-size: 16px;
   font-weight: 400;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
-form select,form textarea{
+form select,
+form textarea {
   border-radius: 6px;
 }
 /* Main Join end */
@@ -683,7 +759,7 @@ form select,form textarea{
   width: 100%;
   height: auto;
   padding-bottom: 70px;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 /* Main contact end */
 
@@ -692,7 +768,12 @@ footer {
   width: 100%;
   display: flex;
   margin: auto;
-  background: linear-gradient(to right, var(--backgroundPrimaryColor), var(--backgroundSecondaryColor), var(--backgroundPrimaryColor));
+  background: linear-gradient(
+    to right,
+    var(--backgroundPrimaryColor),
+    var(--backgroundSecondaryColor),
+    var(--backgroundPrimaryColor)
+  );
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -749,7 +830,7 @@ footer a:hover {
   margin-bottom: 3px;
 }
 #logoFooter {
-  width:  320px;
+  width: 320px;
   margin-right: -120px;
   padding-right: 50px;
   margin-top: -100px;
@@ -780,7 +861,12 @@ footer a:hover {
 hr {
   height: 2px;
   margin: 20px 0;
-  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
+  background: linear-gradient(
+    to right,
+    var(--bannerColorPrimary),
+    var(--bannerColorSecondary),
+    var(--bannerColorPrimary)
+  );
   border: none;
   width: 100%;
 }

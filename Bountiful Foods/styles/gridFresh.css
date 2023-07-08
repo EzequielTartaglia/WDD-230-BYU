@@ -56,7 +56,7 @@
   }
   .gridArea2 {
     grid-area: 8 / 1 / 8 / 5;
-    height: 230px;
+    height: 300px;
     border: solid #00445a25;
     box-shadow: var(--boxShadowBlack);
   }
@@ -75,11 +75,11 @@
 
     .gridArea5 {
       grid-area: 2 / 1 / 3 / 3;
-      height: 220px;
+      height: 230px;
     }
     .gridArea6 {
       grid-area: 2 / 3 / 3 / 5;
-      height: 220px;
+      height: 230px;
       margin-top: 10px;
     }
 
@@ -109,7 +109,7 @@
       }
     .gridArea2 {
       grid-area: 7 / 1 / 7 / 5;
-      height: 230px;
+      height: 300px;
     }
   }
   
@@ -127,38 +127,35 @@
     }
     .gridArea2 {
       grid-area: 5 / 1 / 7 / 3;
-      height: 250px;
+      height: 280px;
     }
       /* Col 2 */
     .gridArea3 {
       grid-area: 1 / 3 / 3 / 3;
-      height: 250px;
-      margin-top: -20px;
+      height: 280px;
+      margin-top: 10px;
 
     }
     .gridArea4 {
         grid-area: 7 / 3 / 5 / 3;
-        height: 250px;
+        height: 280px;
     }
     .gridArea5 {
       grid-area: 3 / 3 / 5 / 3;
-      height: 250px;
-      margin-top: -20px;
+      height: 280px;
     }
     /* Col 3 */
     .gridArea6 {
         grid-area: 1 / 4 / 3 / 5;
-        height: 250px;
-        margin-top: -10px;
+        height: 280px;
     }
     .gridArea7 {
         grid-area: 3 / 4 / 5 / 5;
-        height: 250px;
-        margin-top: -10px;
+        height: 280px;
     }
     .gridArea8 {
         grid-area: 5 / 4 / 7 / 5;
-        height: 250px;
+        height: 280px;
     }
   }
   
