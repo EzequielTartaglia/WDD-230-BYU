@@ -6,6 +6,8 @@
   --backgroundPrimaryColor: #5ef3a9;
   --backgroundSecondaryColor: #cff0df;
   
+  --backgroundMainColor: #cff0df;
+  --backgroundMainColorGradient: #5ef3a9;
   --backgroundBodyPrimaryColor: #03d86d;
   --backgroundBodySecondaryColor: var(--secondaryColor);
   
@@ -76,7 +78,7 @@ a:hover {
   
 }
 
-#banner {
+#banner,.divisor {
   width: 100%;
   margin: 10px auto;
   display: block;
@@ -89,6 +91,11 @@ a:hover {
 #banner a:hover {
   -webkit-text-fill-color: var(--bannerLink-hover);
   letter-spacing: 0.6px;
+}
+.divisor{
+  margin: 0px auto;
+  padding: 4px;
+
 }
 
 header {
@@ -281,17 +288,10 @@ nav {
   color: var(--accentColorSecondary-hover);
   transition: all 0.2s ease-in-out;
 }
-.currentDate {
-  background-color: aqua;
-  padding: 10px;
-  margin-top: 10px;
-  text-align: center;
-}
-
 /* Main */
 main {
   max-width: 1750px;
-  background: linear-gradient(to right, var(--backgroundBodyPrimaryColor), var(--backgroundBodySecondaryColor), var(--backgroundBodyPrimaryColor));
+  background: var(--backgroundMainColor);
   padding-top: 130px;
 }
 
@@ -320,7 +320,7 @@ a {
 }
 
 .grid-container {
-  background: linear-gradient(to right, var(--backgroundBodyPrimaryColor), var(--backgroundBodySecondaryColor), var(--backgroundBodyPrimaryColor));
+  background: linear-gradient(to bottom, var(--backgroundMainColor), var(--backgroundMainColorGradient), var(--backgroundMainColor)) ;
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   align-items: center;
