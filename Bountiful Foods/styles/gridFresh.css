@@ -56,7 +56,7 @@
   }
   .gridArea2 {
     grid-area: 8 / 1 / 8 / 5;
-    height: 300px;
+    height: auto;
     border: solid #00445a25;
     box-shadow: var(--boxShadowBlack);
   }
@@ -109,7 +109,7 @@
       }
     .gridArea2 {
       grid-area: 7 / 1 / 7 / 5;
-      height: 300px;
+      height: auto;
     }
   }
   
@@ -123,11 +123,12 @@
   
     .gridArea1 {
       grid-area: 1 / 1 / 5 / 3;
-      height: 550px;
+      height: 580px;
     }
     .gridArea2 {
       grid-area: 5 / 1 / 7 / 3;
-      height: 280px;
+      height: auto;
+      margin-top: -20px;
     }
       /* Col 2 */
     .gridArea3 {
