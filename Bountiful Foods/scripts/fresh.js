@@ -280,9 +280,13 @@ if (localStorage.getItem("Quantity of Smoothies Taken")) {
 
 //Send order
 submitSmoothie.addEventListener('click', () => {
-  //Update the quantity taken in localStorage
+
+  //If price is more than $0.00
+  if (calculateTotalPrice() > 0) {
+      //Update the quantity taken in localStorage
   Orderscounter++;
   localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
 
   console.log("Order taken successfully");
+  }
 });
