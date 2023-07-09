@@ -40,7 +40,7 @@ const totalPriceFruitsCheckout = document.getElementById("optionFruits");
         });
         totalPriceFruits.textContent = `$${totalPrice}.00`;
         totalPriceFruitsCheckout.textContent = `$${totalPrice}.00`; 
-        totalPriceCheckoutValue += totalPrice;
+        totalPriceCheckoutValue = calculateTotalPrice();
         totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;    
     });
     });
@@ -81,7 +81,7 @@ checkboxesVegetables.forEach((checkbox) => {
     });
     totalPriceVegetables.textContent = `$${totalPrice}.00`;
     totalPriceVegetablesCheckout.textContent = `$${totalPrice}.00`; 
-    totalPriceCheckoutValue += totalPrice;
+    totalPriceCheckoutValue = calculateTotalPrice();
     totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
   });
 });
@@ -122,7 +122,7 @@ checkboxesCreamsJams.forEach((checkbox) => {
     });
     totalPriceCreamsJams.textContent = `$${totalPrice}.00`;
     totalPriceCreamsJamsCheckout.textContent = `$${totalPrice}.00`; 
-    totalPriceCheckoutValue += totalPrice;
+    totalPriceCheckoutValue = calculateTotalPrice();
     totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
   });
 });
@@ -163,7 +163,7 @@ checkboxesSizes.forEach((checkbox) => {
     });
     totalPriceSizes.textContent = `$${totalPrice}.00`;
     totalPriceSizesCheckout.textContent = `$${totalPrice}.00`; 
-    totalPriceCheckoutValue += totalPrice;
+    totalPriceCheckoutValue = calculateTotalPrice();
     totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
 
   });
@@ -189,7 +189,7 @@ sherbetToggle.addEventListener("input", () => {
   // Update the final price
   totalPriceSherbets.textContent = `$${totalPriceSherbetsUpdated}.00`;
   totalPriceSherbetCheckout.textContent = `$${totalPriceSherbetsUpdated}.00`;
-  totalPriceCheckoutValue += totalPriceSherbetsUpdated;
+  totalPriceCheckoutValue = calculateTotalPrice();
   totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
 
 });
@@ -214,9 +214,63 @@ iceToggle.addEventListener("input", () => {
   // Update the final price
   totalPriceIces.textContent = `$${totalPriceIcesUpdated}.00`;
   totalPriceIcesCheckout.textContent = `$${totalPriceIcesUpdated}.00`;
-  totalPriceCheckoutValue += totalPriceIcesUpdated;
+  totalPriceCheckoutValue = calculateTotalPrice();
   totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
 
 });
 
+/* ---------------------------------- Calculate dinamically the final price ---------------------------------- */
 
+// Calculate the final price
+const calculateTotalPrice = () => {
+  let totalPrice = 0;
+
+  checkboxesFruit.forEach((checkbox) => {
+    if (checkbox.checked) {
+      const fruit = checkbox.value;
+      const price = fruitPrices[fruit];
+      totalPrice += price;
+    }
+  });
+
+  checkboxesVegetables.forEach((checkbox) => {
+    if (checkbox.checked) {
+      const vegetable = checkbox.value;
+      const price = vegetablesPrices[vegetable];
+      totalPrice += price;
+    }
+  });
+
+  checkboxesCreamsJams.forEach((checkbox) => {
+    if (checkbox.checked) {
+      const creamsJams = checkbox.value;
+      const price = creamsJamsPrices[creamsJams];
+      totalPrice += price;
+    }
+  });
+
+  checkboxesSizes.forEach((checkbox) => {
+    if (checkbox.checked) {
+      const sizes = checkbox.value;
+      const price = sizesPrices[sizes];
+      totalPrice += price;
+    }
+  });
+
+  const sherbetAmount = sherbetToggle.value;
+  const totalPriceSherbetsUpdated = sherbetAmount * 1;
+  totalPrice += totalPriceSherbetsUpdated;
+
+  const iceAmount = iceToggle.value;
+  const totalPriceIcesUpdated = iceAmount * 1;
+  totalPrice += totalPriceIcesUpdated;
+
+  return totalPrice;
+}
+
+/*--------------------------------------------- Take order --------------------------------------------- */
+const submitSmoothie = document.getElementById("submitSmoothie");
+
+submitSmoothie.addEventListener('click', () => {
+  console.log("Order taken successfully");
+});
