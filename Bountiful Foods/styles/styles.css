@@ -641,8 +641,7 @@ a {
 #submitSmoothie{
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.optionsSmoothie {
+}.optionsSmoothie {
   margin-left: 20px;
   margin-top: -20px;
   align-items: center;
@@ -657,9 +656,7 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 0;
 }
-
 .option-list li {
-  flex: 1 1 50%;
   display: flex;
   align-items: center;
   margin-bottom: 0;
@@ -678,6 +675,38 @@ a {
 .option-list li input[type="checkbox"] {
   margin-right: 5px;
   vertical-align: middle;
+}
+
+.optionRange-list li{
+list-style-type: none;
+}
+.optionRange-list li input[type="range"] {
+  width: 50px;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ccc;
+  border-radius: 10px;
+  outline: none;
+  margin-left: auto;
+  margin-right: 5px;
+}
+.optionRange-list li input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #0a0909;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.optionRange-list li input[type="range"]:checked::-webkit-slider-thumb {
+  background-color: #ff8c00;
+}
+
+#sherbetToggle,#icesToggle {
+  margin-left: 10px;
 }
 
 /* Main fresh end*/

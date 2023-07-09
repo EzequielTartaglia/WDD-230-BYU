@@ -32,13 +32,7 @@
   border: solid #00445a25;
   box-shadow: var(--boxShadowBlack);
 }
-.gridArea7 {
-  grid-area: 6 / 1 / 7 / 5;
-  border: solid #00445a25;
-  box-shadow: var(--boxShadowBlack);
-  margin-bottom: 5px;
-  height: 230px;
-}
+
 .gridArea6 {
   grid-area: 5 / 1 / 6 / 5;
   border: solid #00445a25;
@@ -46,10 +40,16 @@
   margin-bottom: 5px;
   height: 230px;
 }
-
+.gridArea7 {
+    grid-area: 6 / 1 / 7 / 5;
+    border: solid #00445a25;
+    box-shadow: var(--boxShadowBlack);
+    margin-bottom: 5px;
+    height: 150px;
+  }
 .gridArea8 {
   grid-area: 7 / 1 / 7 / 5;
-  height: 230px;
+  height: 150px;
   border: solid #00445a25;
   box-shadow: var(--boxShadowBlack);
 }
@@ -95,12 +95,12 @@
   }
   .gridArea7 {
     grid-area: 4 / 1 / 5 / 3;
-    height: 230px;
+    height: 150px;
   }
 
   .gridArea8 {
     grid-area: 4 / 3 / 5 / 5;
-    height: 230px;
+    height: 150px;
     border: solid #00445a25;
     box-shadow: var(--boxShadowBlack);
   }
@@ -157,9 +157,15 @@
     grid-area: 3 / 4 / 5 / 5;
     height: 280px;
   }
+  #sherbetOptionsContainer .gridAreaContent {
+    margin-top: 50px;
+  }
   /* Ices */
   .gridArea8 {
     grid-area: 5 / 4 / 7 / 5;
     height: 280px;
+  }
+  #iceOptionsContainer .gridAreaContent {
+    margin-top: 50px;
   }
 }
