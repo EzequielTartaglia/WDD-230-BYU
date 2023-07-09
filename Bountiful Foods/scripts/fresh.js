@@ -303,7 +303,29 @@ submitSmoothie.addEventListener('click', () => {
   totalPriceIcesCheckout.textContent = `$${0}.00`;
   totalPriceCheckout.textContent = `$${0}.00`;
 
+  // Uncheck all checkboxes
+  checkboxesFruit.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+
+  checkboxesVegetables.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+
+  checkboxesCreamsJams.forEach((checkbox) => {
+    checkbox.checked = false;
+  });
+
+  checkboxesSizes.forEach((checkbox) => {
+    checkbox.checked = false;
+  });  
+
+  // Reset the range inputs
+  sherbetToggle.value = 0;
+  iceToggle.value = 0;
+  
   console.log("Order taken successfully");
+
   }
   
 });
