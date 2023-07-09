@@ -75,16 +75,16 @@
         strawberry: 5,
     };
     
-    // Get chekbox (vegetables)
+    // Get chekbox (creams & jams)
     const checkboxesCreamsJams = document.querySelectorAll('#creamsJamsOptionsContainer input[type="checkbox"]');
     
-    // Get quantity of vegetables
+    // Get quantity of creams & jams
     const totalPriceCreamsJams = document.getElementById('totalPriceCreamsJams');
     
     // Change the value per each change
     checkboxesCreamsJams.forEach((checkbox) => {
         checkbox.addEventListener('change', () => {
-        // Calcular el nuevo precio total
+        // Calculate the total
         let totalPrice = 0;
         checkboxesCreamsJams.forEach((checkbox) => {
             if (checkbox.checked) {
@@ -96,8 +96,39 @@
         totalPriceCreamsJams.textContent = `$${totalPrice}.00`;
         });
     });
-    
+
 /* Sizes */
+    // Price of sizes
+    const sizesPrices = {
+        small: 1,
+        medium: 2,
+        large: 3,
+        xl: 4,
+        xxl: 5,
+        xxxl: 6,
+    };
+    
+    // Get chekbox (sizes)
+    const checkboxesSizes = document.querySelectorAll('#sizeOptionsContainer input[type="checkbox"]');
+    
+    // Get quantity of sizes
+    const totalPriceSizes = document.getElementById('totalPriceSizes');
+    
+    // Change the value per each change
+    checkboxesSizes.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+        // Calculate the total
+        let totalPrice = 0;
+        checkboxesSizes.forEach((checkbox) => {
+            if (checkbox.checked) {
+            const sizes = checkbox.value;
+            const price = sizesPrices[sizes];
+            totalPrice += price;
+            }
+        });
+        totalPriceSizes.textContent = `$${totalPrice}.00`;
+        });
+    });
 
 /* Sherbets */
 
