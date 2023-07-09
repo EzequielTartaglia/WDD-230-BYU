@@ -1,5 +1,8 @@
+//-------------------------------- /* Checkout */ ------------------------------------
 const totalPriceCheckout = document.getElementById("totalPrice");
 let totalPriceCheckoutValue = 0;
+//-------------------------------- /* Checkout */ ------------------------------------
+
 
 /* Fruits */
 // Get element in checkout
@@ -77,13 +80,16 @@ checkboxesVegetables.forEach((checkbox) => {
       }
     });
     totalPriceVegetables.textContent = `$${totalPrice}.00`;
-    totalPriceVegetablesCheckout.textContent = `$${totalPrice}.00`; // Actualizar el contenido del elemento en el checkout
+    totalPriceVegetablesCheckout.textContent = `$${totalPrice}.00`; 
     totalPriceCheckoutValue += totalPrice;
     totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
   });
 });
 
 /* Creams & Jams */
+// Get element in checkout
+const totalPriceCreamsJamsCheckout = document.getElementById("optionCreamsJams");
+
 // Price of Creams / Jams
 const creamsJamsPrices = {
   caramel: 2,
@@ -115,6 +121,9 @@ checkboxesCreamsJams.forEach((checkbox) => {
       }
     });
     totalPriceCreamsJams.textContent = `$${totalPrice}.00`;
+    totalPriceCreamsJamsCheckout.textContent = `$${totalPrice}.00`; 
+    totalPriceCheckoutValue += totalPrice;
+    totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
   });
 });
 
@@ -189,5 +198,4 @@ iceToggle.addEventListener("input", () => {
   totalPriceIces.textContent = `$${totalPriceIcesUpdated}.00`;
 });
 
-//-------------------------------- /* Checkout */ ------------------------------------
 
