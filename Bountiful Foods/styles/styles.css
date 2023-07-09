@@ -594,7 +594,7 @@ a {
   height: 400px;
   opacity: 85%;
 }
-#checkoutOrder,#vegetablesOptionsContainer,#creamsJamsOptionsContainer,
+#checkoutOrder,#fruitsOptionsContainer, #vegetablesOptionsContainer,#creamsJamsOptionsContainer,
 #sizeOptionsContainer,#sherbetOptionsContainer,#iceOptionsContainer {
   position: relative;
   width: 100%;
@@ -638,6 +638,42 @@ a {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.optionsSmoothie {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.option-list {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.option-list li {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.option-list li label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0;
+}
+
+.option-list li input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 /* Main fresh end*/
 
 /* Main Join */
