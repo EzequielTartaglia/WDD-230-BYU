@@ -289,4 +289,5 @@ submitSmoothie.addEventListener('click', () => {
 
   console.log("Order taken successfully");
   }
+  
 });
