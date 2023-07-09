@@ -128,6 +128,9 @@ checkboxesCreamsJams.forEach((checkbox) => {
 });
 
 /* Sizes */
+// Get element in checkout
+const totalPriceSizesCheckout = document.getElementById("optionSize");
+
 // Price of sizes
 const sizesPrices = {
   small: 1,
@@ -159,6 +162,10 @@ checkboxesSizes.forEach((checkbox) => {
       }
     });
     totalPriceSizes.textContent = `$${totalPrice}.00`;
+    totalPriceSizesCheckout.textContent = `$${totalPrice}.00`; 
+    totalPriceCheckoutValue += totalPrice;
+    totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
+
   });
 });
 
