@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         className: "info",
         style: {
           background: "linear-gradient(to right, #016131, #028d48, #016131)"
+        },
+        onClick: () => {
+          window.location.href = "fresh.html";
         }
       }).showToast();
     }
