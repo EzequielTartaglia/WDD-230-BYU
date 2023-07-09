@@ -27,3 +27,8 @@ Assiment Portal: https://ezequieltartaglia.github.io/wdd230/
 W01 Activity: Applied JavaScript: https://codepen.io/ezequieltartaglia/pen/OJBNwdZ
 
 ### Final Project
+
+- Boutiful Foods Site Plan: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/Design/design.html
+- Boutiful Foods Home Page: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/index.html
+- Boutiful Foods Fresh Page: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/fresh.html
+- Boutiful Foods About Page: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/about.html

@@ -35,6 +35,11 @@ const finalProjectDesign = new Assigment("Final project - Site Plan","./Bountifu
 lessonList.push(finalProjectDesign)
 const finalProjectHome = new Assigment("Final project","./Bountiful Foods/index.html","Bountiful Foods | Home")
 lessonList.push(finalProjectHome)
+const finalProjectFresh = new Assigment("Final project","./Bountiful Foods/fresh.html","Bountiful Foods | Fresh")
+lessonList.push(finalProjectFresh)
+const finalProjectAbout = new Assigment("Final project","./Bountiful Foods/about.html","Bountiful Foods | About")
+lessonList.push(finalProjectAbout)
+
 const assigmentsList = document.getElementById("assigmentsList");
 
 assigmentsList.innerHTML = lessonList.map(element => 
