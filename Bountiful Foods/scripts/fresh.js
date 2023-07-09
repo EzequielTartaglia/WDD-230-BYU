@@ -288,20 +288,33 @@ submitSmoothie.addEventListener('click', () => {
   Orderscounter++;
   localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
 
+  //Toastify
+  Toastify({
+    text: `Your order of ${totalPriceCheckout.textContent} has been sent!`,
+    duration: 3000,
+    close: true,
+    gravity: 'top',
+    positionLeft: false,
+    style: {
+      background: "linear-gradient(to right, #016131, #028d48, #016131)"
+    }
+    }).showToast();
+
   //Empty values
-  totalPriceFruits.textContent = `$${0}.00`;
-  totalPriceFruitsCheckout.textContent = `$${0}.00`;
-  totalPriceVegetables.textContent = `$${0}.00`;
-  totalPriceVegetablesCheckout.textContent = `$${0}.00`;
-  totalPriceCreamsJams.textContent = `$${0}.00`;
-  totalPriceCreamsJamsCheckout.textContent = `$${0}.00`; 
-  totalPriceSizes.textContent = `$${0}.00`;
-  totalPriceSizesCheckout.textContent = `$${0}.00`;
-  totalPriceSherbets.textContent = `$${0}.00`;
-  totalPriceSherbetCheckout.textContent = `$${0}.00`;
-  totalPriceIces.textContent = `$${0}.00`;
-  totalPriceIcesCheckout.textContent = `$${0}.00`;
-  totalPriceCheckout.textContent = `$${0}.00`;
+  const emptyValue = `$${0}.00`;
+  totalPriceFruits.textContent = emptyValue;
+  totalPriceFruitsCheckout.textContent = emptyValue;
+  totalPriceVegetables.textContent = emptyValue;
+  totalPriceVegetablesCheckout.textContent = emptyValue;
+  totalPriceCreamsJams.textContent = emptyValue;
+  totalPriceCreamsJamsCheckout.textContent = emptyValue;
+  totalPriceSizes.textContent = emptyValue;
+  totalPriceSizesCheckout.textContent = emptyValue;
+  totalPriceSherbets.textContent = emptyValue;
+  totalPriceSherbetCheckout.textContent = emptyValue;
+  totalPriceIces.textContent = emptyValue;
+  totalPriceIcesCheckout.textContent = emptyValue;
+  totalPriceCheckout.textContent = emptyValue;
 
   // Uncheck all checkboxes
   checkboxesFruit.forEach((checkbox) => {

@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
       Toastify({
         text: `You have taken ${Orderscounter} smoothies so far. Keep up the good work!`,
         className: "info",
+        duration: 3000,
+        close: true,    
         style: {
           background: "linear-gradient(to right, #016131, #028d48, #016131)"
         },
