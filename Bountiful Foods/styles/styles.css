@@ -594,7 +594,8 @@ a {
   height: 400px;
   opacity: 85%;
 }
-#checkoutOrder,#vegetablesOptionsContainer,#creamsJamsOptionsContainer {
+#checkoutOrder,#vegetablesOptionsContainer,#creamsJamsOptionsContainer,
+#sizeOptionsContainer,#sherbetOptionsContainer,#iceOptionsContainer {
   position: relative;
   width: 100%;
 }
