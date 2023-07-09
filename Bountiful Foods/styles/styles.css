@@ -622,7 +622,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .option-value {
@@ -630,10 +630,14 @@ a {
   padding: 10px;
 }
 
-#totalPriceContainer {
+#totalPriceContainer, .totalPriceSectionSmoothie {
   position: relative;
   margin-top: 0;
 }
+.totalPriceSectionSmoothie {
+  padding: 10px;
+}
+
 #submitSmoothie{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -641,25 +645,27 @@ a {
 .optionsSmoothie {
   margin-left: 20px;
   margin-top: -20px;
+  align-items: center;
 }
 
 .option-list {
   list-style-type: none;
   padding: 0;
   border-radius: 2px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+  word-wrap: break-word;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
 }
 
 .option-list li {
   flex: 1 1 50%;
   display: flex;
   align-items: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   width: 50%;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 0;
 }
 
 .option-list li label {
