@@ -1,9 +1,9 @@
-  .float-buttons .home{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000000;
-  }
+.float-buttons .home{
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  z-index: 1000000;
+}
   .float-button {
     display: flex;
     align-items: center;
