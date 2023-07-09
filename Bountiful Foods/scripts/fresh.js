@@ -170,6 +170,9 @@ checkboxesSizes.forEach((checkbox) => {
 });
 
 /* Sherbets */
+// Get element in checkout
+const totalPriceSherbetCheckout = document.getElementById("optionSherbets");
+
 // Get the range
 const sherbetToggle = document.getElementById("sherbetToggle");
 
@@ -185,9 +188,16 @@ sherbetToggle.addEventListener("input", () => {
 
   // Update the final price
   totalPriceSherbets.textContent = `$${totalPriceSherbetsUpdated}.00`;
+  totalPriceSherbetCheckout.textContent = `$${totalPriceSherbetsUpdated}.00`;
+  totalPriceCheckoutValue += totalPriceSherbetsUpdated;
+  totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
+
 });
 
 /* Ices */
+// Get element in checkout
+const totalPriceIcesCheckout = document.getElementById("optionIces");
+
 // Get the range
 const iceToggle = document.getElementById("icesToggle");
 
@@ -203,6 +213,10 @@ iceToggle.addEventListener("input", () => {
 
   // Update the final price
   totalPriceIces.textContent = `$${totalPriceIcesUpdated}.00`;
+  totalPriceIcesCheckout.textContent = `$${totalPriceIcesUpdated}.00`;
+  totalPriceCheckoutValue += totalPriceIcesUpdated;
+  totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
+
 });
 
 
