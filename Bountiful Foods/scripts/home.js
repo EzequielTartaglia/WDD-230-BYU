@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
       Toastify({
         text: `You have taken ${Orderscounter} smoothies so far. Keep up the good work!`,
         className: "info",
-        backgroundColor: "linear-gradient(to right, #016131, #028d48, #016131)",
+        style: {
+          background: "linear-gradient(to right, #016131, #028d48, #016131)"
+        }
       }).showToast();
     }
   });
