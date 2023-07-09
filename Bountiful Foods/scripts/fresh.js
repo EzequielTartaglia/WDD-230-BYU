@@ -131,7 +131,39 @@
     });
 
 /* Sherbets */
+    // Get the range
+    const sherbetToggle = document.getElementById('sherbetToggle');
+
+    // Get the total price
+    const totalPriceSherbets = document.getElementById('totalSherbets');
+
+    sherbetToggle.addEventListener('input', () => {
+    // Get the value of the range
+    const sherbetAmount = sherbetToggle.value;
+
+    // Calculate the total
+    const totalPriceSherbetsUpdated = sherbetAmount * 1; 
+
+    // Update the final price
+    totalPriceSherbets.textContent = `$${totalPriceSherbetsUpdated}.00`;
+    });
 
 /* Ices */
+    // Get the range
+    const iceToggle = document.getElementById('icesToggle');
 
+    // Get the total price
+    const totalPriceIces = document.getElementById('totalPriceIces');
+
+    iceToggle.addEventListener('input', () => {
+    // Get the value of the range
+    const iceAmount = iceToggle.value;
+
+    // Calculate the total
+    const totalPriceIcesUpdated = iceAmount * 1; 
+
+    // Update the final price
+    totalPriceIces.textContent = `$${totalPriceIcesUpdated}.00`;
+    });
+    
 /* Checkout */
