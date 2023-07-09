@@ -270,7 +270,19 @@ const calculateTotalPrice = () => {
 
 /*--------------------------------------------- Take order --------------------------------------------- */
 const submitSmoothie = document.getElementById("submitSmoothie");
+let Orderscounter = 0;
 
+//Receive info from localStorage (quantity of smoothies taken) 
+//and remplace the value (let Orderscounter = 0;)
+if (localStorage.getItem("Quantity of Smoothies Taken")) {
+  Orderscounter = parseInt(localStorage.getItem("Quantity of Smoothies Taken"));
+}
+
+//Send order
 submitSmoothie.addEventListener('click', () => {
+  //Update the quantity taken in localStorage
+  Orderscounter++;
+  localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
+
   console.log("Order taken successfully");
 });
