@@ -63,9 +63,40 @@
         totalPriceVegetables.textContent = `$${totalPrice}.00`;
         });
     });
-    
-/* Creams & Jams */
 
+/* Creams & Jams */
+    // Price of Creams / Jams
+    const creamsJamsPrices = {
+        caramel: 2,
+        chocolate: 3,
+        coconut: 5,
+        honey: 2,
+        peach: 3,
+        strawberry: 5,
+    };
+    
+    // Get chekbox (vegetables)
+    const checkboxesCreamsJams = document.querySelectorAll('#creamsJamsOptionsContainer input[type="checkbox"]');
+    
+    // Get quantity of vegetables
+    const totalPriceCreamsJams = document.getElementById('totalPriceCreamsJams');
+    
+    // Change the value per each change
+    checkboxesCreamsJams.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+        // Calcular el nuevo precio total
+        let totalPrice = 0;
+        checkboxesCreamsJams.forEach((checkbox) => {
+            if (checkbox.checked) {
+            const creamsJams = checkbox.value;
+            const price = creamsJamsPrices[creamsJams];
+            totalPrice += price;
+            }
+        });
+        totalPriceCreamsJams.textContent = `$${totalPrice}.00`;
+        });
+    });
+    
 /* Sizes */
 
 /* Sherbets */
