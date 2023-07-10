@@ -291,11 +291,10 @@ submitSmoothie.addEventListener("click", () => {
       hideClass: { popup: "animate__animated animate__fadeOutUp" },
       confirmButtonColor: "#5ef3a9",
       padding: "1.7rem",
-      icon: "warning",
       confirmButtonText: "Confirm",
       background: "linear-gradient(to right, #016131, #028d48, #016131)",
       color: "#fff",
-      allowOutsideClick: false,
+      allowOutsideClick: true,
       showDenyButton: true,
       denyButtonText: `Cancel`,
 
@@ -304,10 +303,10 @@ submitSmoothie.addEventListener("click", () => {
         <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email"  id="swal-input2" class="swal2-input""><br>
         <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel"  id="swal-input3" class="swal2-input"><br>`,
       //When you enter the values
-    }).then((result) => {
+    })
+    .then((result) => {
       if (result.isConfirmed) {
         Swal.fire({
-          text: "Sending order...",
           padding: "1rem",
           background: "linear-gradient(to right, #016131, #028d48, #016131)",
           icon: "success",
@@ -386,10 +385,9 @@ submitSmoothie.addEventListener("click", () => {
       } else if (!result.isConfirmed) {
         Swal.fire({
           text: "Canceling order...",
-          padding: "1rem",
+          padding: "1.7rem",
           background: "linear-gradient(to right, #016131, #028d48, #016131)",
-          icon: "error",
-          timer: 1000,
+          timer: 1600,
           color: "#fff",
           timerProgressBar: false,
           didOpen: () => {
@@ -403,6 +401,10 @@ submitSmoothie.addEventListener("click", () => {
             clearInterval(timerInterval);
           },
         });
+        // Cerrar el modal después de un cierto tiempo
+        setTimeout(() => {
+          Swal.close();
+        }, 1200); // Ajusta el tiempo en milisegundos según tus necesidades
       }
     });
   }
