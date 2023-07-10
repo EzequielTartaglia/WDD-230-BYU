@@ -281,127 +281,166 @@ if (localStorage.getItem("Quantity of Smoothies Taken")) {
 submitSmoothie.addEventListener("click", () => {
   //If price is more than $0.00
   if (calculateTotalPrice() > 0) {
-    //Send a form
-    Swal.fire({
-      //Text in the alert
-      title: `<h3 style="justify-content: center;color: #ffffff;">Review and Confirm</h3>`,
-      //Propieties
-      focusConfirm: false,
-      showClass: { popup: "animate__animated animate__fadeInDown" },
-      hideClass: { popup: "animate__animated animate__fadeOutUp" },
-      confirmButtonColor: "#5ef3a9",
-      padding: "1.7rem",
-      confirmButtonText: "Confirm",
-      background: "linear-gradient(to right, #016131, #028d48, #016131)",
-      color: "#fff",
-      allowOutsideClick: true,
-      showDenyButton: true,
-      denyButtonText: `Cancel`,
+    const showOrderModal = () => {
+      Swal.fire({
+        // Text in the alert
+        title: `<h3 style="justify-content: center;color: #ffffff;">Review and Confirm</h3>`,
+        // Properties
+        focusConfirm: false,
+        showClass: { popup: "animate__animated animate__fadeInDown" },
+        hideClass: { popup: "animate__animated animate__fadeOutUp" },
+        confirmButtonColor: "#5ef3a9",
+        padding: "1.7rem",
+        confirmButtonText: "Confirm",
+        background: "linear-gradient(to right, #016131, #028d48, #016131)",
+        color: "#fff",
+        allowOutsideClick: false,
+        showDenyButton: true,
+        denyButtonText: `Cancel`,
 
-      //Create an html format
-      html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text"  id="swal-input1" class="swal2-input""><br>
-        <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email"  id="swal-input2" class="swal2-input""><br>
-        <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel"  id="swal-input3" class="swal2-input"><br>`,
-      //When you enter the values
-    })
-    .then((result) => {
-      if (result.isConfirmed) {
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'center',
-          showConfirmButton: false,
-          background: "linear-gradient(to right, #016131, #028d48, #016131)",
-          color: '#fff',
-          padding: "1.7rem",
-          timer: 1800,
-          timerProgressBar: true,
-          hideClass: '',
-        })
-        Toast.fire({
-          icon: 'wait',
-          title: 'Sending order...'
-        }).then((result) => {
-          if (result.dismiss === Swal.DismissReason.timer) {
-            //Update the quantity taken in localStorage
-            Orderscounter++;
-            localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
+        // Create an HTML format
+        html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input"><br>
+          <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email" id="swal-input2" class="swal2-input"><br>
+          <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input"><br>`,
+        // When you enter the values
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const inputIds = ["swal-input1", "swal-input2", "swal-input3"];
+          let isEmpty = false;
 
-            const Toast = Swal.mixin({
-              toast: true,
-              position: 'center',
-              showConfirmButton: false,
-              background: "linear-gradient(to right, #016131, #028d48, #016131)",
-              color: '#fff',
-              padding: "1.7rem",
-              timer: 1800,
-              hideClass: '',
-            })
-            Toast.fire({
-              icon: 'success',
-              text: `Your order of ${totalPriceCheckout.textContent} has been sent successfully!`,
-            })
-
-            //Empty values
-            const emptyValue = `$${0}.00`;
-            
-            const totalPriceFruits = document.getElementById("total-price-fruits");
-            if (totalPriceFruits) {
-              totalPriceFruits.textContent = emptyValue;
-            }            
-            
-            totalPriceFruitsCheckout.textContent = emptyValue;
-            totalPriceVegetables.textContent = emptyValue;
-            totalPriceVegetablesCheckout.textContent = emptyValue;
-            totalPriceCreamsJams.textContent = emptyValue;
-            totalPriceCreamsJamsCheckout.textContent = emptyValue;
-            totalPriceSizes.textContent = emptyValue;
-            totalPriceSizesCheckout.textContent = emptyValue;
-            totalPriceSherbets.textContent = emptyValue;
-            totalPriceSherbetCheckout.textContent = emptyValue;
-            totalPriceIces.textContent = emptyValue;
-            totalPriceIcesCheckout.textContent = emptyValue;
-            totalPriceCheckout.textContent = emptyValue;
-
-            // Uncheck all checkboxes
-            checkboxesFruit.forEach((checkbox) => {
-              checkbox.checked = false;
-            });
-
-            checkboxesVegetables.forEach((checkbox) => {
-              checkbox.checked = false;
-            });
-
-            checkboxesCreamsJams.forEach((checkbox) => {
-              checkbox.checked = false;
-            });
-
-            checkboxesSizes.forEach((checkbox) => {
-              checkbox.checked = false;
-            });
-
-            // Reset the range inputs
-            sherbetToggle.value = 0;
-            iceToggle.value = 0;
-
-            console.log("Order taken successfully");
+          for (let i = 0; i < inputIds.length; i++) {
+            const input = document.getElementById(inputIds[i]);
+            if (input.value.trim() === "") {
+              isEmpty = true;
+              break;
+            }
           }
-        });
-      } else if (!result.isConfirmed) {
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'center',
-          showConfirmButton: false,
-          background: "#dc3741",
-          color: '#fff',
-          padding: "1.7rem",
-          timer: 1800,
-          hideClass: '',
-        })
-        Toast.fire({
-          icon: 'error',
-          text: `Order canceled.`,
-        })
-      }
-    });
+
+          if (isEmpty) {
+            Swal.fire({
+              title: "Please fill in all the fields",
+              icon: "warning",
+              allowOutsideClick: false,
+              confirmButtonColor: "#5ef3a9",
+              padding: "1.7rem",
+              confirmButtonText: "Confirm",
+
+              background:
+                "linear-gradient(to right, #016131, #028d48, #016131)",
+              color: "#fff",
+            }).then(() => {
+              showOrderModal(); // Show the modal again if fields are not filled
+            });
+            return;
+          }
+
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "center",
+            showConfirmButton: false,
+            background: "linear-gradient(to right, #016131, #028d48, #016131)",
+            color: "#fff",
+            padding: "1.7rem",
+            timer: 1800,
+            timerProgressBar: true,
+            hideClass: "",
+          });
+
+          Toast.fire({
+            icon: "wait",
+            title: "Sending order...",
+          }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+              // Update the quantity taken in localStorage
+              Orderscounter++;
+              localStorage.setItem(
+                "Quantity of Smoothies Taken",
+                Orderscounter
+              );
+
+              const Toast = Swal.mixin({
+                toast: true,
+                position: "center",
+                showConfirmButton: false,
+                background:
+                  "linear-gradient(to right, #016131, #028d48, #016131)",
+                color: "#fff",
+                padding: "1.7rem",
+                timer: 1800,
+                hideClass: "",
+              });
+
+              Toast.fire({
+                icon: "success",
+                text: `Your order of ${totalPriceCheckout.textContent} has been sent successfully!`,
+              });
+
+              // Empty values
+              const emptyValue = `$${0}.00`;
+
+              const totalPriceFruits =
+                document.getElementById("total-price-fruits");
+              if (totalPriceFruits) {
+                totalPriceFruits.textContent = emptyValue;
+              }
+
+              totalPriceFruitsCheckout.textContent = emptyValue;
+              totalPriceVegetables.textContent = emptyValue;
+              totalPriceVegetablesCheckout.textContent = emptyValue;
+              totalPriceCreamsJams.textContent = emptyValue;
+              totalPriceCreamsJamsCheckout.textContent = emptyValue;
+              totalPriceSizes.textContent = emptyValue;
+              totalPriceSizesCheckout.textContent = emptyValue;
+              totalPriceSherbets.textContent = emptyValue;
+              totalPriceSherbetCheckout.textContent = emptyValue;
+              totalPriceIces.textContent = emptyValue;
+              totalPriceIcesCheckout.textContent = emptyValue;
+              totalPriceCheckout.textContent = emptyValue;
+
+              // Uncheck all checkboxes
+              checkboxesFruit.forEach((checkbox) => {
+                checkbox.checked = false;
+              });
+
+              checkboxesVegetables.forEach((checkbox) => {
+                checkbox.checked = false;
+              });
+
+              checkboxesCreamsJams.forEach((checkbox) => {
+                checkbox.checked = false;
+              });
+
+              checkboxesSizes.forEach((checkbox) => {
+                checkbox.checked = false;
+              });
+
+              // Reset the range inputs```javascript
+              sherbetToggle.value = 0;
+              iceToggle.value = 0;
+
+              console.log("Order taken successfully");
+            }
+          });
+        } else if (!result.isConfirmed) {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "center",
+            showConfirmButton: false,
+            background: "#dc3741",
+            color: "#fff",
+            padding: "1.7rem",
+            timer: 1800,
+            hideClass: "",
+          });
+
+          Toast.fire({
+            icon: "error",
+            text: "Order canceled.",
+          });
+        }
+      });
+    };
+
+    showOrderModal(); // Show the initial modal
   }
 });
