@@ -301,7 +301,8 @@ submitSmoothie.addEventListener("click", () => {
         // Create an HTML format
         html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input"><br>
           <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email" id="swal-input2" class="swal2-input"><br>
-          <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input"><br>`,
+          <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input"><br>
+          <br><label><b style="color: #ffffff;">Comments</b><h6 style="color: #ffffff;">(optional)</h6></label><br><input type="text"  id="swal-input4" class="swal2-input">`,
         // When you enter the values
       }).then((result) => {
         if (result.isConfirmed) {
