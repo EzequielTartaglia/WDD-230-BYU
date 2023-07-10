@@ -306,45 +306,49 @@ submitSmoothie.addEventListener("click", () => {
     })
     .then((result) => {
       if (result.isConfirmed) {
-        Swal.fire({
-          padding: "1rem",
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'center',
+          showConfirmButton: false,
           background: "linear-gradient(to right, #016131, #028d48, #016131)",
-          icon: "success",
+          color: '#fff',
+          padding: "1.7rem",
           timer: 1800,
-          color: "#fff",
           timerProgressBar: true,
-          didOpen: () => {
-            Swal.showLoading();
-            const b = Swal.getHtmlContainer().querySelector("b");
-            timerInterval = setInterval(() => {
-              b.textContent = Swal.getTimerLeft();
-            }, 100);
-          },
-          willClose: () => {
-            clearInterval(timerInterval);
-          },
+          hideClass: '',
+        })
+        Toast.fire({
+          icon: 'wait',
+          title: 'Sending order...'
         }).then((result) => {
           if (result.dismiss === Swal.DismissReason.timer) {
             //Update the quantity taken in localStorage
             Orderscounter++;
             localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
 
-            //Toastify
-            Toastify({
+            const Toast = Swal.mixin({
+              toast: true,
+              position: 'center',
+              showConfirmButton: false,
+              background: "linear-gradient(to right, #016131, #028d48, #016131)",
+              color: '#fff',
+              padding: "1.7rem",
+              timer: 1800,
+              hideClass: '',
+            })
+            Toast.fire({
+              icon: 'success',
               text: `Your order of ${totalPriceCheckout.textContent} has been sent successfully!`,
-              duration: 3000,
-              close: true,
-              gravity: "top",
-              positionLeft: false,
-              style: {
-                background:
-                  "linear-gradient(to right, #016131, #028d48, #016131)",
-              },
-            }).showToast();
+            })
 
             //Empty values
             const emptyValue = `$${0}.00`;
-            totalPriceFruits.textContent = emptyValue;
+            
+            const totalPriceFruits = document.getElementById("total-price-fruits");
+            if (totalPriceFruits) {
+              totalPriceFruits.textContent = emptyValue;
+            }            
+            
             totalPriceFruitsCheckout.textContent = emptyValue;
             totalPriceVegetables.textContent = emptyValue;
             totalPriceVegetablesCheckout.textContent = emptyValue;
@@ -383,28 +387,20 @@ submitSmoothie.addEventListener("click", () => {
           }
         });
       } else if (!result.isConfirmed) {
-        Swal.fire({
-          text: "Canceling order...",
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'center',
+          showConfirmButton: false,
+          background: "#dc3741",
+          color: '#fff',
           padding: "1.7rem",
-          background: "linear-gradient(to right, #016131, #028d48, #016131)",
-          timer: 1600,
-          color: "#fff",
-          timerProgressBar: false,
-          didOpen: () => {
-            Swal.showLoading();
-            const b = Swal.getHtmlContainer().querySelector("b");
-            timerInterval = setInterval(() => {
-              b.textContent = Swal.getTimerLeft();
-            }, 100);
-          },
-          willClose: () => {
-            clearInterval(timerInterval);
-          },
-        });
-        // Cerrar el modal después de un cierto tiempo
-        setTimeout(() => {
-          Swal.close();
-        }, 1200); // Ajusta el tiempo en milisegundos según tus necesidades
+          timer: 1800,
+          hideClass: '',
+        })
+        Toast.fire({
+          icon: 'error',
+          text: `Order canceled.`,
+        })
       }
     });
   }
