@@ -298,7 +298,7 @@ submitSmoothie.addEventListener("click", () => {
       allowOutsideClick: false,
       showDenyButton: true,
       denyButtonText: `Cancel`,
-    
+
       //Create an html format
       html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text"  id="swal-input1" class="swal2-input""><br>
         <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email"  id="swal-input2" class="swal2-input""><br>
@@ -329,7 +329,7 @@ submitSmoothie.addEventListener("click", () => {
             //Update the quantity taken in localStorage
             Orderscounter++;
             localStorage.setItem("Quantity of Smoothies Taken", Orderscounter);
-    
+
             //Toastify
             Toastify({
               text: `Your order of ${totalPriceCheckout.textContent} has been sent successfully!`,
@@ -338,10 +338,11 @@ submitSmoothie.addEventListener("click", () => {
               gravity: "top",
               positionLeft: false,
               style: {
-                background: "linear-gradient(to right, #016131, #028d48, #016131)",
+                background:
+                  "linear-gradient(to right, #016131, #028d48, #016131)",
               },
             }).showToast();
-    
+
             //Empty values
             const emptyValue = `$${0}.00`;
             totalPriceFruits.textContent = emptyValue;
@@ -357,33 +358,32 @@ submitSmoothie.addEventListener("click", () => {
             totalPriceIces.textContent = emptyValue;
             totalPriceIcesCheckout.textContent = emptyValue;
             totalPriceCheckout.textContent = emptyValue;
-    
+
             // Uncheck all checkboxes
             checkboxesFruit.forEach((checkbox) => {
               checkbox.checked = false;
             });
-    
+
             checkboxesVegetables.forEach((checkbox) => {
               checkbox.checked = false;
             });
-    
+
             checkboxesCreamsJams.forEach((checkbox) => {
               checkbox.checked = false;
             });
-    
+
             checkboxesSizes.forEach((checkbox) => {
               checkbox.checked = false;
             });
-    
+
             // Reset the range inputs
             sherbetToggle.value = 0;
             iceToggle.value = 0;
-    
+
             console.log("Order taken successfully");
           }
         });
-      }
-      else if (!result.isConfirmed){
+      } else if (!result.isConfirmed) {
         Swal.fire({
           text: "Canceling order...",
           padding: "1rem",
@@ -402,9 +402,8 @@ submitSmoothie.addEventListener("click", () => {
           willClose: () => {
             clearInterval(timerInterval);
           },
-        })
+        });
       }
     });
-    
   }
 });
