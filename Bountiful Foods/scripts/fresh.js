@@ -296,7 +296,6 @@ submitSmoothie.addEventListener("click", () => {
         showClass: { popup: "animate__animated animate__fadeInDown" },
         hideClass: { popup: "animate__animated animate__fadeOutUp" },
         confirmButtonColor: "#5ef3a9",
-        padding: "1.7rem",
         confirmButtonText: "Confirm",
         background: "linear-gradient(to right, #016131, #028d48, #016131)",
         color: "#fff",
