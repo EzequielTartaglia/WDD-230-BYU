@@ -31,14 +31,15 @@ const lesson10 = new Assigment("Lesson 10","./Lesson 10/weather-api.html","Weath
 lessonList.push(lesson10)
 const lesson11 = new Assigment("Lesson 11","./Chamber/contact.html","Chamber Contact Page | Chamber Contact Success Page (form's response)")
 lessonList.push(lesson11)
-const finalProjectDesign = new Assigment("Final project - Site Plan","./Bountiful Foods/Design/index.html","Bountiful Foods | Design planning")
+
+/* const finalProjectDesign = new Assigment("Final project - Site Plan","./Bountiful Foods/Design/index.html","Bountiful Foods | Design planning")
 lessonList.push(finalProjectDesign)
 const finalProjectHome = new Assigment("Final project","./Bountiful Foods/index.html","Bountiful Foods | Home")
 lessonList.push(finalProjectHome)
 const finalProjectFresh = new Assigment("Final project","./Bountiful Foods/fresh.html","Bountiful Foods | Fresh")
 lessonList.push(finalProjectFresh)
 const finalProjectAbout = new Assigment("Final project","./Bountiful Foods/about.html","Bountiful Foods | About")
-lessonList.push(finalProjectAbout)
+lessonList.push(finalProjectAbout) */
 
 const assigmentsList = document.getElementById("assigmentsList");
 
