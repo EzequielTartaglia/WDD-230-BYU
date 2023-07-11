@@ -400,11 +400,13 @@ a {
   -webkit-text-fill-color: var(--textShadow);
   width: 100%;
 }
-
+.gridAreatitle a {
+  -webkit-text-stroke: 0px var(--textMainColor);
+}
 .gridAreatitle h4 {
   margin-top: 10px;
-  -webkit-text-stroke: 0.7px var(--textWhite);
-  -webkit-text-fill-color: var(--textShadow);
+  -webkit-text-stroke: 0.0px var(--textWhite);
+  -webkit-text-fill-color: var(--textMainColor);
 }
 .gridAreaContent {
   padding: 0 10px;
