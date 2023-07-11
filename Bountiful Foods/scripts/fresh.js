@@ -277,6 +277,12 @@ if (localStorage.getItem("Quantity of Smoothies Taken")) {
   Orderscounter = parseInt(localStorage.getItem("Quantity of Smoothies Taken"));
 }
 
+//Receive the info from the form to send an output
+outputClientName = '';
+outputClientEmail = '';
+outputClientPhone = '';
+outputClientComments = '';
+
 //Send order
 submitSmoothie.addEventListener("click", () => {
   //If price is more than $0.00
@@ -304,6 +310,22 @@ submitSmoothie.addEventListener("click", () => {
           <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input"><br>
           <br><label><b style="color: #ffffff;">Comments</b><h6 style="color: #ffffff;">(optional)</h6></label><br><input type="text"  id="swal-input4" class="swal2-input">`,
         // When you enter the values
+
+        preConfirm: () => {
+          return [
+            (clientName = document.getElementById("swal-input1").value),
+            (clientEmail = document.getElementById("swal-input2").value),
+            (clientPhone = document.getElementById("swal-input3").value),
+            (clientComments = document.getElementById("swal-input4").value),
+
+            //Save out the scope
+            outputClientName = clientName,
+            outputClientEmail = clientEmail,
+            outputClientPhone = clientPhone,
+            outputClientComments = clientComments
+          ]
+          }
+
       }).then((result) => {
         if (result.isConfirmed) {
           const inputIds = ["swal-input1", "swal-input2", "swal-input3"];
@@ -334,7 +356,7 @@ submitSmoothie.addEventListener("click", () => {
             });
             return;
           }
-
+          
           const Toast = Swal.mixin({
             toast: true,
             position: "center",
@@ -348,7 +370,7 @@ submitSmoothie.addEventListener("click", () => {
           });
 
           Toast.fire({
-            icon: "wait",
+            icon: "success",
             title: "Sending order...",
           }).then((result) => {
             if (result.dismiss === Swal.DismissReason.timer) {
@@ -367,14 +389,27 @@ submitSmoothie.addEventListener("click", () => {
                   "linear-gradient(to right, #016131, #028d48, #016131)",
                 color: "#fff",
                 padding: "1.7rem",
-                timer: 1800,
+                timer: 4000,
                 hideClass: "",
               });
 
               Toast.fire({
-                icon: "success",
-                text: `Your order of ${totalPriceCheckout.textContent} has been sent successfully!`,
+                html: `
+                  <div style="background: linear-gradient(to right, #016131, #028d48, #016131); color: #fff; padding: 1.7rem;">
+                    <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
+                    <hr>
+                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
+                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
+                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p>
+                    <hr>
+                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${totalPriceCheckout.textContent}</p><br>
+
+                    </div>
+                `,
               });
+              
+              
 
               // Empty values
               const emptyValue = `$${0}.00`;
