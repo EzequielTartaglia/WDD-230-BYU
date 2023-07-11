@@ -406,6 +406,7 @@ submitSmoothie.addEventListener("click", () => {
                   font-size: 17px;
                   -webkit-text-fill-color: #ffffff;">
                     <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
+                    <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
                     <hr>
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
