@@ -362,13 +362,11 @@ submitSmoothie.addEventListener("click", () => {
             background: "linear-gradient(to right, #016131, #028d48, #016131)",
             color: "#fff",
             padding: "1.7rem",
-            timer: 1800,
+            timer: 6000,
             timerProgressBar: true,
-            hideClass: "",
           });
 
           Toast.fire({
-            icon: "success",
             title: "Sending order...",
           }).then((result) => {
             if (result.dismiss === Swal.DismissReason.timer) {
@@ -393,7 +391,13 @@ submitSmoothie.addEventListener("click", () => {
 
               Toast.fire({
                 html: `
-                  <div style="background: linear-gradient(to right, #016131, #028d48, #016131); color: #fff; padding: 1.7rem;">
+                  <div id="ticket" style="padding: 0 10px;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  font-weight: bold;
+                  font-size: 17px;
+                  -webkit-text-fill-color: #ffffff;">
                     <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
                     <hr>
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
@@ -402,7 +406,8 @@ submitSmoothie.addEventListener("click", () => {
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p>
                     <hr>
                     <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${totalPriceCheckout.textContent}</p><br>
-
+                    <hr>
+                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
                     </div>
                 `,
               });
