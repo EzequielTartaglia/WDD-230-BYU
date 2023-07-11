@@ -166,7 +166,26 @@ header {
   flex-direction: column;
   margin-left: -25px;
 }
-
+.section-title {
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 20px #e6e4e4;
+  -webkit-text-stroke: 0.7px var(--textMainColor);
+  -webkit-text-fill-color: var(--textShadow);
+  width: 100%;
+}
+#mainTitle h1 {
+  font-size: 40px;
+  color: #00445a;
+}
 .title {
   font-size: 14px;
 }
