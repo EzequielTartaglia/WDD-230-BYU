@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Bountiful Foods: Fresh and healthy fruits in Carlsbad, California, and along the coast from Los Angeles to San Diego. Organic options for convenient and nutritious eating."
+      content="Thanks page for new members of the Chamber"
     />
-    <link href="favicon.ico" rel="shortcut icon" type="png/icon" />
+    <link href="./images/icon.png" rel="shortcut icon" type="png/icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -35,9 +35,9 @@
       href="./styles/viewports/large.css"
       media="screen and (min-width: 1025px)"
     />
-    <link rel="stylesheet" href="./styles/grid.css" />
-    <title>Bountiful Foods | About</title>
+    <title>Bountiful Foods | Contact Success</title>
   </head>
+
   <body>
     <header>
       <div class="headerInfo">
@@ -93,80 +93,20 @@
     </header>
 
     <main>
-      <div class="divisorheader"></div>
-
-      <section id="floatButtonContainer">
-        <div class="float-buttons">
-          <a href="../index.html" class="float-button home">
-            <i class="fas fa-home"></i>
-          </a>
-        </div>
-      </section>
+      <div class="divisorheader">
+      </div>
+      <div class="float-buttons home">
+        <a href="../index.html" class="float-button home">
+          <i class="fas fa-home"></i>
+        </a>
+      </div>
 
       <div class="section-title" id="mainTitle">
-        <h1>About Us</h1>
+        <h1>Thanks for contact us <span id="joinedMember"></span>!</h1>
+        <h4>We will respond promptly to your inquiry.</h4>
       </div>
-
-      <div class="section-title">
-        <h2>Visit Us</h2>
-      </div>
-      <section class="content-section">
-        <iframe id="GoogleMaps"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26732.64188679751!2d-117.2816222!3d33.1201178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1689038568435!5m2!1ses!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-      <section class="google-maps-section"></section>
-
-      <div class="section-title">
-        <h2>Contact Information</h2>
-      </div>
-
       <section class="form-section">
-        <form action="contactSuccess.html" method="post">
-          <label for="firstName"
-            >First Name <span class="asterisk">*</span></label
-          >
-          <input type="text" name="firstName" id="firstName" required />
-
-          <label for="lastName"
-            >Last Name <span class="asterisk">*</span></label
-          >
-          <input type="text" name="lastName" id="lastName" required />
-
-          <label for="email">Email <span class="asterisk">*</span></label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="example@example.com"
-            required
-          />
-
-          <label for="phone">Phone <span class="asterisk">*</span></label>
-          <input type="tel" name="phone" id="phone" required />
-
-          <label for="comments"
-            >Aditional comments
-            <span class="optionalInput">(optional)</span></label
-          >
-          <textarea name="comments" id="comments"></textarea>
-
-          <!-- Hidden field for current date and time -->
-          <input
-            type="hidden"
-            name="formLoadedDateTime"
-            id="formLoadedDateTime"
-          />
-
-          <p id="validationMessageSubmit"></p>
-          <input id="submitBtn" type="submit" value="Contact Us" disabled />
-        </form>
+        <div id="newMember"></div>
       </section>
       <div class="divisorFooter"></div>
     </main>
@@ -213,9 +153,9 @@
         </div>
       </div>
     </footer>
-
     <script src="./scripts/script.js" defer></script>
     <script src="./scripts/index.js" defer></script>
     <script src="./scripts/contactFormValidation.js" defer></script>
+    <script src="./scripts/formResponseContact.js" defer></script>
   </body>
 </html>
