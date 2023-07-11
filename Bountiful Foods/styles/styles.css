@@ -984,6 +984,7 @@ hr {
   display: inline;
 }
 
+/* Sweet alert styles */
 .swal2-confirm {
   color: black !important;
   font-weight: bold !important;
