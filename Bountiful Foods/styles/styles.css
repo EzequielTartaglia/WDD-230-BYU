@@ -80,6 +80,8 @@ a:hover {
   align-items: center;
   height: 100%;
   font-size: large;
+  color: var(--textMainColor);
+
 }
 
 #banner,
@@ -342,6 +344,7 @@ main button {
   font-weight: bold;
   border: none;
   box-shadow: var(--boxShadowBlack);
+  -webkit-text-fill-color: var(--textMainColor);
 }
 main button:hover {
   padding: 10px 15px;
@@ -376,12 +379,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: linear-gradient(
-    to right,
-    var(--containerBackgroundBodyPrimaryColor),
-    var(--containerBackgroundBodySecondaryColor),
-    var(--containerBackgroundBodyPrimaryColor)
-  );
+  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
   white-space: normal;
   word-wrap: break-word;
 }
@@ -398,14 +396,14 @@ a {
   font-weight: bold;
   font-size: 18px;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-stroke: 0.7px var(--textMainColor);
+  -webkit-text-stroke: 0.7px var(--textWhite);
   -webkit-text-fill-color: var(--textShadow);
   width: 100%;
 }
 
 .gridAreatitle h4 {
   margin-top: 10px;
-  -webkit-text-stroke: 0.7px var(--textMainColor);
+  -webkit-text-stroke: 0.7px var(--textWhite);
   -webkit-text-fill-color: var(--textShadow);
 }
 .gridAreaContent {
@@ -416,7 +414,7 @@ a {
   font-weight: bold;
   font-size: 17px;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: var(--textWhite);
 }
 .gridAreaContent p {
   margin-bottom: 10px;
@@ -427,7 +425,7 @@ a {
   letter-spacing: 0px;
   text-decoration: none;
   transition: all 0.3s;
-  -webkit-text-fill-color: var(--bannerColorSecondary);
+  -webkit-text-fill-color: var(--accentColorSecondary);
 }
 
 .gridAreaContent a:hover {
@@ -439,7 +437,7 @@ a {
   letter-spacing: 0.8px;
   text-decoration: none;
   text-shadow: 0 0 20px #e6e4e4;
-  -webkit-text-fill-color: var(--textMainColor);
+  -webkit-text-fill-color: var(--textWhite);
 }
 #hero {
   position: relative;
@@ -576,7 +574,7 @@ a {
 
 #hero button,
 #join button a {
-  -webkit-text-stroke: 0px #ffffff;
+  -webkit-text-stroke: 0px var(--textWhite);
   -webkit-text-fill-color: var(--textMainColor);
   font-weight: bold;
 }
@@ -804,8 +802,8 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  -webkit-text-stroke: var(--textWhite);
-  -webkit-text-fill-color: var(--textWhite);
+  -webkit-text-stroke: var(--textMainColor);
+  -webkit-text-fill-color: var(--textMainColor);
   text-transform: capitalize;
   white-space: nowrap;
 }
@@ -984,4 +982,10 @@ hr {
 #firstLineFooter p:not(:last-child)::after {
   content: " |";
   display: inline;
+}
+
+.swal2-confirm {
+  color: black !important;
+  font-weight: bold !important;
+  border-radius: 12px !important;
 }

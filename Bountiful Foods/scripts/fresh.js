@@ -303,7 +303,11 @@ submitSmoothie.addEventListener("click", () => {
         allowOutsideClick: false,
         showDenyButton: true,
         denyButtonText: `Cancel`,
-
+        denyButtonColor: "#f77b86",
+        customClass: {
+          confirmButton: 'swal2-confirm',
+          denyButton: 'swal2-confirm',
+        },
         // Create an HTML format
         html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input"><br>
           <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email" id="swal-input2" class="swal2-input"><br>
@@ -345,7 +349,10 @@ submitSmoothie.addEventListener("click", () => {
               confirmButtonColor: "#5ef3a9",
               padding: "1.7rem",
               confirmButtonText: "Confirm",
-
+              customClass: {
+                confirmButton: 'swal2-confirm',
+                denyButton: 'swal2-confirm',
+              },
               background:
                 "linear-gradient(to right, #016131, #028d48, #016131)",
               color: "#fff",
