@@ -198,6 +198,10 @@ align-items: center;
   padding-top: 30px;
   font-size: 40px;
 }
+.section-title h2{
+  font-size: 35px;
+  margin-bottom: 30px;
+}
 #mainTitle h1 {
   font-size: 40px;
 }

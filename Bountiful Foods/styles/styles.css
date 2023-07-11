@@ -743,28 +743,29 @@ form {
   height: auto;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 1px 1px 15px #000000;
-}
+  box-shadow: var(--boxShadow);
+  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));}
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
   font-weight: bold;
+  color: var(--textWhite);
 }
 .asterisk {
-  color: #cf2c20;
+  color: var(--accentColorSecondary);
   font-weight: bold;
 }
 .optionalInput {
   font-size: 12px;
+  color: var(--textWhite);
 }
 input {
   width: 100%;
   border-radius: 6px;
-  border: 1px solid #080808;
+  border: 2px solid var(--textWhite);
   font-size: 16px;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.788);
-  color: rgb(0, 0, 0);
+  color: var(--textWhite);
 }
 input[type="text"],
 input[type="email"],
@@ -774,21 +775,24 @@ form textarea {
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
+  color: var(--textWhite);
   box-sizing: border-box;
-  border: 1px solid #ccc;
+  border: 2px solid var(--textWhite);
+  background: linear-gradient(to right, var(--bannerColorPrimary), var(--bannerColorSecondary), var(--bannerColorPrimary));
+
 }
 input:required {
-  border-right: 3px solid #cf2c20;
+  border-right: 3px solid var(--secondaryColor);
 }
 input:required:valid {
-  border: 1px solid green;
-  border-right: 3px solid green;
+  border: 1px solid var(--textWhite);
+  border-right: 3px solid var(--bannerLink-hover);
 }
 input:focus {
   border-right: 0px solid #cf2c20;
 }
 input[type="submit"] {
-  background-color: #00445a;
+  background-color: var(--backgroundBodyPrimaryColor);
   border: none;
   border-radius: 12px;
   padding: 13px 20px;
@@ -800,21 +804,21 @@ input[type="submit"] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  -webkit-text-stroke: #ffffff;
-  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke: var(--textWhite);
+  -webkit-text-fill-color: var(--textWhite);
   text-transform: capitalize;
   white-space: nowrap;
 }
 
 input[type="submit"]:hover {
-  background-color: #ec8e35;
+  background-color: var(--secondaryColor);
   text-decoration: none;
   margin: 4px auto;
   letter-spacing: 0.6px;
   cursor: pointer;
 }
 input[type="submit"]:disabled {
-  background-color: #b8b8b8;
+  background-color:  #b8b8b8;
   -webkit-text-stroke: #757474;
   -webkit-text-fill-color: #757474;
   cursor: default;
@@ -823,7 +827,7 @@ input[type="submit"]:disabled {
 
 #validationMessage,
 #validationMessageSubmit {
-  color: #cf2c20;
+  color: var(--secondaryColor);
   font-size: 16px;
   font-weight: 400;
   width: 100%;
