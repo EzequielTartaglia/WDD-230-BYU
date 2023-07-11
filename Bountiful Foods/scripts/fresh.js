@@ -278,10 +278,10 @@ if (localStorage.getItem("Quantity of Smoothies Taken")) {
 }
 
 //Receive the info from the form to send an output
-outputClientName = '';
-outputClientEmail = '';
-outputClientPhone = '';
-outputClientComments = '';
+outputClientName = "";
+outputClientEmail = "";
+outputClientPhone = "";
+outputClientComments = "";
 
 //Send order
 submitSmoothie.addEventListener("click", () => {
@@ -317,15 +317,13 @@ submitSmoothie.addEventListener("click", () => {
             (clientEmail = document.getElementById("swal-input2").value),
             (clientPhone = document.getElementById("swal-input3").value),
             (clientComments = document.getElementById("swal-input4").value),
-
             //Save out the scope
-            outputClientName = clientName,
-            outputClientEmail = clientEmail,
-            outputClientPhone = clientPhone,
-            outputClientComments = clientComments
-          ]
-          }
-
+            (outputClientName = clientName),
+            (outputClientEmail = clientEmail),
+            (outputClientPhone = clientPhone),
+            (outputClientComments = clientComments),
+          ];
+        },
       }).then((result) => {
         if (result.isConfirmed) {
           const inputIds = ["swal-input1", "swal-input2", "swal-input3"];
@@ -356,7 +354,7 @@ submitSmoothie.addEventListener("click", () => {
             });
             return;
           }
-          
+
           const Toast = Swal.mixin({
             toast: true,
             position: "center",
@@ -408,8 +406,6 @@ submitSmoothie.addEventListener("click", () => {
                     </div>
                 `,
               });
-              
-              
 
               // Empty values
               const emptyValue = `$${0}.00`;
