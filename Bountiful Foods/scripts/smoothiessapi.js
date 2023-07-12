@@ -30,22 +30,18 @@ const displaySmoothies = (dataReceived) => {
   };
 
   // Filter and shuffle the companies
-  const filteredSmoothies = dataReceived.filter(
-    ({ name }) =>
-    name !== ""
-  );
+  const filteredSmoothies = dataReceived.filter(({ name }) => name !== "");
   const shuffledSmoothies = shuffleArray(filteredSmoothies);
 
   // Display the first 3 shuffled companies
   const selectedSmoothies = shuffledSmoothies.slice(0, 3);
 
-  selectedSmoothies.forEach(
-    ({ name,description,src,ingredients }, i) => {
-      // Create elements to add to the spotlightsContainer element
-      let spotlight = document.createElement("div");
-      spotlight.setAttribute("class", `gridArea${i + 6}`);
-      spotlight.setAttribute("id", `spotlight${i + 1}`);
-      spotlight.innerHTML = `
+  selectedSmoothies.forEach(({ name, description, src, ingredients }, i) => {
+    // Create elements to add to the spotlightsContainer element
+    let spotlight = document.createElement("div");
+    spotlight.setAttribute("class", `gridArea${i + 6}`);
+    spotlight.setAttribute("id", `spotlight${i + 1}`);
+    spotlight.innerHTML = `
     <div class="gridAreatitle">
       <h2>${name}</h2>
     </div>
@@ -58,10 +54,9 @@ const displaySmoothies = (dataReceived) => {
     </div>
   `;
 
-      // Append the spotlight element to the spotlightsContainer
-      spotlightsContainer.appendChild(spotlight);
-    }
-  ); // end of forEach loop
+    // Append the spotlight element to the spotlightsContainer
+    spotlightsContainer.appendChild(spotlight);
+  }); // end of forEach loop
 }; // end of function expression
 
 fetchDataAndDisplay();

@@ -20,14 +20,14 @@ const fetchDataAndDisplay = async () => {
     console.error("Error fetching data:", error);
   }
 
-    // Check if the "Total Price Fruits" exists in localStorage
-    if (!localStorage.getItem("Total Price Fruits")) {
-        // Uncheck all fruit checkboxes
-        const fruitCheckboxes = document.querySelectorAll('input[name="fruits"]');
-        fruitCheckboxes.forEach((checkbox) => {
-          checkbox.checked = false;
-        });
-      }
+  // Check if the "Total Price Fruits" exists in localStorage
+  if (!localStorage.getItem("Total Price Fruits")) {
+    // Uncheck all fruit checkboxes
+    const fruitCheckboxes = document.querySelectorAll('input[name="fruits"]');
+    fruitCheckboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  }
 };
 
 // Manipulate the data result
@@ -77,6 +77,13 @@ const handleFruitCheckboxChange = () => {
   checkedCheckboxes.forEach((checkbox) => {
     fruitsTotal += parseInt(checkbox.value);
   });
+  // Get the names of selected fruits
+  const selectedFruits = Array.from(checkedCheckboxes).map((checkbox) =>
+    checkbox.parentElement.textContent.trim()
+  );
+
+  // Save the selected fruits in localStorage
+  localStorage.setItem("Fruits Selected", JSON.stringify(selectedFruits));
 
   localStorage.setItem("Total Price Fruits", fruitsTotal.toString());
   // Update the totalPriceFruits and totalPriceFruitsCheckout

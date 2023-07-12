@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Tu código aquí
+  localStorage.removeItem("Total Price Fruits")
+  localStorage.removeItem("Fruits Selected")
+});
+
 //-------------------------------- /* Checkout */ ------------------------------------
 const totalPriceCheckout = document.getElementById("totalPrice");
 let totalPriceCheckoutValue = 0;
@@ -494,6 +500,7 @@ submitSmoothie.addEventListener("click", () => {
               // Empty values
               const emptyValue = `$${0}.00`;
               localStorage.removeItem("Total Price Fruits");
+              localStorage.removeItem("Fruits Selected")
               const totalPriceFruits =
                 document.getElementById("totalPriceFruits");
               if (totalPriceFruits) {
