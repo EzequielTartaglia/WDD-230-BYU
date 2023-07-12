@@ -467,7 +467,7 @@ submitSmoothie.addEventListener("click", () => {
                   "linear-gradient(to right, #016131, #028d48, #016131)",
                 color: "#fff",
                 padding: "1.7rem",
-                timer: 4000,
+                timer: 8000,
                 hideClass: "",
               });
 
