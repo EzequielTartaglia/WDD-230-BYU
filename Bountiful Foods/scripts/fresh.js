@@ -1,5 +1,5 @@
+//Remove localStorage key when the page reload
 document.addEventListener("DOMContentLoaded", () => {
-  // Tu código aquí
   localStorage.removeItem("Total Price Fruits")
   localStorage.removeItem("Fruits Selected")
 });
@@ -384,9 +384,9 @@ submitSmoothie.addEventListener("click", () => {
           denyButton: "swal2-confirm",
         },
         // Create an HTML format
-        html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input"><br>
-          <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email" id="swal-input2" class="swal2-input"><br>
-          <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input"><br>
+        html: `<label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input">
+          <br><label><b style="color: #ffffff;">Email</b></label><br><input type="email" id="swal-input2" class="swal2-input">
+          <br><label><b style="color: #ffffff;">Phone number</b></label><br><input type="tel" id="swal-input3" class="swal2-input">
           <br><label><b style="color: #ffffff;">Comments</b><h6 style="color: #ffffff;">(optional)</h6></label><br><input type="text"  id="swal-input4" class="swal2-input">`,
         // When you enter the values
 
@@ -471,32 +471,68 @@ submitSmoothie.addEventListener("click", () => {
                 hideClass: "",
               });
 
-              Toast.fire({
-                html: `
-                  <div id="ticket" style="padding: 0 10px;
-                  align-items: center;
-                  justify-content: center;
-                  text-align: center;
-                  font-weight: bold;
-                  font-size: 17px;
-                  -webkit-text-fill-color: #ffffff;">
-                    <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
-                    <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
-                    <hr>
-                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
-                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
-                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
-                    <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p>
-                    <hr>
-                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
-                      totalPriceCheckout.textContent
-                    }</p><br>
-                    <hr>
-                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
+              if (localStorage.getItem("Fruits Selected")) {
+                const fruitsArray = JSON.parse(localStorage.getItem("Fruits Selected"));
+              
+                Toast.fire({
+                  html: `
+                    <div id="ticket" style="padding: 0 10px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 17px;
+                    -webkit-text-fill-color: #ffffff;">
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
+                      <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
+                      <hr>
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
+                      <hr>
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order Info</strong></p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Fruits:</strong> ${fruitsArray.join(", ")}</p><br>
+                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
+                        totalPriceCheckout.textContent
+                      }</p><br>
+                      <hr>
+                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
                     </div>
-                `,
-              });
-
+                  `,
+                });
+              }
+              else{
+                Toast.fire({
+                  html: `
+                    <div id="ticket" style="padding: 0 10px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 17px;
+                    -webkit-text-fill-color: #ffffff;">
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
+                      <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
+                      <hr>
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
+                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
+                      <hr>
+                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order Info</strong></p><br>
+                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
+                        totalPriceCheckout.textContent
+                      }</p><br>
+                      <hr>
+                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
+                    </div>
+                  `,
+                });
+              }
+              
               // Empty values
               const emptyValue = `$${0}.00`;
               localStorage.removeItem("Total Price Fruits");
