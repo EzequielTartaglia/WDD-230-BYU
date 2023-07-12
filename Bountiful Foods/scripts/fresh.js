@@ -7,16 +7,6 @@ let totalPriceCheckoutValue = 0;
 // Get element in checkout
 const totalPriceFruitsCheckout = document.getElementById("optionFruits");
 
-// Price of fruits
-const fruitPrices = {
-  apple: 1,
-  banana: 4,
-  grapes: 5,
-  kiwi: 7,
-  orange: 3,
-  mango: 5,
-};
-
 // Get chekbox (fruits)
 const checkboxesFruit = document.querySelectorAll(
   '#fruitsOptionsContainer input[type="checkbox"]'
@@ -303,13 +293,13 @@ iceToggle.addEventListener("input", () => {
 const calculateTotalPrice = () => {
   let totalPrice = 0;
 
-  checkboxesFruit.forEach((checkbox) => {
-    if (checkbox.checked) {
-      const fruit = checkbox.value;
-      const price = fruitPrices[fruit];
-      totalPrice += price;
-    }
-  });
+  // Obtener el valor de la clave "Total Price Fruits" del localStorage
+  if (localStorage.getItem("Total Price Fruits")) {
+    const totalPriceFruitsValue = parseInt(
+      localStorage.getItem("Total Price Fruits")
+    );
+    totalPrice += totalPriceFruitsValue;
+  }
 
   checkboxesVegetables.forEach((checkbox) => {
     if (checkbox.checked) {
@@ -503,9 +493,9 @@ submitSmoothie.addEventListener("click", () => {
 
               // Empty values
               const emptyValue = `$${0}.00`;
-
+              localStorage.removeItem("Total Price Fruits");
               const totalPriceFruits =
-                document.getElementById("total-price-fruits");
+                document.getElementById("totalPriceFruits");
               if (totalPriceFruits) {
                 totalPriceFruits.textContent = emptyValue;
               }
@@ -523,10 +513,17 @@ submitSmoothie.addEventListener("click", () => {
               totalPriceIcesCheckout.textContent = emptyValue;
               totalPriceCheckout.textContent = emptyValue;
 
-              // Uncheck all checkboxes
-              checkboxesFruit.forEach((checkbox) => {
-                checkbox.checked = false;
-              });
+              // Additional function to uncheck all fruit checkboxes
+              const uncheckAllFruitCheckboxes = () => {
+                const fruitCheckboxes = document.querySelectorAll(
+                  'input[name="fruits"]'
+                );
+                fruitCheckboxes.forEach((checkbox) => {
+                  checkbox.checked = false;
+                });
+              };
+              // Call the function to uncheck all fruit checkboxes
+              uncheckAllFruitCheckboxes();
 
               checkboxesVegetables.forEach((checkbox) => {
                 checkbox.checked = false;
