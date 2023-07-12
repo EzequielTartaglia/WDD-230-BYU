@@ -1,4 +1,6 @@
 // Control the data (API)
+
+//const urlJson =   "./scripts/fruits.data.json";
 const urlFetched =
   "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
