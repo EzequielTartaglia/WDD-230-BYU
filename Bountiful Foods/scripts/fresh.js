@@ -21,14 +21,34 @@ const fruitPrices = {
 const checkboxesFruit = document.querySelectorAll(
   '#fruitsOptionsContainer input[type="checkbox"]'
 );
-
-// Get quantity of fruits
-const totalPriceFruits = document.getElementById("totalPriceFruits");
+const maxFruitsChecked = 3; // Maximum number of fruits to be checked
 
 // Change the value per each change in checkout
 checkboxesFruit.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
-    // Calcular el nuevo precio total de frutas
+    let checkedCount = 0; // Track the number of checkboxes checked
+
+    checkboxesFruit.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+
+    if (checkedCount >= maxFruitsChecked) {
+      // Disable the remaining unchecked checkboxes
+      checkboxesFruit.forEach((checkbox) => {
+        if (!checkbox.checked) {
+          checkbox.disabled = true;
+        }
+      });
+    } else {
+      // Enable all checkboxes
+      checkboxesFruit.forEach((checkbox) => {
+        checkbox.disabled = false;
+      });
+    }
+
+    // Calculate the total price and update the display
     let totalPrice = 0;
     checkboxesFruit.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -63,14 +83,34 @@ const vegetablesPrices = {
 const checkboxesVegetables = document.querySelectorAll(
   '#vegetablesOptionsContainer input[type="checkbox"]'
 );
+const maxVegetablesChecked = 3; // Maximum number of vegetables to be checked
 
-// Get quantity of vegetables
-const totalPriceVegetables = document.getElementById("totalPriceVegetables");
-
-// Change the value per each change
+// Change the value for each change in checkout
 checkboxesVegetables.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
-    // Calcular el nuevo precio total
+    let checkedCount = 0; // Track the number of checkboxes checked
+
+    checkboxesVegetables.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+
+    if (checkedCount >= maxVegetablesChecked) {
+      // Disable the remaining unchecked checkboxes
+      checkboxesVegetables.forEach((checkbox) => {
+        if (!checkbox.checked) {
+          checkbox.disabled = true;
+        }
+      });
+    } else {
+      // Enable all checkboxes
+      checkboxesVegetables.forEach((checkbox) => {
+        checkbox.disabled = false;
+      });
+    }
+
+    // Calculate the total price and update the display
     let totalPrice = 0;
     checkboxesVegetables.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -105,14 +145,34 @@ const creamsJamsPrices = {
 const checkboxesCreamsJams = document.querySelectorAll(
   '#creamsJamsOptionsContainer input[type="checkbox"]'
 );
+const maxCreamsJamsChecked = 2; // Maximum number of creams & jams to be checked
 
-// Get quantity of creams & jams
-const totalPriceCreamsJams = document.getElementById("totalPriceCreamsJams");
-
-// Change the value per each change
+// Change the value for each change in checkout
 checkboxesCreamsJams.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
-    // Calculate the total
+    let checkedCount = 0; // Track the number of checkboxes checked
+
+    checkboxesCreamsJams.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+
+    if (checkedCount >= maxCreamsJamsChecked) {
+      // Disable the remaining unchecked checkboxes
+      checkboxesCreamsJams.forEach((checkbox) => {
+        if (!checkbox.checked) {
+          checkbox.disabled = true;
+        }
+      });
+    } else {
+      // Enable all checkboxes
+      checkboxesCreamsJams.forEach((checkbox) => {
+        checkbox.disabled = false;
+      });
+    }
+
+    // Calculate the total price and update the display
     let totalPrice = 0;
     checkboxesCreamsJams.forEach((checkbox) => {
       if (checkbox.checked) {
@@ -146,19 +206,39 @@ const sizesPrices = {
 const checkboxesSizes = document.querySelectorAll(
   '#sizeOptionsContainer input[type="checkbox"]'
 );
+const maxSizesChecked = 1; // Maximum number of sizes to be checked
 
-// Get quantity of sizes
-const totalPriceSizes = document.getElementById("totalPriceSizes");
-
-// Change the value per each change
+// Change the value for each change in checkout
 checkboxesSizes.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
-    // Calculate the total
+    let checkedCount = 0; // Track the number of checkboxes checked
+
+    checkboxesSizes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        checkedCount++;
+      }
+    });
+
+    if (checkedCount >= maxSizesChecked) {
+      // Disable the remaining unchecked checkboxes
+      checkboxesSizes.forEach((checkbox) => {
+        if (!checkbox.checked) {
+          checkbox.disabled = true;
+        }
+      });
+    } else {
+      // Enable all checkboxes
+      checkboxesSizes.forEach((checkbox) => {
+        checkbox.disabled = false;
+      });
+    }
+
+    // Calculate the total price and update the display
     let totalPrice = 0;
     checkboxesSizes.forEach((checkbox) => {
       if (checkbox.checked) {
-        const sizes = checkbox.value;
-        const price = sizesPrices[sizes];
+        const size = checkbox.value;
+        const price = sizesPrices[size];
         totalPrice += price;
       }
     });
@@ -304,8 +384,8 @@ submitSmoothie.addEventListener("click", () => {
         denyButtonText: `Cancel`,
         denyButtonColor: "#f77b86",
         customClass: {
-          confirmButton: 'swal2-confirm',
-          denyButton: 'swal2-confirm',
+          confirmButton: "swal2-confirm",
+          denyButton: "swal2-confirm",
         },
         // Create an HTML format
         html: `<br><label><b style="color: #ffffff;">First name</b></label><br><input type="text" id="swal-input1" class="swal2-input"><br>
@@ -349,8 +429,8 @@ submitSmoothie.addEventListener("click", () => {
               padding: "1.7rem",
               confirmButtonText: "Confirm",
               customClass: {
-                confirmButton: 'swal2-confirm',
-                denyButton: 'swal2-confirm',
+                confirmButton: "swal2-confirm",
+                denyButton: "swal2-confirm",
               },
               background:
                 "linear-gradient(to right, #016131, #028d48, #016131)",
@@ -412,7 +492,9 @@ submitSmoothie.addEventListener("click", () => {
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
                     <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p>
                     <hr>
-                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${totalPriceCheckout.textContent}</p><br>
+                    <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
+                      totalPriceCheckout.textContent
+                    }</p><br>
                     <hr>
                     <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
                     </div>
