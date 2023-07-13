@@ -37,7 +37,7 @@ const displayFruits = (dataReceived) => {
   // Display the first 6 fruits
   const selectedFruits = dataReceived.slice(0, 6);
   let fruitsHTML = "";
-  selectedFruits.forEach(({ name }) => {
+  selectedFruits.forEach(({ name, nutritions }) => {
     // Price of fruits
     const fruitPrices = {
       Apple: 1,
@@ -48,6 +48,10 @@ const displayFruits = (dataReceived) => {
       Blueberry: 5,
     };
     const price = fruitPrices[name]; // Get the price based on the fruit name
+
+    // Nutritional information
+    const { carbohydrates, protein, fat, calories, sugar } = nutritions;
+
     fruitsHTML += `
       <li class="optionRange-list">
         <label>
@@ -68,37 +72,51 @@ const displayFruits = (dataReceived) => {
 };
 
 // Handle fruit checkbox change
-const handleFruitCheckboxChange = () => {
+const handleFruitCheckboxChange = async () => {
   const checkedCheckboxes = document.querySelectorAll(
     'input[name="fruits"]:checked'
   );
   let fruitsTotal = 0;
+  const selectedFruits = [];
 
-  checkedCheckboxes.forEach((checkbox) => {
-    fruitsTotal += parseInt(checkbox.value);
-  });
-  // Get the names of selected fruits
-  const selectedFruits = Array.from(checkedCheckboxes).map((checkbox) =>
-    checkbox.parentElement.textContent.trim()
-  );
+  for (const checkbox of checkedCheckboxes) {
+    const fruitName = checkbox.parentElement.textContent.trim();
+    const fruitInfo = await getFruitNutrition(fruitName);
 
-  // Save the selected fruits in localStorage
+    if (fruitInfo) {
+      fruitsTotal += parseInt(checkbox.value);
+      selectedFruits.push({
+        name: fruitName,
+        nutrition: fruitInfo.nutritions
+      });
+    }
+  }
+
   localStorage.setItem("Fruits Selected", JSON.stringify(selectedFruits));
-
   localStorage.setItem("Total Price Fruits", fruitsTotal.toString());
-  // Update the totalPriceFruits and totalPriceFruitsCheckout
+
   totalPriceFruits.textContent = `$${fruitsTotal}.00`;
   totalPriceFruitsCheckout.textContent = `$${fruitsTotal}.00`;
 
-  // Update the totalPriceCheckout
   totalPriceCheckoutValue = calculateTotalPrice();
   totalPriceCheckout.textContent = `$${totalPriceCheckoutValue}.00`;
 
-  // Save the fruitsTotal value in localStorage
-  localStorage.setItem("Total Price Fruits", fruitsTotal.toString());
-
   toggleRemainingFruitCheckboxes();
 };
+
+// Get the nutritional information of a fruit
+const getFruitNutrition = async (fruitName) => {
+  try {
+    const response = await fetch(urlFetched);
+    const fruitsData = await response.json();
+    const fruitInfo = fruitsData.find((fruit) => fruit.name === fruitName);
+    return fruitInfo;
+  } catch (error) {
+    console.error("Error fetching fruit data:", error);
+    return null;
+  }
+};
+
 
 // Toggle remaining fruit checkboxes
 const toggleRemainingFruitCheckboxes = () => {
