@@ -1,7 +1,10 @@
 //Remove localStorage key when the page reload
 document.addEventListener("DOMContentLoaded", () => {
-  localStorage.removeItem("Total Price Fruits")
-  localStorage.removeItem("Fruits Selected")
+  localStorage.removeItem("Total Price Fruits");
+  localStorage.removeItem("Fruits Selected");
+  localStorage.removeItem("Vegetables Selected");
+  localStorage.removeItem("Creams/Jams Selected");
+  localStorage.removeItem("Size Selected");
 });
 
 //-------------------------------- /* Checkout */ ------------------------------------
@@ -67,12 +70,12 @@ const totalPriceVegetablesCheckout =
 
 // Price of vegetables
 const vegetablesPrices = {
-  carrot: 1,
-  celery: 4,
-  ginger: 5,
-  kale: 7,
-  pepper: 3,
-  spinach: 5,
+  Carrot: 1,
+  Celery: 4,
+  Ginger: 5,
+  Kale: 7,
+  Pepper: 3,
+  Spinach: 5,
 };
 
 // Get chekbox (vegetables)
@@ -129,12 +132,12 @@ const totalPriceCreamsJamsCheckout =
 
 // Price of Creams / Jams
 const creamsJamsPrices = {
-  caramel: 2,
-  chocolate: 3,
-  coconut: 5,
-  honey: 2,
-  peach: 3,
-  strawberry: 5,
+  Caramel: 2,
+  Chocolate: 3,
+  Coconut: 5,
+  Honey: 2,
+  Peach: 3,
+  Strawberry: 5,
 };
 
 // Get chekbox (creams & jams)
@@ -190,12 +193,12 @@ const totalPriceSizesCheckout = document.getElementById("optionSize");
 
 // Price of sizes
 const sizesPrices = {
-  small: 1,
-  medium: 2,
-  large: 3,
-  xl: 4,
-  xxl: 5,
-  xxxl: 6,
+  Small: 1,
+  Medium: 2,
+  Large: 3,
+  XL: 4,
+  XXL: 5,
+  XXXL: 6,
 };
 
 // Get chekbox (sizes)
@@ -308,26 +311,153 @@ const calculateTotalPrice = () => {
   }
 
   checkboxesVegetables.forEach((checkbox) => {
+    const vegetable = checkbox.value;
+    const price = vegetablesPrices[vegetable];
+  
     if (checkbox.checked) {
-      const vegetable = checkbox.value;
-      const price = vegetablesPrices[vegetable];
       totalPrice += price;
+  
+      // Get the selected vegetables array from localStorage
+      let vegetablesSelected = [];
+      if (localStorage.getItem("Vegetables Selected")) {
+        vegetablesSelected = JSON.parse(
+          localStorage.getItem("Vegetables Selected")
+        );
+      }
+  
+      // Check if the vegetable is already present in the array
+      if (!vegetablesSelected.includes(vegetable)) {
+        // Add the selected vegetable to the array
+        vegetablesSelected.push(vegetable);
+  
+        // Save the selected vegetables array to localStorage
+        localStorage.setItem(
+          "Vegetables Selected",
+          JSON.stringify(vegetablesSelected)
+        );
+      }
+    } else {
+      // Get the selected vegetables array from localStorage
+      let vegetablesSelected = [];
+      if (localStorage.getItem("Vegetables Selected")) {
+        vegetablesSelected = JSON.parse(
+          localStorage.getItem("Vegetables Selected")
+        );
+      }
+  
+      // Check if the vegetable is present in the array
+      const index = vegetablesSelected.indexOf(vegetable);
+      if (index > -1) {
+        // Remove the vegetable from the array
+        vegetablesSelected.splice(index, 1);
+  
+        // Save the selected vegetables array to localStorage
+        localStorage.setItem(
+          "Vegetables Selected",
+          JSON.stringify(vegetablesSelected)
+        );
+      }
     }
   });
-
+  
   checkboxesCreamsJams.forEach((checkbox) => {
+    const creamsJams = checkbox.value;
+    const price = creamsJamsPrices[creamsJams];
+  
     if (checkbox.checked) {
-      const creamsJams = checkbox.value;
-      const price = creamsJamsPrices[creamsJams];
       totalPrice += price;
+  
+      // Get the selected creams/jams array from localStorage
+      let creamsJamsSelected = [];
+      if (localStorage.getItem("Creams/Jams Selected")) {
+        creamsJamsSelected = JSON.parse(
+          localStorage.getItem("Creams/Jams Selected")
+        );
+      }
+  
+      // Check if the creams/jams item is already present in the array
+      if (!creamsJamsSelected.includes(creamsJams)) {
+        // Add the selected creams/jams item to the array
+        creamsJamsSelected.push(creamsJams);
+  
+        // Save the creams/jams array to localStorage
+        localStorage.setItem(
+          "Creams/Jams Selected",
+          JSON.stringify(creamsJamsSelected)
+        );
+      }
+    } else {
+      // Get the selected creams/jams array from localStorage
+      let creamsJamsSelected = [];
+      if (localStorage.getItem("Creams/Jams Selected")) {
+        creamsJamsSelected = JSON.parse(
+          localStorage.getItem("Creams/Jams Selected")
+        );
+      }
+  
+      // Check if the creams/jams item is present in the array
+      const index = creamsJamsSelected.indexOf(creamsJams);
+      if (index > -1) {
+        // Remove the creams/jams item from the array
+        creamsJamsSelected.splice(index, 1);
+  
+        // Save the creams/jams array to localStorage
+        localStorage.setItem(
+          "Creams/Jams Selected",
+          JSON.stringify(creamsJamsSelected)
+        );
+      }
     }
   });
-
+  
+  
   checkboxesSizes.forEach((checkbox) => {
+    const sizes = checkbox.value;
+    const price = sizesPrices[sizes];
+  
     if (checkbox.checked) {
-      const sizes = checkbox.value;
-      const price = sizesPrices[sizes];
       totalPrice += price;
+  
+      // Get the selected creams/jams array from localStorage
+      let sizeSelected = [];
+      if (localStorage.getItem("Size Selected")) {
+        sizeSelected = JSON.parse(
+          localStorage.getItem("Size Selected")
+        );
+      }
+  
+      // Check if the creams/jams item is already present in the array
+      if (!sizeSelected.includes(sizes)) {
+        // Add the selected creams/jams item to the array
+        sizeSelected.push(sizes);
+  
+        // Save the creams/jams array to localStorage
+        localStorage.setItem(
+          "Size Selected",
+          JSON.stringify(sizeSelected)
+        );
+      }
+    } else {
+      // Get the selected creams/jams array from localStorage
+      let sizeSelected = [];
+      if (localStorage.getItem("Size Selected")) {
+        sizeSelected = JSON.parse(
+          localStorage.getItem("Size Selected")
+        );
+      }
+  
+      // Check if the creams/jams item is present in the array
+      const index = sizeSelected.indexOf(sizes);
+      if (index > -1) {
+        // Remove the creams/jams item from the array
+        sizeSelected.splice(index, 1);
+  
+        // Save the creams/jams array to localStorage
+        localStorage.setItem(
+          "Size Selected",
+          JSON.stringify(sizeSelected)
+        );
+      }
     }
   });
 
@@ -471,9 +601,88 @@ submitSmoothie.addEventListener("click", () => {
                 hideClass: "",
               });
 
-              if (localStorage.getItem("Fruits Selected")) {
-                const fruitsArray = JSON.parse(localStorage.getItem("Fruits Selected"));
-              
+              // Save arrays to manipulate in render (inner HTML)
+              const fruitsArray = JSON.parse(
+                localStorage.getItem("Fruits Selected")
+              );
+              const vegetablesArray = JSON.parse(
+                localStorage.getItem("Vegetables Selected")
+              );
+              const creamsJamsArray = JSON.parse(
+                localStorage.getItem("Creams/Jams Selected")
+                );
+              const sizesArray = JSON.parse(
+                localStorage.getItem("Size Selected")
+                );              
+                
+              if (
+                (fruitsArray && fruitsArray.length >= 1) ||
+                (vegetablesArray && vegetablesArray.length >= 1)||
+                (creamsJamsArray && creamsJamsArray.length >= 1) ||
+                (sizesArray && sizesArray.length >= 1) 
+
+              ) {
+                let fruitsString;
+                let vegetablesString;
+                let creamsJamsString;
+                let sizesString;
+
+                if (
+                  fruitsArray &&
+                  Array.isArray(fruitsArray) &&
+                  fruitsArray.length > 1
+                ) {
+                  fruitsString = fruitsArray.join(", ");
+                } else if (
+                  fruitsArray &&
+                  Array.isArray(fruitsArray) &&
+                  fruitsArray.length === 1
+                ) {
+                  fruitsString = fruitsArray[0];
+                }
+
+                if (
+                  vegetablesArray &&
+                  Array.isArray(vegetablesArray) &&
+                  vegetablesArray.length > 1
+                ) {
+                  vegetablesString = vegetablesArray.join(", ");
+                } else if (
+                  vegetablesArray &&
+                  Array.isArray(vegetablesArray) &&
+                  vegetablesArray.length === 1
+                ) {
+                  vegetablesString = vegetablesArray[0];
+                }
+
+                if (
+                  creamsJamsArray &&
+                  Array.isArray(creamsJamsArray) &&
+                  creamsJamsArray.length > 1
+                ) {
+                  creamsJamsString = creamsJamsArray.join(", ");
+                } else if (
+                  creamsJamsArray &&
+                  Array.isArray(creamsJamsArray) &&
+                  creamsJamsArray.length === 1
+                ) {
+                  creamsJamsString = creamsJamsArray[0];
+                }
+
+                if (
+                  sizesArray &&
+                  Array.isArray(sizesArray) &&
+                  sizesArray.length > 1
+                ) {
+                  fruitsString = sizesArray.join(", ");
+                } else if (
+                  sizesArray &&
+                  Array.isArray(sizesArray) &&
+                  sizesArray.length === 1
+                ) {
+                  sizesString = sizesArray[0];
+                }
+
                 Toast.fire({
                   html: `
                     <div id="ticket" style="padding: 0 10px;
@@ -484,59 +693,53 @@ submitSmoothie.addEventListener("click", () => {
                     font-size: 17px;
                     -webkit-text-fill-color: #ffffff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
-                      <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
-                      <hr>
+                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"> ${new Date().toLocaleString()}</p><br>
+                      <hr style="height:2px; background-color: #fff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
+                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
+                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
+                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
                       <hr>
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order Info</strong></p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Fruits:</strong> ${fruitsArray.join(", ")}</p><br>
-                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
+                      ${
+                        fruitsString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Fruits:</strong> ${fruitsString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Fruits:</strong> N/A </p><br>`
+                      }
+                      ${
+                        vegetablesString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Vegetables:</strong> ${vegetablesString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Vegetables:</strong> N/A </p><br>`
+                      }
+                      ${
+                        creamsJamsString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Creams/Jams:</strong> ${creamsJamsString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Creams/Jams:</strong> N/A </p><br>`
+                      }
+                      ${
+                        sizesString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> ${sizesString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> N/A </p><br>`
+                      }
+                      <br>
+                      <p style="font-size: 16px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Total Price:</strong> ${
                         totalPriceCheckout.textContent
                       }</p><br>
-                      <hr>
+                      <hr style="height:2px; background-color: #fff;">
                       <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
                     </div>
                   `,
                 });
-              }
-              else{
-                Toast.fire({
-                  html: `
-                    <div id="ticket" style="padding: 0 10px;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    font-weight: bold;
-                    font-size: 17px;
-                    -webkit-text-fill-color: #ffffff;">
-                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
-                      <p style="font-size: 14px; color: #fff;"> ${new Date().toLocaleString()}</p><br>
-                      <hr>
-                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
-                      <p style="font-size: 14px; color: #fff;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
-                      <hr>
-                      <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order Info</strong></p><br>
-                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Total Price:</strong> ${
-                        totalPriceCheckout.textContent
-                      }</p><br>
-                      <hr>
-                      <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
-                    </div>
-                  `,
-                });
-              }
-              
+              } 
+
               // Empty values
               const emptyValue = `$${0}.00`;
               localStorage.removeItem("Total Price Fruits");
-              localStorage.removeItem("Fruits Selected")
+              localStorage.removeItem("Fruits Selected");
+              localStorage.removeItem("Vegetables Selected");
+              localStorage.removeItem("Creams/Jams Selected");
+              localStorage.removeItem("Size Selected");
               const totalPriceFruits =
                 document.getElementById("totalPriceFruits");
               if (totalPriceFruits) {
