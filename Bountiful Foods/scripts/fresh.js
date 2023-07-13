@@ -702,6 +702,9 @@ submitSmoothie.addEventListener("click", () => {
                   iceString = "No";
                 }
 
+                //Css style
+                const pStyle = "font-size: 14px; color: #fff; margin-bottom:-15px"
+                
                 Toast.fire({
                   html: `
                     <div id="ticket" style="padding: 0 10px;
@@ -712,44 +715,44 @@ submitSmoothie.addEventListener("click", () => {
                     font-size: 17px;
                     -webkit-text-fill-color: #ffffff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
-                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"> ${new Date().toLocaleString()}</p><br>
+                      <p style="${pStyle}"> ${new Date().toLocaleString()}</p><br>
                       <hr style="height:2px; background-color: #fff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
-                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
-                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
-                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
-                      <p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
+                      <p style="${pStyle}"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                      <p style="${pStyle}"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
+                      <p style="${pStyle};"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
+                      <p style="${pStyle}"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
                       <hr>
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order Info</strong></p><br>
                       ${
                         fruitsString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Fruits:</strong> ${fruitsString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Fruits:</strong> N/A </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Fruits:</strong> ${fruitsString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Fruits:</strong> N/A </p><br>`
                       }
                       ${
                         vegetablesString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Vegetables:</strong> ${vegetablesString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Vegetables:</strong> N/A </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Vegetables:</strong> ${vegetablesString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Vegetables:</strong> N/A </p><br>`
                       }
                       ${
                         creamsJamsString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Creams/Jams:</strong> ${creamsJamsString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Creams/Jams:</strong> N/A </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Creams/Jams:</strong> ${creamsJamsString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Creams/Jams:</strong> N/A </p><br>`
                       }
                       ${
                         sizesString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> ${sizesString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> N/A </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Size:</strong> ${sizesString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Size:</strong> N/A </p><br>`
                       }
                       ${
                         sherbetString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Sherbet:</strong> ${sherbetString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Sherbet:</strong> No </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Sherbet:</strong> ${sherbetString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Sherbet:</strong> No </p><br>`
                       }
                       ${
                         iceString
-                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Ice:</strong> ${iceString}</p><br>`
-                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Ice:</strong> No </p><br>`
+                          ? `<p style="${pStyle}"><strong style="color: #fff;">Ice:</strong> ${iceString}</p><br>`
+                          : `<p style="${pStyle}"><strong style="color: #fff;">Ice:</strong> No </p><br>`
                       }
                       <br>
                       <p style="font-size: 16px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Total Price:</strong> ${
