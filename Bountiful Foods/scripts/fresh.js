@@ -742,7 +742,7 @@ submitSmoothie.addEventListener("click", () => {
                   font-size: 17px;
                   -webkit-text-fill-color: #ffffff;">
                   <p style="font-size: 18px; color: #fff; margin-bottom:15px"><strong style="color: #fff;">Nutritional Info</strong></p>
-                  <p style="font-size: 15px; color: #fff;margin-bottom:15px">These values provide information about the carbohydrate, protein, fat, calorie, and sugar content of the selected fruits.</p><br>
+                  <p style="font-size: 14px; color: #fff;margin-bottom:15px">These values provide information about the carbohydrate, protein, fat, calorie, and sugar content of the selected fruits.</p><br>
                   <ul style="list-style: none; padding-left: 0;">
                     <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Carbohydrates..........${totalCarbohydrates.toFixed(2)}g</li>
                     <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Protein........................${totalProtein.toFixed(2)}g</li>
