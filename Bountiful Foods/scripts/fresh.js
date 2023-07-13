@@ -576,7 +576,7 @@ submitSmoothie.addEventListener("click", () => {
             background: "linear-gradient(to right, #016131, #028d48, #016131)",
             color: "#fff",
             padding: "1.7rem",
-            timer: 6000,
+            timer: 4000,
             timerProgressBar: true,
           });
 
@@ -607,6 +607,11 @@ submitSmoothie.addEventListener("click", () => {
               const fruitsArray = JSON.parse(
                 localStorage.getItem("Fruits Selected")
               );
+              const selectedFruitNames = fruitsArray.map((fruit) => fruit.name);
+              const selectedFruitNutritions = fruitsArray.map(
+                (fruit) => fruit.nutrition
+              );
+
               const vegetablesArray = JSON.parse(
                 localStorage.getItem("Vegetables Selected")
               );
@@ -619,8 +624,9 @@ submitSmoothie.addEventListener("click", () => {
 
               const sherbetOption = localStorage.getItem("Sherbet");
               const iceOption = localStorage.getItem("Ice");
+
               if (
-                (fruitsArray && fruitsArray.length >= 1) ||
+                (selectedFruitNames && selectedFruitNames.length >= 1) ||
                 (vegetablesArray && vegetablesArray.length >= 1) ||
                 (creamsJamsArray && creamsJamsArray.length >= 1) ||
                 (sizesArray && sizesArray.length >= 1) ||
@@ -635,17 +641,17 @@ submitSmoothie.addEventListener("click", () => {
                 let iceString;
 
                 if (
-                  fruitsArray &&
-                  Array.isArray(fruitsArray) &&
-                  fruitsArray.length > 1
+                  selectedFruitNames &&
+                  Array.isArray(selectedFruitNames) &&
+                  selectedFruitNames.length > 1
                 ) {
-                  fruitsString = fruitsArray.join(", ");
+                  fruitsString = selectedFruitNames.join(", ");
                 } else if (
-                  fruitsArray &&
-                  Array.isArray(fruitsArray) &&
-                  fruitsArray.length === 1
+                  selectedFruitNames &&
+                  Array.isArray(selectedFruitNames) &&
+                  selectedFruitNames.length === 1
                 ) {
-                  fruitsString = fruitsArray[0];
+                  fruitsString = selectedFruitNames[0];
                 }
 
                 if (
@@ -681,7 +687,7 @@ submitSmoothie.addEventListener("click", () => {
                   Array.isArray(sizesArray) &&
                   sizesArray.length > 1
                 ) {
-                  fruitsString = sizesArray.join(", ");
+                  sizesString = sizesArray.join(", ");
                 } else if (
                   sizesArray &&
                   Array.isArray(sizesArray) &&
@@ -702,23 +708,42 @@ submitSmoothie.addEventListener("click", () => {
                   iceString = "No";
                 }
 
-                //Css style
-                const pStyle = "font-size: 14px; color: #fff; margin-bottom:-15px"
-                
+                // Generate nutritional information HTML
+                let nutritionalInfoHTML = "";
+                // Css style
+                const pStyle =
+                  "font-size: 14px; color: #fff; margin-bottom:-16px";
+
+                selectedFruitNutritions.forEach((nutrition) => {
+                  const { carbohydrates, protein, fat, calories, sugar } =
+                    nutrition;
+
+                  nutritionalInfoHTML += `
+                  <p style="font-size: 18px; color: #fff; margin-bottom:15px"><strong style="color: #fff;">Nutritional Info</strong></p>
+                  <p style="font-size: 17px; color: #fff;margin-bottom:15px">These values provide information about the carbohydrate, protein, fat, calorie, and sugar content of the selected fruits.</p>
+                  <p style="font-size: 17px; color: #fff;margin-bottom:15px">Carbohydrates: ${carbohydrates}g <br>
+                  Protein: ${protein}g <br> 
+                  Fat: ${fat}g <br> 
+                  Calories: ${calories}g <br>
+                   Sugar: ${sugar}g</p>
+                  <br>
+                `;
+                });
+
                 Toast.fire({
                   html: `
                     <div id="ticket" style="padding: 0 10px;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    font-weight: bold;
-                    font-size: 17px;
-                    -webkit-text-fill-color: #ffffff;">
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                      font-weight: bold;
+                      font-size: 17px;
+                      -webkit-text-fill-color: #ffffff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Order sent successfully.</strong></p>
                       <p style="${pStyle}"> ${new Date().toLocaleString()}</p><br>
                       <hr style="height:2px; background-color: #fff;">
                       <p style="font-size: 18px; color: #fff;"><strong style="color: #fff;">Client Info</strong></p><br>
-                      <p style="${pStyle}"><strong style="color: #fff;">Nombre:</strong> ${outputClientName}</p><br>
+                      <p style="${pStyle}"><strong style="color: #fff;">Name:</strong> ${outputClientName}</p><br>
                       <p style="${pStyle}"><strong style="color: #fff;">Mail:</strong> ${outputClientEmail}</p><br>
                       <p style="${pStyle};"><strong style="color: #fff;">Phone:</strong> ${outputClientPhone}</p><br>
                       <p style="${pStyle}"><strong style="color: #fff;">Comments:</strong> ${outputClientComments}</p><br>
@@ -762,9 +787,22 @@ submitSmoothie.addEventListener("click", () => {
                       <p style="font-size: 16px; color: #fff;"><strong style="color: #fff;">Thank you for choosing us.</strong></p><br>
                     </div>
                   `,
-                });
-              }
+                }).then(() => {
+                  if (fruitsString) {
+                    Toast.fire({
+                      html: `${nutritionalInfoHTML}`,
+                      showConfirmButton: false,
+                      timer: 10000,
+                      background:
+                        "linear-gradient(to right, #016131, #028d48, #016131)",
+                      color: "#fff",
+                      padding: "1.7rem",
+                    });
+                  }
 
+                });
+                
+              }
               // Empty values
               const emptyValue = `$${0}.00`;
               localStorage.removeItem("Total Price Fruits");
