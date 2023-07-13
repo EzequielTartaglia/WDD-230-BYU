@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   localStorage.removeItem("Vegetables Selected");
   localStorage.removeItem("Creams/Jams Selected");
   localStorage.removeItem("Size Selected");
+  localStorage.removeItem("Sherbet");
+  localStorage.removeItem("Ice");
 });
 
 //-------------------------------- /* Checkout */ ------------------------------------
@@ -313,10 +315,10 @@ const calculateTotalPrice = () => {
   checkboxesVegetables.forEach((checkbox) => {
     const vegetable = checkbox.value;
     const price = vegetablesPrices[vegetable];
-  
+
     if (checkbox.checked) {
       totalPrice += price;
-  
+
       // Get the selected vegetables array from localStorage
       let vegetablesSelected = [];
       if (localStorage.getItem("Vegetables Selected")) {
@@ -324,12 +326,12 @@ const calculateTotalPrice = () => {
           localStorage.getItem("Vegetables Selected")
         );
       }
-  
+
       // Check if the vegetable is already present in the array
       if (!vegetablesSelected.includes(vegetable)) {
         // Add the selected vegetable to the array
         vegetablesSelected.push(vegetable);
-  
+
         // Save the selected vegetables array to localStorage
         localStorage.setItem(
           "Vegetables Selected",
@@ -344,13 +346,13 @@ const calculateTotalPrice = () => {
           localStorage.getItem("Vegetables Selected")
         );
       }
-  
+
       // Check if the vegetable is present in the array
       const index = vegetablesSelected.indexOf(vegetable);
       if (index > -1) {
         // Remove the vegetable from the array
         vegetablesSelected.splice(index, 1);
-  
+
         // Save the selected vegetables array to localStorage
         localStorage.setItem(
           "Vegetables Selected",
@@ -359,14 +361,14 @@ const calculateTotalPrice = () => {
       }
     }
   });
-  
+
   checkboxesCreamsJams.forEach((checkbox) => {
     const creamsJams = checkbox.value;
     const price = creamsJamsPrices[creamsJams];
-  
+
     if (checkbox.checked) {
       totalPrice += price;
-  
+
       // Get the selected creams/jams array from localStorage
       let creamsJamsSelected = [];
       if (localStorage.getItem("Creams/Jams Selected")) {
@@ -374,12 +376,12 @@ const calculateTotalPrice = () => {
           localStorage.getItem("Creams/Jams Selected")
         );
       }
-  
+
       // Check if the creams/jams item is already present in the array
       if (!creamsJamsSelected.includes(creamsJams)) {
         // Add the selected creams/jams item to the array
         creamsJamsSelected.push(creamsJams);
-  
+
         // Save the creams/jams array to localStorage
         localStorage.setItem(
           "Creams/Jams Selected",
@@ -394,13 +396,13 @@ const calculateTotalPrice = () => {
           localStorage.getItem("Creams/Jams Selected")
         );
       }
-  
+
       // Check if the creams/jams item is present in the array
       const index = creamsJamsSelected.indexOf(creamsJams);
       if (index > -1) {
         // Remove the creams/jams item from the array
         creamsJamsSelected.splice(index, 1);
-  
+
         // Save the creams/jams array to localStorage
         localStorage.setItem(
           "Creams/Jams Selected",
@@ -409,54 +411,43 @@ const calculateTotalPrice = () => {
       }
     }
   });
-  
-  
+
   checkboxesSizes.forEach((checkbox) => {
     const sizes = checkbox.value;
     const price = sizesPrices[sizes];
-  
+
     if (checkbox.checked) {
       totalPrice += price;
-  
+
       // Get the selected creams/jams array from localStorage
       let sizeSelected = [];
       if (localStorage.getItem("Size Selected")) {
-        sizeSelected = JSON.parse(
-          localStorage.getItem("Size Selected")
-        );
+        sizeSelected = JSON.parse(localStorage.getItem("Size Selected"));
       }
-  
+
       // Check if the creams/jams item is already present in the array
       if (!sizeSelected.includes(sizes)) {
         // Add the selected creams/jams item to the array
         sizeSelected.push(sizes);
-  
+
         // Save the creams/jams array to localStorage
-        localStorage.setItem(
-          "Size Selected",
-          JSON.stringify(sizeSelected)
-        );
+        localStorage.setItem("Size Selected", JSON.stringify(sizeSelected));
       }
     } else {
       // Get the selected creams/jams array from localStorage
       let sizeSelected = [];
       if (localStorage.getItem("Size Selected")) {
-        sizeSelected = JSON.parse(
-          localStorage.getItem("Size Selected")
-        );
+        sizeSelected = JSON.parse(localStorage.getItem("Size Selected"));
       }
-  
+
       // Check if the creams/jams item is present in the array
       const index = sizeSelected.indexOf(sizes);
       if (index > -1) {
         // Remove the creams/jams item from the array
         sizeSelected.splice(index, 1);
-  
+
         // Save the creams/jams array to localStorage
-        localStorage.setItem(
-          "Size Selected",
-          JSON.stringify(sizeSelected)
-        );
+        localStorage.setItem("Size Selected", JSON.stringify(sizeSelected));
       }
     }
   });
@@ -465,10 +456,21 @@ const calculateTotalPrice = () => {
   const totalPriceSherbetsUpdated = sherbetAmount * 1;
   totalPrice += totalPriceSherbetsUpdated;
 
+  if (sherbetAmount == 1) {
+    localStorage.setItem("Sherbet", "Yes");
+  } else {
+    localStorage.removeItem("Sherbet");
+  }
+
   const iceAmount = iceToggle.value;
   const totalPriceIcesUpdated = iceAmount * 1;
   totalPrice += totalPriceIcesUpdated;
 
+  if (iceAmount == 1) {
+    localStorage.setItem("Ice", "Yes");
+  } else {
+    localStorage.removeItem("Ice");
+  }
   return totalPrice;
 };
 
@@ -610,22 +612,27 @@ submitSmoothie.addEventListener("click", () => {
               );
               const creamsJamsArray = JSON.parse(
                 localStorage.getItem("Creams/Jams Selected")
-                );
+              );
               const sizesArray = JSON.parse(
                 localStorage.getItem("Size Selected")
-                );              
-                
+              );
+
+              const sherbetOption = localStorage.getItem("Sherbet");
+              const iceOption = localStorage.getItem("Ice");
               if (
                 (fruitsArray && fruitsArray.length >= 1) ||
-                (vegetablesArray && vegetablesArray.length >= 1)||
+                (vegetablesArray && vegetablesArray.length >= 1) ||
                 (creamsJamsArray && creamsJamsArray.length >= 1) ||
-                (sizesArray && sizesArray.length >= 1) 
-
+                (sizesArray && sizesArray.length >= 1) ||
+                sherbetOption ||
+                iceOption
               ) {
                 let fruitsString;
                 let vegetablesString;
                 let creamsJamsString;
                 let sizesString;
+                let sherbetString;
+                let iceString;
 
                 if (
                   fruitsArray &&
@@ -683,6 +690,18 @@ submitSmoothie.addEventListener("click", () => {
                   sizesString = sizesArray[0];
                 }
 
+                if (sherbetOption) {
+                  sherbetString = "Yes";
+                } else {
+                  sherbetString = "No";
+                }
+
+                if (iceOption) {
+                  iceString = "Yes";
+                } else {
+                  iceString = "No";
+                }
+
                 Toast.fire({
                   html: `
                     <div id="ticket" style="padding: 0 10px;
@@ -722,6 +741,16 @@ submitSmoothie.addEventListener("click", () => {
                           ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> ${sizesString}</p><br>`
                           : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Size:</strong> N/A </p><br>`
                       }
+                      ${
+                        sherbetString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Sherbet:</strong> ${sherbetString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Sherbet:</strong> No </p><br>`
+                      }
+                      ${
+                        iceString
+                          ? `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Ice:</strong> ${iceString}</p><br>`
+                          : `<p style="font-size: 14px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Ice:</strong> No </p><br>`
+                      }
                       <br>
                       <p style="font-size: 16px; color: #fff; margin-bottom:-15px;"><strong style="color: #fff;">Total Price:</strong> ${
                         totalPriceCheckout.textContent
@@ -731,7 +760,7 @@ submitSmoothie.addEventListener("click", () => {
                     </div>
                   `,
                 });
-              } 
+              }
 
               // Empty values
               const emptyValue = `$${0}.00`;
@@ -740,6 +769,9 @@ submitSmoothie.addEventListener("click", () => {
               localStorage.removeItem("Vegetables Selected");
               localStorage.removeItem("Creams/Jams Selected");
               localStorage.removeItem("Size Selected");
+              localStorage.removeItem("Sherbet");
+              localStorage.removeItem("Ice");
+
               const totalPriceFruits =
                 document.getElementById("totalPriceFruits");
               if (totalPriceFruits) {
