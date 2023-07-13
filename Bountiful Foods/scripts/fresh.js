@@ -714,21 +714,48 @@ submitSmoothie.addEventListener("click", () => {
                 const pStyle =
                   "font-size: 14px; color: #fff; margin-bottom:-16px";
 
-                selectedFruitNutritions.forEach((nutrition) => {
-                  const { carbohydrates, protein, fat, calories, sugar } =
-                    nutrition;
+                  let totalCarbohydrates = 0;
+                  let totalProtein = 0;
+                  let totalFat = 0;
+                  let totalCalories = 0;
+                  let totalSugar = 0;
+                  
+                  selectedFruitNutritions.forEach((nutrition) => {
+                    const { carbohydrates, protein, fat, calories, sugar } = nutrition;
+                  
+                    // Sumar los valores de cada nutriente a las variables totales
+                    totalCarbohydrates += carbohydrates;
+                    totalProtein += protein;
+                    totalFat += fat;
+                    totalCalories += calories;
+                    totalSugar += sugar;
 
-                  nutritionalInfoHTML += `
-                  <p style="font-size: 18px; color: #fff; margin-bottom:15px"><strong style="color: #fff;">Nutritional Info</strong></p>
-                  <p style="font-size: 17px; color: #fff;margin-bottom:15px">These values provide information about the carbohydrate, protein, fat, calorie, and sugar content of the selected fruits.</p>
-                  <p style="font-size: 17px; color: #fff;margin-bottom:15px">Carbohydrates: ${carbohydrates}g <br>
-                  Protein: ${protein}g <br> 
-                  Fat: ${fat}g <br> 
-                  Calories: ${calories}g <br>
-                   Sugar: ${sugar}g</p>
-                  <br>
-                `;
-                });
+                  });
+                  
+// Mostrar la suma total de los nutrientes
+// Mostrar la suma total de los nutrientes
+nutritionalInfoHTML += `
+  <div id="ticket" style="padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-text-fill-color: #ffffff;">
+    <p style="font-size: 18px; color: #fff; margin-bottom:15px"><strong style="color: #fff;">Nutritional Info</strong></p>
+    <p style="font-size: 15px; color: #fff;margin-bottom:15px">These values provide information about the carbohydrate, protein, fat, calorie, and sugar content of the selected fruits.</p><br>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Carbohydrates..........${totalCarbohydrates}g</li>
+      <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Protein......................${totalProtein}g</li>
+      <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Fat..........................${totalFat}g</li>
+      <li style="font-size: 13px; color: #fff; margin-bottom: 5px;">Calories.....................${totalCalories}g</li>
+      <li style="font-size: 13px; color: #fff; margin-bottom: 10px;">Sugar.......................${totalSugar}g</li>
+    </ul>
+  </div>
+`;
+
+
+                  
 
                 Toast.fire({
                   html: `
