@@ -28,6 +28,8 @@ W01 Activity: Applied JavaScript: https://codepen.io/ezequieltartaglia/pen/OJBNw
 
 ### Final Project
 
+![Preview Final Project](https://github.com/EzequielTartaglia/wdd230/assets/96756615/17eb4436-e11f-4973-8ecb-5f95c0583aa8)
+
 - Boutiful Foods Site Plan: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/Design/design.html
 - Boutiful Foods Home Page: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/index.html
 - Boutiful Foods Fresh Page: https://ezequieltartaglia.github.io/wdd230/Bountiful%20Foods/fresh.html
