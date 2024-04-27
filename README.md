@@ -8,7 +8,7 @@ Assiment Portal: https://ezequieltartaglia.github.io/WDD-230-BYU/
 
 - Design Principles Document:  https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%202/design-principles.html
 - Book of Mormon - Top 25: https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%205/bom.html
-- Progressive Loading of Images (lazyload): https://ezequieltartaglia.github.io/WDD230/Lesson%207/lazyload.html
+- Progressive Loading of Images (lazyload): https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%207/lazyload.html
 - Table build: https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%208/tablebuild.html
 - Latter-day Prophets (API): https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%209/prophets.html
 - Weather (API): https://ezequieltartaglia.github.io/WDD-230-BYU/Lesson%2010/weather-api.html
